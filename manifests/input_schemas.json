@@ -1,0 +1,558 @@
+{
+  "data/frozen/vision/tables/exp10_imagenet_adv_pier.csv": {
+    "columns": [
+      "TargetModel",
+      "Group",
+      "Dose",
+      "MeanPIER"
+    ],
+    "row_count": 36
+  },
+  "data/frozen/vision/tables/exp11_shape_texture_pier.csv": {
+    "columns": [
+      "ContextType",
+      "ContextLabel",
+      "TargetModel",
+      "Group",
+      "Dose",
+      "MeanPIER",
+      "StdPIER",
+      "NumEvalPoints",
+      "NumFitPoints",
+      "ContextRawSize"
+    ],
+    "row_count": 14
+  },
+  "data/frozen/vision/tables/exp12_shape_texture_pier_separated.csv": {
+    "columns": [
+      "ContextType",
+      "ContextLabel",
+      "TargetModel",
+      "Group",
+      "Dose",
+      "MeanPIER",
+      "StdPIER",
+      "NumEvalPoints",
+      "NumFitPoints",
+      "ContextRawSize",
+      "ShapeVariant"
+    ],
+    "row_count": 30
+  },
+  "data/frozen/traffic/tables/exp14_multicity_tabular_summary.csv": {
+    "columns": [
+      "City",
+      "HorizonSteps",
+      "MeanFlow_Test",
+      "Local_MAE_Ratio",
+      "Persist_MAE",
+      "Skill_vs_Persist",
+      "Local_Train_MAE",
+      "Global_Train_MAE",
+      "Local_MAE",
+      "Global_MAE",
+      "Router_MAE",
+      "Delta_Global",
+      "Delta_Router",
+      "PIER",
+      "FitDistance",
+      "PairwiseMeanAbsDiff",
+      "ClosestPeerName",
+      "ClosestPeerMeanAbsDiff",
+      "WeightEntropy",
+      "WeightEntropyNorm",
+      "EffectivePeers_HHI",
+      "TopPeer1",
+      "TopPeer1Weight",
+      "TopPeer2",
+      "TopPeer2Weight",
+      "TopPeer3",
+      "TopPeer3Weight",
+      "TopKMass3",
+      "NumNonZeroWeights",
+      "NumTrain",
+      "NumVal",
+      "NumTest",
+      "NumFitSamples",
+      "NumEvalSamples",
+      "NumPeers",
+      "CacheHash",
+      "ModelType"
+    ],
+    "row_count": 31
+  },
+  "data/frozen/traffic/tables/exp14_multicity_tabular_summary_peer_weights_long.csv": {
+    "columns": [
+      "City",
+      "PeerName",
+      "Weight",
+      "Rank",
+      "HorizonSteps",
+      "CacheHash",
+      "ModelType"
+    ],
+    "row_count": 961
+  },
+  "data/frozen/synthetic_legacy/tables/exp1_scaling_law.csv": {
+    "columns": [
+      "queries",
+      "method",
+      "correct",
+      "error"
+    ],
+    "row_count": 2800
+  },
+  "data/frozen/synthetic_legacy/tables/exp2_saturation.csv": {
+    "columns": [
+      "dimension",
+      "n_peers",
+      "pier_score",
+      "is_redundant",
+      "ratio_N_d"
+    ],
+    "row_count": 3900
+  },
+  "data/frozen/synthetic_legacy/tables/exp3_shapley.csv": {
+    "columns": [
+      "Model",
+      "Metric",
+      "Score"
+    ],
+    "row_count": 6
+  },
+  "data/frozen/bert_legacy/tables/exp4_bert_disco_dosesplit.csv": {
+    "columns": [
+      "Dose",
+      "PIER",
+      "Model",
+      "Group"
+    ],
+    "row_count": 30
+  },
+  "data/frozen/bert_legacy/tables/exp5_dual_mode_residuals.csv": {
+    "columns": [
+      "Eval_Point",
+      "BERT_Uniqueness_R",
+      "BERT_Redundancy_R",
+      "DistilBERT_Uniqueness_R",
+      "DistilBERT_Redundancy_R",
+      "RoBERTa_Uniqueness_R",
+      "RoBERTa_Redundancy_R",
+      "ALBERT_Uniqueness_R",
+      "ALBERT_Redundancy_R",
+      "XLNet_Uniqueness_R",
+      "XLNet_Redundancy_R"
+    ],
+    "row_count": 1000
+  },
+  "data/frozen/bert_legacy/tables/exp6_bert_multicontext_pier.csv": {
+    "columns": [
+      "ContextType",
+      "ContextLabel",
+      "TargetModel",
+      "Dose",
+      "MeanPIER",
+      "StdPIER",
+      "NumEvalPoints",
+      "NumFitPoints",
+      "ContextRawSize"
+    ],
+    "row_count": 300
+  },
+  "data/frozen/bert_legacy/tables/exp7_bert_context_disagreement.csv": {
+    "columns": [
+      "ContextType",
+      "ContextLabel",
+      "TargetModel",
+      "Dose",
+      "MeanDisagreement",
+      "StdDisagreement",
+      "NumPoints",
+      "ContextRawSize"
+    ],
+    "row_count": 300
+  },
+  "data/frozen/bert_legacy/tables/exp8_routing_sanity_dose0.csv": {
+    "columns": [
+      "TargetModel",
+      "GlobalDisagreement_D",
+      "MAE_SinglePeer",
+      "BestPeerName",
+      "MAE_OracleRouter",
+      "NumSamples"
+    ],
+    "row_count": 5
+  },
+  "data/frozen/bert_legacy/tables/exp9_routing_sanity_dose_grid_convex.csv": {
+    "columns": [
+      "TargetModel",
+      "Dose",
+      "GlobalDisagreement_D",
+      "MAE_SinglePeer",
+      "BestPeerName",
+      "MAE_OracleRouter",
+      "MAE_ConvexRouter",
+      "NumFitSamples",
+      "NumEvalSamples"
+    ],
+    "row_count": 50
+  },
+  "data/frozen/llm/v23/table_v23_claim_locking_matrix.csv": {
+    "columns": [
+      "claim_id",
+      "v22_raw_trackwise",
+      "v23_endpoint_raw",
+      "v23_permutation_averaged",
+      "common_bootstrap",
+      "matched_objective",
+      "generation_compatibility",
+      "final_status",
+      "paper_ready_wording"
+    ],
+    "row_count": 16
+  },
+  "data/frozen/llm/v23/table_v23_distributed_convex_coverage.csv": {
+    "columns": [
+      "target",
+      "family",
+      "raw_MSE_single_error",
+      "raw_MSE_convex_error",
+      "raw_MAE_single_error",
+      "raw_MAE_convex_error",
+      "perm_MSE_single_error",
+      "perm_MSE_convex_error",
+      "perm_MAE_single_error",
+      "perm_MAE_convex_error",
+      "common_bootstrap_MSE_improvement_interval",
+      "common_bootstrap_MAE_improvement_interval",
+      "claim_status"
+    ],
+    "row_count": 16
+  },
+  "data/frozen/llm/v23/table_v23_endpoint_claim_comparison.csv": {
+    "columns": [
+      "target",
+      "family",
+      "v22_full_design_raw_delta",
+      "v23_endpoint_raw_delta",
+      "v23_permutation_averaged_delta",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "positive_split_count",
+      "claim_status"
+    ],
+    "row_count": 16
+  },
+  "data/frozen/llm/v23/table_v23_generation_validation.csv": {
+    "columns": [
+      "model",
+      "condition",
+      "canonical_score_generation_agreement",
+      "all_rotation_score_generation_agreement",
+      "malformed_rate",
+      "median_generation_tokens",
+      "generated_answer_rotation_stability",
+      "score_vs_generated_frequency_TV"
+    ],
+    "row_count": 24
+  },
+  "data/frozen/llm/v23/table_v23_sibling_coverage.csv": {
+    "columns": [
+      "target",
+      "removed_sibling",
+      "family",
+      "raw_endpoint_inflation",
+      "permutation_averaged_inflation",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "largest_non_sibling_inflation",
+      "sibling_rank",
+      "splits_sibling_largest",
+      "claim_status"
+    ],
+    "row_count": 8
+  },
+  "data/frozen/llm/v2/table1_ecosystem_manifest.csv": {
+    "columns": [
+      "model",
+      "revision",
+      "parameter_count",
+      "broad_lineage",
+      "exact_sibling_group",
+      "post_training_type",
+      "tokenizer",
+      "chat_template",
+      "prompt_count",
+      "generation_count",
+      "clean_direct_answer_accuracy"
+    ],
+    "row_count": 8
+  },
+  "data/frozen/llm/v2/table2_main_target_audit_summary.csv": {
+    "columns": [
+      "target",
+      "clean_pier",
+      "maximum_pier",
+      "condition_of_maximum",
+      "honest_convexity_gain",
+      "exact_sibling_removal_inflation",
+      "broad_lineage_removal_inflation",
+      "random_removal_percentile",
+      "vector_tv",
+      "top1_surrogate_agreement",
+      "split_stability",
+      "generation_score_agreement"
+    ],
+    "row_count": 8
+  },
+  "data/frozen/llm/v2/table3_design_representation_sensitivity.csv": {
+    "columns": [
+      "target",
+      "gold_probability_rank",
+      "margin_rank",
+      "vector_response_rank",
+      "calibrated_probability_rank",
+      "intervention_family_rank_shift",
+      "low_to_high_transfer_penalty",
+      "cross_family_transfer_penalty"
+    ],
+    "row_count": 8
+  },
+  "data/frozen/llm/v2/table4_controls_quality_checks.csv": {
+    "columns": [
+      "control",
+      "expected_behavior",
+      "observed_mean_residual",
+      "observed_max_residual",
+      "passed"
+    ],
+    "row_count": 7
+  },
+  "data/frozen/llm/v2/table5_gold_candidates.csv": {
+    "columns": [
+      "criterion",
+      "target",
+      "value",
+      "metric"
+    ],
+    "row_count": 9
+  },
+  "data/frozen/llm/v22/convexity_bootstrap_summary.csv": {
+    "columns": [
+      "analysis_type",
+      "target",
+      "family",
+      "metric",
+      "bootstrap_mean",
+      "bootstrap_median",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "probability_positive",
+      "probability_negative",
+      "replicates",
+      "bootstrap_unit",
+      "interval_estimand"
+    ],
+    "row_count": 16
+  },
+  "data/frozen/llm/v22/endpoint_bootstrap_summary.csv": {
+    "columns": [
+      "analysis_type",
+      "target",
+      "family",
+      "metric",
+      "bootstrap_mean",
+      "bootstrap_median",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "probability_positive",
+      "probability_negative",
+      "replicates",
+      "bootstrap_unit",
+      "interval_estimand"
+    ],
+    "row_count": 16
+  },
+  "data/frozen/llm/v22/selected_calibrated_bootstrap_summary.csv": {
+    "columns": [
+      "analysis_type",
+      "target",
+      "family",
+      "bootstrap_mean",
+      "bootstrap_median",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "probability_positive",
+      "probability_negative",
+      "replicates",
+      "interval_estimand",
+      "temperature_refit_within_bootstrap",
+      "temperature_conditioning"
+    ],
+    "row_count": 8
+  },
+  "data/frozen/llm/v22/sibling_removal_bootstrap_summary.csv": {
+    "columns": [
+      "analysis_type",
+      "target",
+      "family",
+      "metric",
+      "bootstrap_mean",
+      "bootstrap_median",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "probability_positive",
+      "probability_negative",
+      "replicates",
+      "bootstrap_unit",
+      "interval_estimand"
+    ],
+    "row_count": 8
+  },
+  "data/frozen/llm/v22/table_1_corrected_endpoint_effects.csv": {
+    "columns": [
+      "target",
+      "family",
+      "trackwise_clean_pier",
+      "trackwise_high_pier",
+      "trackwise_delta",
+      "trackwise_relative_delta",
+      "trackwise_delta_median",
+      "trackwise_delta_standard_deviation",
+      "trackwise_delta_minimum",
+      "trackwise_delta_maximum",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "probability_delta_positive",
+      "positive_split_count",
+      "negative_split_count",
+      "stability_label",
+      "old_mean_response_delta",
+      "delta_difference_due_to_correction",
+      "endpoint_sign_changed_from_v21",
+      "calibrated_delta",
+      "interface_corrected_delta"
+    ],
+    "row_count": 16
+  },
+  "data/frozen/llm/v22/table_2_estimand_decomposition.csv": {
+    "columns": [
+      "target",
+      "family",
+      "dose",
+      "aggregate_fit_aggregate_eval",
+      "aggregate_fit_trackwise_eval",
+      "trackwise_fit_aggregate_eval",
+      "trackwise_fit_trackwise_eval",
+      "evaluation_correction",
+      "fitting_correction",
+      "interaction",
+      "cancellation_gap",
+      "weight_l1_change",
+      "weight_l2_change",
+      "projected_response_change",
+      "rank_correlation_aggregate_to_v22"
+    ],
+    "row_count": 80
+  },
+  "data/frozen/llm/v22/table_3_convexity_gap.csv": {
+    "columns": [
+      "target",
+      "family",
+      "fit_selected_single_peer",
+      "fit_selected_single_peer_frequency",
+      "single_error_trackwise",
+      "convex_error_trackwise",
+      "absolute_improvement",
+      "gap_ratio",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "positive_split_count",
+      "stability_label",
+      "calibrated_improvement",
+      "vector_space_support",
+      "vector_support_fraction"
+    ],
+    "row_count": 16
+  },
+  "data/frozen/llm/v22/table_4_sibling_coverage.csv": {
+    "columns": [
+      "target",
+      "removed_sibling",
+      "family",
+      "all_peer_trackwise_pier",
+      "sibling_removed_trackwise_pier",
+      "inflation",
+      "bootstrap_lower",
+      "bootstrap_upper",
+      "positive_split_count",
+      "stability_label",
+      "largest_non_sibling_inflation",
+      "median_non_sibling_inflation",
+      "sibling_rank",
+      "sibling_percentile",
+      "splits_sibling_largest",
+      "calibrated_inflation",
+      "vector_space_support",
+      "vector_support_fraction"
+    ],
+    "row_count": 8
+  },
+  "data/frozen/llm/v22/table_5_cancellation_diagnosis.csv": {
+    "columns": [
+      "target",
+      "family",
+      "dose",
+      "trackwise_pier",
+      "track_mean_response_pier",
+      "cancellation_gap",
+      "relative_hidden_fraction",
+      "between_track_std",
+      "between_track_range",
+      "endpoint_sign_changed_from_v21"
+    ],
+    "row_count": 80
+  },
+  "data/frozen/llm/v22/table_6_claim_survival.csv": {
+    "columns": [
+      "claim",
+      "v21_status",
+      "v22_raw_trackwise_status",
+      "bootstrap_status",
+      "calibration_status",
+      "interface_sensitivity_status",
+      "vector_support_status",
+      "details",
+      "final_recommended_wording"
+    ],
+    "row_count": 14
+  },
+  "data/frozen/llm/v22/vector_audit/trackwise_vector_scalar_columns.csv": {
+    "columns": [
+      "target",
+      "family",
+      "split_seed",
+      "dose",
+      "weight_source",
+      "mean_total_variation",
+      "mean_jensen_shannon_divergence",
+      "top1_semantic_answer_agreement",
+      "correctness_agreement",
+      "vector_overall_total_variation",
+      "vector_endpoint_delta",
+      "scalar_endpoint_delta",
+      "endpoint_direction_support",
+      "fit_selected_single_peer",
+      "single_peer_overall_total_variation",
+      "vector_convexity_improvement",
+      "scalar_convexity_improvement",
+      "convexity_direction_support",
+      "vector_sibling_removal_inflation",
+      "scalar_sibling_removal_inflation",
+      "sibling_direction_support",
+      "scalar_vector_weight_l1_change",
+      "scalar_vector_weight_l2_change"
+    ],
+    "row_count": 1600
+  }
+}

@@ -1,0 +1,15 @@
+[project]
+name = "behavioral-coverage-audit"
+version = "0.1.0"
+description = "Frozen-evidence replay for Auditing Behavioral Coverage in Model Ecosystems"
+requires-python = ">=3.12"
+dependencies = ["numpy", "pandas", "scipy", "pyarrow", "pymupdf"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+analysis = ["cvxpy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]
+addopts = "-ra -p no:cacheprovider"

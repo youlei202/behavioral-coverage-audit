@@ -1,0 +1,15 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=7.1cm,height=4.45cm,grid=major,xmin=0,xmax=.055,ymin=.4,ymax=4.7,xlabel={Single-peer error minus group error},ytick={1,2,3,4},yticklabels={Phi-R / I,Phi-R / D,Mistral / I,Mistral / D},legend style={at={(.5,1.04)},anchor=south,legend columns=2}
+]
+\addplot[only marks,mark=*,teal,error bars/.cd,x dir=both,x explicit] table[x=gain,y=y,col sep=comma,x error minus=lo,x error plus=hi] {../../data/figures/distributed_MSE.csv};
+\addlegendentry{MSE fit}
+\addplot[only marks,mark=square*,coral,error bars/.cd,x dir=both,x explicit] table[x=gain,y=y,col sep=comma,x error minus=lo,x error plus=hi] {../../data/figures/distributed_MAE.csv};
+\addlegendentry{MAE fit}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

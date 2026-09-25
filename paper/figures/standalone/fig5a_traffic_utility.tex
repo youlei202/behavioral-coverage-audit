@@ -1,0 +1,19 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=7.1cm,height=4.2cm,grid=major,xmin=0,xmax=64,ymin=-40,ymax=140,xlabel={PIER / mean flow (\%)},ylabel={MAE change / local MAE (\%)},legend style={at={(.98,.50)},anchor=east}
+]
+\draw[slate!50,dashed] (axis cs:0,0)--(axis cs:64,0);
+\addplot[only marks,teal,mark=*] table[x=rel_pier,y=impact,col sep=comma] {../../data/figures/traffic_False.csv};
+\addlegendentry{$\min w\geq-10^{-3}$}
+\addplot[only marks,coral,mark=triangle*] table[x=rel_pier,y=impact,col sep=comma] {../../data/figures/traffic_True.csv};
+\addlegendentry{$\min w<-10^{-3}$}
+\node[font=\sffamily\fontsize{7}{8}\selectfont,anchor=north west,yshift=-3pt] at (axis cs:35.769960029973099,110.30585148671203) {Paris};
+\node[font=\sffamily\fontsize{7}{8}\selectfont,anchor=south east,yshift=3pt] at (axis cs:57.404776178442262,-25.654910747234233) {Bern};
+\node[font=\sffamily\fontsize{7}{8}\selectfont,anchor=south west,yshift=4pt] at (axis cs:24.314569881520946,-20.213786038211463) {Luzern};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

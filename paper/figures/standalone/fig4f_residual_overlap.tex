@@ -1,0 +1,15 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.1cm,height=4.3cm,grid=major,xmin=1,xmax=40,ymin=0,ymax=1.03,xlabel={Top-$k$ residual inputs},ylabel={Intersection / $k$},xtick={1,10,20,30,40},legend style={at={(.97,.45)},anchor=east}
+]
+\addplot[teal,line width=.8pt,no marks] table[x=k,y=overlap,col sep=comma] {../../data/figures/residual_overlap_texture_natural.csv};
+\addlegendentry{Natural}
+\addplot[coral,line width=.8pt,no marks] table[x=k,y=overlap,col sep=comma] {../../data/figures/residual_overlap_shape_bias.csv};
+\addlegendentry{Shape-biased}
+\draw[slate!50,dotted] (axis cs:20,0)--(axis cs:20,1);
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,316 @@
+[
+  {
+    "item": "Figure 1",
+    "label": "fig:framework",
+    "page": 3,
+    "family": "conceptual",
+    "source": "paper/sections/02_framework.tex",
+    "panels": [
+      "fig1a_matched_audit",
+      "fig1b_peer_projection"
+    ],
+    "frozen_inputs": [],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Figure 2",
+    "label": "fig:llm-coverage",
+    "page": 5,
+    "family": "llm",
+    "source": "paper/sections/04_llm_coverage.tex",
+    "panels": [
+      "fig2a_group_gain",
+      "fig2b_sibling_removal",
+      "fig2c_directional_coverage",
+      "fig2d_distributed_gain"
+    ],
+    "frozen_inputs": [
+      "data/frozen/llm/v23/table_v23_distributed_convex_coverage.csv",
+      "data/frozen/llm/v23/table_v23_sibling_coverage.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Figure 3",
+    "label": "fig:stress",
+    "page": 7,
+    "family": "llm",
+    "source": "paper/sections/05_stress_interface.tex",
+    "panels": [
+      "fig3a_context_trajectory",
+      "fig3b_deletion_trajectory",
+      "fig3c_balanced_effects"
+    ],
+    "frozen_inputs": [
+      "data/frozen/llm/v22/table_2_estimand_decomposition.csv",
+      "data/frozen/llm/v23/table_v23_endpoint_claim_comparison.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Figure 4",
+    "label": "fig:vision",
+    "page": 8,
+    "family": "vision",
+    "source": "paper/sections/06_vision.tex",
+    "panels": [
+      "fig4a_vision_stress",
+      "fig4b_vision_context",
+      "fig4c_geometry_natural",
+      "fig4d_geometry_shape",
+      "fig4e_residual_mass",
+      "fig4f_residual_overlap"
+    ],
+    "frozen_inputs": [
+      "data/frozen/vision/artifacts/exp11/exp11_shape_bias_ConvNeXtTiny_residuals.npz",
+      "data/frozen/vision/artifacts/exp11/exp11_shape_bias_ShapeResNet50_ShapeResNet_residuals.npz",
+      "data/frozen/vision/artifacts/exp11/exp11_texture_natural_ConvNeXtTiny_residuals.npz",
+      "data/frozen/vision/artifacts/exp11/exp11_texture_natural_ShapeResNet50_ShapeResNet_residuals.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_shape_bias.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_texture_natural.npz",
+      "data/frozen/vision/tables/exp10_imagenet_adv_pier.csv",
+      "data/frozen/vision/tables/exp11_shape_texture_pier.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Figure 5",
+    "label": "fig:interface-diagnostics",
+    "page": 17,
+    "family": "llm",
+    "source": "paper/appendix/C_robustness.tex",
+    "panels": [
+      "figA_interface_change",
+      "figA_cancellation"
+    ],
+    "frozen_inputs": [
+      "data/frozen/llm/v22/table_2_estimand_decomposition.csv",
+      "data/frozen/llm/v23/table_v23_endpoint_claim_comparison.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Figure 6",
+    "label": "fig:geometry-all",
+    "page": 20,
+    "family": "vision",
+    "source": "paper/tables/geometry_panels.tex",
+    "panels": [
+      "fig4c_geometry_natural",
+      "fig4d_geometry_shape",
+      "figD_geometry_SININ_natural",
+      "figD_geometry_SININ_shape",
+      "figD_geometry_C_natural",
+      "figD_geometry_C_shape"
+    ],
+    "frozen_inputs": [
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_shape_bias.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_texture_natural.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_shape_bias.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_texture_natural.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_shape_bias.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_texture_natural.npz"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Figure 7",
+    "label": "fig:traffic",
+    "page": 21,
+    "family": "traffic",
+    "source": "paper/tables/forecasting_panels.tex",
+    "panels": [
+      "fig5a_traffic_utility",
+      "fig5b_traffic_group"
+    ],
+    "frozen_inputs": [
+      "data/frozen/traffic/tables/exp14_multicity_tabular_summary.csv",
+      "data/frozen/traffic/tables/exp14_multicity_tabular_summary_peer_weights_long.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Figure 8",
+    "label": "fig:legacy",
+    "page": 22,
+    "family": "bert_legacy",
+    "source": "paper/appendix/F_legacy_experiments.tex",
+    "panels": [
+      "figF_bert_baseline",
+      "figF_bert_mid",
+      "figF_bert_controls"
+    ],
+    "frozen_inputs": [
+      "data/frozen/bert_legacy/tables/exp4_bert_disco_dosesplit.csv",
+      "data/frozen/bert_legacy/tables/exp6_bert_multicontext_pier.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables figures paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 1",
+    "label": "tab:controls",
+    "page": 4,
+    "family": "llm",
+    "source": "paper/tables/exact_controls.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v2/control_results.json"
+    ],
+    "generator": "scripts/generate_inline_tables.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 2",
+    "label": "tab:vector-main",
+    "page": 6,
+    "family": "llm",
+    "source": "paper/tables/vector_main.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v22/vector_audit/trackwise_vector_results.parquet",
+      "data/frozen/llm/v22/vector_audit/trackwise_vector_scalar_columns.csv",
+      "data/frozen/llm/v22/vector_audit/stage_11_vector_sensitivity.json"
+    ],
+    "generator": "scripts/build_vector_evidence.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 3",
+    "label": "tab:vector-sibling",
+    "page": 6,
+    "family": "llm",
+    "source": "paper/tables/vector_siblings.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v22/vector_audit/trackwise_vector_results.parquet",
+      "data/frozen/llm/v22/vector_audit/trackwise_vector_scalar_columns.csv",
+      "data/frozen/llm/v22/vector_audit/stage_11_vector_sensitivity.json"
+    ],
+    "generator": "scripts/build_vector_evidence.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 4",
+    "label": "tab:models",
+    "page": 13,
+    "family": "llm",
+    "source": "paper/tables/models.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v2/table1_ecosystem_manifest.csv"
+    ],
+    "generator": "scripts/generate_inline_tables.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 5",
+    "label": "tab:endpoints-full",
+    "page": 15,
+    "family": "llm",
+    "source": "paper/tables/endpoint_effects.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v23/table_v23_endpoint_claim_comparison.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 6",
+    "label": "tab:all-gains",
+    "page": 15,
+    "family": "llm",
+    "source": "paper/tables/all_gains.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v23/table_v23_distributed_convex_coverage.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 7",
+    "label": "tab:sibling-full",
+    "page": 16,
+    "family": "llm",
+    "source": "paper/tables/sibling_effects.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v23/table_v23_sibling_coverage.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 8",
+    "label": "tab:vector-all",
+    "page": 17,
+    "family": "llm",
+    "source": "paper/tables/vector_all.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v22/vector_audit/trackwise_vector_results.parquet",
+      "data/frozen/llm/v22/vector_audit/trackwise_vector_scalar_columns.csv",
+      "data/frozen/llm/v22/vector_audit/stage_11_vector_sensitivity.json"
+    ],
+    "generator": "scripts/build_vector_evidence.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 9",
+    "label": "tab:generation",
+    "page": 18,
+    "family": "llm",
+    "source": "paper/tables/generation_diagnostics.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/llm/v23/table_v23_generation_validation.csv"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  },
+  {
+    "item": "Table 10",
+    "label": "tab:geometry-support",
+    "page": 19,
+    "family": "vision",
+    "source": "paper/tables/geometry_support.tex",
+    "panels": [],
+    "frozen_inputs": [
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_shape_bias.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_texture_natural.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_shape_bias.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_texture_natural.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_shape_bias.npz",
+      "data/frozen/vision/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_texture_natural.npz"
+    ],
+    "generator": "scripts/build_assets.py",
+    "command": "make tables paper",
+    "output": "paper/main.pdf"
+  }
+]

@@ -1,0 +1,23 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.1cm,height=4.3cm,grid=major,xlabel={Adversarial dose},ylabel={Residual / clean residual},xmin=0,xmax=.1,ymin=.42,ymax=1.32,xtick={0,.05,.1},xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=2},legend style={at={(.5,1.03)},anchor=south,legend columns=3,font=\sffamily\fontsize{6}{7}\selectfont}
+]
+\addplot[teal,mark=*,line width=.8pt] table[x=Dose,y=relative,col sep=comma] {../../data/figures/vision_adv_ResNet50.csv};
+\addlegendentry{RN-50}
+\addplot[coral,mark=square*,line width=.8pt] table[x=Dose,y=relative,col sep=comma] {../../data/figures/vision_adv_ConvNeXtTiny.csv};
+\addlegendentry{ConvNeXt}
+\addplot[navy,mark=triangle*,line width=.8pt] table[x=Dose,y=relative,col sep=comma] {../../data/figures/vision_adv_RobustResNet50.csv};
+\addlegendentry{Robust RN}
+\addplot[slate,mark=none,line width=.8pt] table[x=Dose,y=relative,col sep=comma] {../../data/figures/vision_adv_ResNet18.csv};
+\addlegendentry{RN-18}
+\addplot[ochre,mark=none,line width=.8pt] table[x=Dose,y=relative,col sep=comma] {../../data/figures/vision_adv_EfficientNetB0.csv};
+\addlegendentry{EffNet}
+\addplot[wine,mark=none,line width=.8pt] table[x=Dose,y=relative,col sep=comma] {../../data/figures/vision_adv_ViT_B16.csv};
+\addlegendentry{ViT}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

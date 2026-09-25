@@ -1,0 +1,27 @@
+\begin{table}[!b]
+\centering\small\setlength{\tabcolsep}{5pt}
+\caption{\textbf{Complete-option reconstruction in the canonical audit.} Each cell averages ten fixed splits. D/I denote deletion/irrelevant context. Single denotes selection by fitting TV; transferred uses scalar-fit weights to predict every option; refitted minimizes vector squared error. $+$ is the number of splits with single TV greater than refitted-group TV, not an independent-replication test.}
+\label{tab:vector-all}
+\begin{tabular}{llrrrrr}
+\toprule
+Target & Family & Single TV & Transferred TV & Refitted TV & Gain (\%) & $+$\\
+\midrule
+Qwen2.5 & D & 0.3140 & 0.3387 & 0.3423 & -9.0 & 0/10\\
+Qwen2.5 & I & 0.3372 & 0.3629 & 0.3630 & -7.6 & 0/10\\
+General Reasoner & D & 0.3140 & 0.2935 & 0.2986 & +4.9 & 10/10\\
+General Reasoner & I & 0.3372 & 0.3009 & 0.3048 & +9.6 & 10/10\\
+OLMo & D & 0.4706 & 0.4500 & 0.4479 & +4.8 & 10/10\\
+OLMo & I & 0.4573 & 0.4381 & 0.4360 & +4.7 & 10/10\\
+Gemma & D & 0.4856 & 0.5402 & 0.5429 & -11.8 & 0/10\\
+Gemma & I & 0.4682 & 0.5443 & 0.5383 & -15.0 & 0/10\\
+Granite & D & 0.5028 & 0.4740 & 0.4745 & +5.6 & 10/10\\
+Granite & I & 0.4845 & 0.4627 & 0.4653 & +4.0 & 10/10\\
+Phi-R & D & 0.4205 & 0.3472 & 0.3447 & +18.0 & 10/10\\
+Phi-R & I & 0.4164 & 0.3536 & 0.3490 & +16.2 & 10/10\\
+phi-4 & D & 0.4612 & 0.4331 & 0.4385 & +4.9 & 10/10\\
+phi-4 & I & 0.4595 & 0.4495 & 0.4585 & +0.2 & 4/10\\
+Mistral & D & 0.4205 & 0.3630 & 0.3604 & +14.3 & 10/10\\
+Mistral & I & 0.4164 & 0.3557 & 0.3523 & +15.4 & 10/10\\
+\bottomrule
+\end{tabular}
+\end{table}

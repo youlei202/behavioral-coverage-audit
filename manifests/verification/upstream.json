@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "source_records": 450,
+  "original_source_files_unchanged": true,
+  "maintained_adaptations": [
+    "paper/sections/03_theory.tex",
+    "paper/appendix/B_llm_protocol.tex",
+    "scripts/table_templates/exact_controls.tex",
+    "paper/tables/exact_controls.tex",
+    "scripts/table_templates/models.tex",
+    "paper/tables/models.tex"
+  ],
+  "method": "Every original source file rehashed against pre-copy SHA256 and size; each maintained copy recorded separately. All six transformations are extraction of two unchanged table fragments."
+}

@@ -1,0 +1,216 @@
+--- ninepage/appendix/C_robustness.tex
++++ topfigures/appendix/C_robustness.tex
+@@ -39,7 +39,7 @@
+ \subsection{Interface rankings and intervention aggregation}
+ Rankings of the eight targets' family-averaged endpoint-design MSE-fit errors have canonical-versus-balanced Spearman correlation $0.952$. Across the 16 target--family endpoint changes, the corresponding correlation is $0.932$, and 15 signs agree. These statistics refer to different objects and should not be interchanged.
+ 
+-\begin{figure}[ht]
++\begin{figure}[!t]
+ \centering
+ \begin{subfigure}[t]{0.485\linewidth}
+ \centering\includegraphics[width=\linewidth]{figures/pdf/figA_interface_change.pdf}
+--- ninepage/appendix/F_legacy_experiments.tex
++++ topfigures/appendix/F_legacy_experiments.tex
+@@ -1,15 +1,4 @@
+-\section{Additional sentiment-classifier audits}
+-\label{app:legacy}
+-
+-The SST-2 experiments complement the main generative-model study by examining identifiable input subgroups and constructed target relations. They contain BERT, DistilBERT, RoBERTa, ALBERT, and XLNet classifiers under matched token masking. They are not described as a modern generative-model benchmark.
+-
+-\paragraph{Context contrasts.}
+-For each model and dose, the horizontal fingerprint coordinate subtracts mean PIER on the reported medium-length bin (8--15) from that on the long-sentence bin (more than 15); the vertical coordinate subtracts the no-negation group from the explicit-negation group. Figure~\ref{fig:legacy}(a)--(b) uses the stored subgroup means at doses $0$ and $0.5$. ALBERT moves from positive contrasts at dose zero to negative contrasts at dose $0.5$. DistilBERT has a negative negation contrast at both doses but a positive length contrast. These are descriptive subgroup contrasts, not causal effects of sentence length or negation.
+-
+-\paragraph{Constructed targets.}
+-A separate fixed-peer audit compares a DistilBERT clone, RoBERTa, and a fine-tuned DistilBERT. The clone's maximum residual is $1.31\times10^{-8}$ across the masking grid. RoBERTa and the fine-tuned target have nonzero gaps that generally rise with dose (Figure~\ref{fig:legacy}c). The fine-tuned target already has a residual of $0.120$ at baseline; stronger masking increases an already present gap. These controls establish different response relations without attributing the observed differences solely to architecture or a particular training mechanism.
+-
+-\begin{figure}[ht]
++\begin{figure}[!t]
+ \centering
+ \begin{subfigure}[t]{0.323\linewidth}
+ \centering\includegraphics[width=\linewidth]{figures/pdf/figF_bert_baseline.pdf}
+@@ -26,3 +15,16 @@
+ \caption{\textbf{Subgroup localization and exact-duplication checks.} Fingerprint coordinates are arithmetic differences of archived context means; lines in (c) connect the observed dose-grid values. No missing confidence interval is reconstructed. The clone residual is retained at its actual nonzero numerical value, although it is visually indistinguishable from zero on the common scale.}
+ \label{fig:legacy}
+ \end{figure}
++
++\section{Additional sentiment-classifier audits}
++\label{app:legacy}
++
++The SST-2 experiments complement the main generative-model study by examining identifiable input subgroups and constructed target relations. They contain BERT, DistilBERT, RoBERTa, ALBERT, and XLNet classifiers under matched token masking. They are not described as a modern generative-model benchmark.
++
++\paragraph{Context contrasts.}
++For each model and dose, the horizontal fingerprint coordinate subtracts mean PIER on the reported medium-length bin (8--15) from that on the long-sentence bin (more than 15); the vertical coordinate subtracts the no-negation group from the explicit-negation group. Figure~\ref{fig:legacy}(a)--(b) uses the stored subgroup means at doses $0$ and $0.5$. ALBERT moves from positive contrasts at dose zero to negative contrasts at dose $0.5$. DistilBERT has a negative negation contrast at both doses but a positive length contrast. These are descriptive subgroup contrasts, not causal effects of sentence length or negation.
++
++\paragraph{Constructed targets.}
++A separate fixed-peer audit compares a DistilBERT clone, RoBERTa, and a fine-tuned DistilBERT. The clone's maximum residual is $1.31\times10^{-8}$ across the masking grid. RoBERTa and the fine-tuned target have nonzero gaps that generally rise with dose (Figure~\ref{fig:legacy}c). The fine-tuned target already has a residual of $0.120$ at baseline; stronger masking increases an already present gap. These controls establish different response relations without attributing the observed differences solely to architecture or a particular training mechanism.
++
++
+--- ninepage/main.tex
++++ topfigures/main.tex
+@@ -38,6 +38,16 @@
+ \setlength{\textfloatsep}{7pt plus 2pt minus 2pt}
+ \setlength{\floatsep}{6pt plus 2pt minus 2pt}
+ \setlength{\intextsep}{6pt plus 2pt minus 2pt}
++% Page-top figures throughout the manuscript and supplement.
++\floatplacement{figure}{!t}
++\setcounter{topnumber}{3}
++\setcounter{totalnumber}{5}
++\renewcommand{\topfraction}{0.94}
++\renewcommand{\textfraction}{0.06}
++\renewcommand{\floatpagefraction}{0.80}
++\makeatletter
++\setlength{\@fptop}{0pt}
++\makeatother
+ \captionsetup{font=small,labelfont=bf,skip=2.5pt}
+ \captionsetup[subfigure]{font=footnotesize,labelfont=bf,skip=2pt,justification=raggedright,singlelinecheck=false}
+ \newcommand{\PIER}{\textsc{pier}\xspace}
+@@ -91,7 +101,6 @@
+ \input{appendix/C_robustness}
+ \FloatBarrier
+ \input{appendix/D_cross_domain}
+-\FloatBarrier
+ \input{appendix/E_additional_theory}
+ \input{appendix/F_legacy_experiments}
+ \end{document}
+--- ninepage/scripts/build_assets.py
++++ topfigures/scripts/build_assets.py
+@@ -288,7 +288,7 @@
+  ctxt='Natural' if r.context=='texture_natural' else 'Shape'
+  lines.append(lab+' & '+ctxt+' & '+' & '.join(f'{r[c]:.3f}' for c in ['ResNet50','EfficientNetB0','ConvNeXtTiny','ViT_B16'])+f' & {r.l2_dist:.5f}'+r'\\')
+ lines+=[r'\bottomrule\end{tabular}\end{table}'];(TAB/'geometry_support.tex').write_text('\n'.join(lines))
+-lines=[r'\begin{figure}[p]\centering']
++lines=[r'\begin{figure}[!t]\centering']
+ for i,((m,ctx),name) in enumerate(geo_names.items()):
+  lab='SIN' if m.endswith('_SIN') else ('SIN+IN' if m.endswith('_SININ') else r'SIN+IN$\to$IN')
+  ctxt='natural' if ctx=='texture_natural' else 'shape-biased'
+--- ninepage/scripts/build_vector_evidence.py
++++ topfigures/scripts/build_vector_evidence.py
+@@ -66,7 +66,7 @@
+ main+='\\bottomrule\n\\end{tabular}\n\\end{table}\n'
+ (T/'vector_main.tex').write_text(main)
+ # Full table: every target in both families, no unreported significance test.
+-full=r'''\begin{table}[!ht]
++full=r'''\begin{table}[!b]
+ \centering\small\setlength{\tabcolsep}{5pt}
+ \caption{\textbf{Complete-option reconstruction in the canonical audit.} Each cell averages ten fixed splits. D/I denote deletion/irrelevant context. Single denotes selection by fitting TV; transferred uses scalar-fit weights to predict every option; refitted minimizes vector squared error. $+$ is the number of splits with single TV greater than refitted-group TV, not an independent-replication test.}
+ \label{tab:vector-all}
+--- ninepage/sections/02_framework.tex
++++ topfigures/sections/02_framework.tex
+@@ -32,7 +32,7 @@
+ \end{equation}
+ We call $R_t$ \PIER and $U_t$ the \emph{coverage gap}. Scalar responses use absolute residuals; the full-option analysis additionally reports total variation. Section~\ref{sec:measurement} specifies the support conditions under which the fitted projection defines a unique evaluation response.
+ 
+-\begin{figure}[t]
++\begin{figure}[!t]
+ \centering
+ \begin{subfigure}[t]{0.485\linewidth}
+ \centering\includegraphics[width=\linewidth]{figures/pdf/fig1a_matched_audit.pdf}
+--- ninepage/sections/04_llm_coverage.tex
++++ topfigures/sections/04_llm_coverage.tex
+@@ -11,7 +11,7 @@
+ \subsection{Collective approximation varies across targets}
+ Six targets show positive group gains under both stress families and both fitting losses, with each corresponding pointwise interval excluding zero (Figure~\ref{fig:llm-coverage}a). Relative improvements range from about $7\%$ to $32\%$. OLMo has smaller gains, including a deletion result whose MSE-fit interval crosses zero. Qwen2.5 has no reliable group advantage. The all-target view therefore separates recurrent collective approximation from a different regime in which one peer already achieves the group's available reconstruction quality.
+ 
+-\begin{figure}[t]
++\begin{figure}[!t]
+ \centering
+ \begin{subfigure}[t]{0.485\linewidth}
+ \centering\includegraphics[width=\linewidth]{figures/pdf/fig2a_group_gain.pdf}
+--- ninepage/sections/05_stress_interface.tex
++++ topfigures/sections/05_stress_interface.tex
+@@ -1,14 +1,4 @@
+-\section{Coverage under stress and response balancing}
+-\label{sec:stress}
+-
+-The identity of the peers is fixed, but the response relation can change with the input. Irrelevant-context injection prepends unrelated material; content deletion removes selected words from the question stem while preserving the options. A single combination is fitted across the declared conditions of each family and held fixed during evaluation. Changes in its residual reveal where that combination ceases to track the target.
+-
+-\paragraph{Opposite directions under matched stress.}
+-At the maximum irrelevant-context dose, the balanced reference-answer gap increases by $0.01435$ for Qwen2.5 and $0.03250$ for phi-4. It decreases by $0.00894$ for Mistral and $0.01026$ for OLMo. All four directions hold in every split and have common-question bootstrap intervals excluding zero (Figure~\ref{fig:stress}c). Under deletion, Mistral and OLMo also decrease, by $0.02183$ and $0.01565$. The same perturbation therefore makes one target harder to reconstruct and another easier.
+-
+-The canonical-order curves show the full dose dependence (Figure~\ref{fig:stress}a--b). Balanced endpoint fits then examine the high-dose changes under a second presentation protocol. The curves and endpoint comparisons retain their own response definitions and fitting designs. The complete-option diagnostic also gives opposite irrelevant-context directions for Qwen2.5 and Mistral (Appendix~\ref{app:vector}).
+-
+-\begin{figure}[!htbp]
++\begin{figure}[!t]
+ \centering
+ \begin{subfigure}[t]{0.322\linewidth}
+ \centering\includegraphics[width=\linewidth]{figures/pdf/fig3a_context_trajectory.pdf}
+@@ -26,6 +16,18 @@
+ \label{fig:stress}
+ \end{figure}
+ 
++\section{Coverage under stress and response balancing}
++\label{sec:stress}
++
++The identity of the peers is fixed, but the response relation can change with the input. Irrelevant-context injection prepends unrelated material; content deletion removes selected words from the question stem while preserving the options. A single combination is fitted across the declared conditions of each family and held fixed during evaluation. Changes in its residual reveal where that combination ceases to track the target.
++
++\paragraph{Opposite directions under matched stress.}
++At the maximum irrelevant-context dose, the balanced reference-answer gap increases by $0.01435$ for Qwen2.5 and $0.03250$ for phi-4. It decreases by $0.00894$ for Mistral and $0.01026$ for OLMo. All four directions hold in every split and have common-question bootstrap intervals excluding zero (Figure~\ref{fig:stress}c). Under deletion, Mistral and OLMo also decrease, by $0.02183$ and $0.01565$. The same perturbation therefore makes one target harder to reconstruct and another easier.
++
++The canonical-order curves show the full dose dependence (Figure~\ref{fig:stress}a--b). Balanced endpoint fits then examine the high-dose changes under a second presentation protocol. The curves and endpoint comparisons retain their own response definitions and fitting designs. The complete-option diagnostic also gives opposite irrelevant-context directions for Qwen2.5 and Mistral (Appendix~\ref{app:vector}).
++
++
++
+ \paragraph{Presentation changes magnitudes more often than directions.}
+ The mean rotation-to-average TV diagnostic is $0.338$, indicating substantial variation in semantic option probabilities across presentations. Nevertheless, canonical and balanced endpoint analyses agree on 15 of 16 effect signs. Their eight-target rankings of family-averaged reconstruction errors have Spearman correlation $0.952$; the correlation across the 16 endpoint changes is $0.932$. These are complementary summaries of the error level and its response to stress.
+ 
+--- ninepage/sections/06_vision.tex
++++ topfigures/sections/06_vision.tex
+@@ -1,14 +1,4 @@
+-\section{Context-dependent gaps and image-level residuals}
+-\label{sec:vision}
+-
+-An increased average residual can arise from many small discrepancies or from a few large ones. The vision audit distinguishes these patterns and relates them to the supporting peer combination. It uses ImageNet classifiers and shape-trained ResNet variants on matched images \citep{deng2009imagenet,he2016resnet,geirhos2019texture}. Fitting and evaluation are separated within each context; the adversarial and context experiments retain their respective score interfaces (Appendix~\ref{app:cross-domain}).
+-
+-\paragraph{Context changes the amount and source of coverage.}
+-At the maximum matched adversarial dose, ResNet-50's mean residual is $0.511$ times its clean value, while ConvNeXt-T and robust ResNet-50 reach $1.189$ and $1.209$ (Figure~\ref{fig:vision}a). The separate seven-model, true-class-probability audit shows higher context-specific gaps for all seven targets on shape-biased images. ConvNeXt-T increases from $8.35\times10^{-5}$ to $7.88\times10^{-4}$, a $9.44$-fold change (Figure~\ref{fig:vision}b).
+-
+-For the SIN-trained ResNet target with four standard peers, context-specific PCA views of the fitting response vectors show a concurrent change in support (Figure~\ref{fig:vision}c--d). The natural-image fit is approximately the ViT response. The shape-biased fit instead assigns weights of about $0.507$, $0.223$, and $0.270$ to ResNet-50, EfficientNet-B0, and ViT-B/16. Its full fitting-vector residual norm rises from $0.00488$ to $0.04673$. These quantities describe the original-space fit; each panel has its own PCA basis. Context changes both the target's discrepancy and which combination lies closest to it.
+-
+-\begin{figure}[!htbp]
++\begin{figure}[!t]
+ \centering
+ \begin{subfigure}[t]{0.322\linewidth}
+ \centering\includegraphics[width=\linewidth]{figures/pdf/fig4a_vision_stress.pdf}
+@@ -39,6 +29,18 @@
+ \label{fig:vision}
+ \end{figure}
+ 
++\section{Context-dependent gaps and image-level residuals}
++\label{sec:vision}
++
++An increased average residual can arise from many small discrepancies or from a few large ones. The vision audit distinguishes these patterns and relates them to the supporting peer combination. It uses ImageNet classifiers and shape-trained ResNet variants on matched images \citep{deng2009imagenet,he2016resnet,geirhos2019texture}. Fitting and evaluation are separated within each context; the adversarial and context experiments retain their respective score interfaces (Appendix~\ref{app:cross-domain}).
++
++\paragraph{Context changes the amount and source of coverage.}
++At the maximum matched adversarial dose, ResNet-50's mean residual is $0.511$ times its clean value, while ConvNeXt-T and robust ResNet-50 reach $1.189$ and $1.209$ (Figure~\ref{fig:vision}a). The separate seven-model, true-class-probability audit shows higher context-specific gaps for all seven targets on shape-biased images. ConvNeXt-T increases from $8.35\times10^{-5}$ to $7.88\times10^{-4}$, a $9.44$-fold change (Figure~\ref{fig:vision}b).
++
++For the SIN-trained ResNet target with four standard peers, context-specific PCA views of the fitting response vectors show a concurrent change in support (Figure~\ref{fig:vision}c--d). The natural-image fit is approximately the ViT response. The shape-biased fit instead assigns weights of about $0.507$, $0.223$, and $0.270$ to ResNet-50, EfficientNet-B0, and ViT-B/16. Its full fitting-vector residual norm rises from $0.00488$ to $0.04673$. These quantities describe the original-space fit; each panel has its own PCA basis. Context changes both the target's discrepancy and which combination lies closest to it.
++
++
++
+ The other shape-trained targets show different support changes under the same four-peer roster (Appendix~\ref{app:cross-domain}). The SIN+IN target changes from approximately the EfficientNet response on natural images to a mixture dominated by ViT on shape-biased images. The SIN+IN$\to$IN target changes from approximately ViT alone to weights of $0.813$ on ConvNeXt and $0.187$ on ViT. Their fitting-vector residual norms increase from $0.01076$ to $0.02076$ and from $0.00604$ to $0.03309$, respectively. The larger gap is therefore accompanied by a target-specific change in which peers provide the closest recorded approximation, rather than a uniform change in one shared reference model.
+ 
+ \paragraph{The gap concentrates on shared inputs.}
+--- ninepage/tables/forecasting_panels.tex
++++ topfigures/tables/forecasting_panels.tex
+@@ -1,4 +1,4 @@
+-\begin{figure}[!htbp]
++\begin{figure}[!t]
+ \centering
+ \begin{subfigure}[t]{0.485\linewidth}
+ \centering\includegraphics[width=\linewidth]{figures/pdf/fig5a_traffic_utility.pdf}
+--- ninepage/tables/geometry_panels.tex
++++ topfigures/tables/geometry_panels.tex
+@@ -1,4 +1,4 @@
+-\begin{figure}[p]\centering
++\begin{figure}[!t]\centering
+ \begin{subfigure}[t]{.485\linewidth}\centering\includegraphics[width=\linewidth]{figures/pdf/fig4c_geometry_natural.pdf}\caption{SIN / natural.}\end{subfigure}
+ \hfill
+ \begin{subfigure}[t]{.485\linewidth}\centering\includegraphics[width=\linewidth]{figures/pdf/fig4d_geometry_shape.pdf}\caption{SIN / shape-biased.}\end{subfigure}
+--- ninepage/tables/vector_all.tex
++++ topfigures/tables/vector_all.tex
+@@ -1,4 +1,4 @@
+-\begin{table}[!ht]
++\begin{table}[!b]
+ \centering\small\setlength{\tabcolsep}{5pt}
+ \caption{\textbf{Complete-option reconstruction in the canonical audit.} Each cell averages ten fixed splits. D/I denote deletion/irrelevant context. Single denotes selection by fitting TV; transferred uses scalar-fit weights to predict every option; refitted minimizes vector squared error. $+$ is the number of splits with single TV greater than refitted-group TV, not an independent-replication test.}
+ \label{tab:vector-all}

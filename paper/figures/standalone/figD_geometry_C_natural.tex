@@ -1,0 +1,21 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.1cm,height=4.3cm,grid=major,clip=false,xmin=-8.7764544369421795,xmax=16.547446660557359,ymin=-10.385539111385395,ymax=8.3786418820977779,xlabel={PC1 (69.9\%)},ylabel={PC2 (22.2\%)},title={SIN+IN$\to$IN},xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=0},yticklabel style={/pgf/number format/fixed,/pgf/number format/precision=0}
+]
+\addplot[draw=teal!85,fill=lightteal,line width=.65pt] table[x=x,y=y,col sep=comma] {../../data/figures/figD_geometry_C_natural_hull.csv};
+\addplot[only marks,mark=*,teal] table[x=x,y=y,col sep=comma] {../../data/figures/figD_geometry_C_natural_peers.csv};
+\draw[coral,line width=.8pt] (axis cs:-3.6327388419072175,0.49893817585887495)--(axis cs:-4.9075251026019719,4.2570298719685269);
+\addplot[only marks,mark=diamond*,mark size=2.4pt,ochre] table[x=x,y=y,col sep=comma] {../../data/figures/figD_geometry_C_natural_mix.csv};
+\addplot[only marks,mark=square*,mark size=2pt,coral] table[x=x,y=y,col sep=comma] {../../data/figures/figD_geometry_C_natural_target.csv};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=south east,xshift=-2pt,yshift=4pt,text=teal] at (axis cs:0.77768188599388832,-6.589317523108452) {1};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=north east,xshift=-2pt,yshift=-4pt,text=teal] at (axis cs:12.678517326217152,2.2456429422087893) {2};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=south west,xshift=2pt,yshift=4pt,text=teal] at (axis cs:-1.2832847175204696,-0.9112055184652128) {3};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=south west,xshift=4pt,yshift=1pt,text=teal] at (axis cs:-3.6326505501813746,0.49891205153747481) {4};
+\node[anchor=south west,xshift=3pt,yshift=4pt,text=coral,font=\sffamily\fontsize{7}{8}\selectfont] at (axis cs:-4.9075251026019719,4.2570298719685269) {Target};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

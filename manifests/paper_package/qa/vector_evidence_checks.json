@@ -1,0 +1,15 @@
+{
+  "raw_parquet_sha256": "1604bc3b71ba193fea699dec26ec24965230a73435ba69588e9f1bf82e1a05a9",
+  "stage_marker_matches": true,
+  "rows": 1600,
+  "scalar_columns": 23,
+  "unique_split_weight_groups": 320,
+  "unique_vector_fit_groups": 160,
+  "five_doses_per_group": true,
+  "group_gain_identity": true,
+  "overall_equal_dose_identity": true,
+  "no_new_inference": true,
+  "no_refitting": true,
+  "no_bootstrap": true,
+  "caveat": "Canonical five-dose vector-square fit / TV-selected single; separate from balanced endpoint matched-loss inference."
+}

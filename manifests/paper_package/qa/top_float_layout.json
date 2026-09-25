@@ -1,0 +1,125 @@
+{
+  "base_zip": "ICLR2027_Behavioral_Coverage_NinePage_Source.zip",
+  "base_zip_sha256": "e9f2d2413cf178883da1009c46b491180848e873cb9444561ae879ea3f8ee9d6",
+  "total_pdf_pages": 22,
+  "figures": [
+    {
+      "figure": 1,
+      "page": 3,
+      "panel_count": 2,
+      "figure_top_pt": 81.861,
+      "caption_top_pt": 212.761,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    },
+    {
+      "figure": 2,
+      "page": 5,
+      "panel_count": 4,
+      "figure_top_pt": 81.861,
+      "caption_top_pt": 379.28,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    },
+    {
+      "figure": 3,
+      "page": 7,
+      "panel_count": 3,
+      "figure_top_pt": 81.861,
+      "caption_top_pt": 217.407,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    },
+    {
+      "figure": 4,
+      "page": 8,
+      "panel_count": 6,
+      "figure_top_pt": 81.862,
+      "caption_top_pt": 347.148,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    },
+    {
+      "figure": 5,
+      "page": 17,
+      "panel_count": 2,
+      "figure_top_pt": 81.862,
+      "caption_top_pt": 210.822,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    },
+    {
+      "figure": 6,
+      "page": 20,
+      "panel_count": 6,
+      "figure_top_pt": 81.862,
+      "caption_top_pt": 664.881,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    },
+    {
+      "figure": 7,
+      "page": 21,
+      "panel_count": 2,
+      "figure_top_pt": 81.862,
+      "caption_top_pt": 234.803,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    },
+    {
+      "figure": 8,
+      "page": 22,
+      "panel_count": 3,
+      "figure_top_pt": 81.861,
+      "caption_top_pt": 202.015,
+      "prose_or_table_words_above_figure": [],
+      "at_page_top": true
+    }
+  ],
+  "reference_start_pages": [
+    10
+  ],
+  "ninth_page_body_bottom_pt": 719.885,
+  "same_source_inputs": {
+    "data": {
+      "file_count": 146,
+      "changed": []
+    },
+    "figures/standalone": {
+      "file_count": 26,
+      "changed": []
+    },
+    "figures/pdf": {
+      "file_count": 26,
+      "changed": []
+    }
+  },
+  "scientific_text_checks": {
+    "sections/04_llm_coverage.tex": "PASS",
+    "sections/07_traffic.tex": "PASS",
+    "sections/06_vision.tex": "PASS",
+    "sections/09_discussion.tex": "PASS",
+    "sections/03_theory.tex": "PASS",
+    "sections/08_related_work.tex": "PASS",
+    "sections/05_stress_interface.tex": "PASS",
+    "sections/02_framework.tex": "PASS",
+    "sections/01_introduction.tex": "PASS",
+    "appendix/D_cross_domain.tex": "PASS",
+    "appendix/C_robustness.tex": "PASS",
+    "appendix/B_llm_protocol.tex": "PASS",
+    "appendix/A_theory.tex": "PASS",
+    "appendix/E_additional_theory.tex": "PASS",
+    "appendix/F_legacy_experiments.tex": "PASS",
+    "tables/geometry_support.tex": "PASS",
+    "tables/geometry_panels.tex": "PASS",
+    "tables/endpoint_effects.tex": "PASS",
+    "tables/vector_main.tex": "PASS",
+    "tables/generation_diagnostics.tex": "PASS",
+    "tables/all_gains.tex": "PASS",
+    "tables/vector_all.tex": "PASS",
+    "tables/sibling_effects.tex": "PASS",
+    "tables/vector_siblings.tex": "PASS",
+    "tables/forecasting_panels.tex": "PASS"
+  },
+  "latex_issues": []
+}

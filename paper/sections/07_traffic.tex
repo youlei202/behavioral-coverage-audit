@@ -1,0 +1,6 @@
+\section{Coverage and task utility}
+\label{sec:traffic}
+
+Reconstruction evaluates a peer response against the target; task loss evaluates it against the outcome. The 31-city forecasting archive \citep{loder2019utd19} illustrates the distinction. Relative residual is $100\,\mathrm{PIER}/\mathrm{MeanFlow}$, and replacement impact is $100(\mathrm{MAE}_{\mathrm{peer}}-\mathrm{MAE}_{\mathrm{local}})/\mathrm{MAE}_{\mathrm{local}}$. Paris has a positive impact, while Bern has a negative one despite its large relative residual. The normalized quantities have Pearson correlation $0.052$; the raw quantities have correlation $0.836$. The definition of scale therefore matters, and response distinctiveness alone does not determine the sign of task-loss change.
+
+We use this archive as a descriptive comparison of two measurement targets. Its stored fits include numerically infeasible simplex coefficients, so its complete point plots and coefficient diagnostics are retained in Appendix~\ref{app:traffic-caveats}, separately from the matched LLM comparisons. The empirical role of the coverage audit is to locate response dependence: the Qwen removal analysis identifies which peer supplies the available reconstruction, while task-outcome measurements assess the value of retaining or replacing that response.

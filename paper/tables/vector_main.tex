@@ -1,0 +1,17 @@
+\begin{table}[!ht]
+\centering\small
+\caption{\textbf{Coverage across the complete option distribution.} Mean held-out total variation over ten splits in the canonical-order, five-dose audit. The group minimizes vector squared error; the single peer is selected by fitting total variation. This response diagnostic uses a different design from the balanced, loss-matched results in Figure~\ref{fig:llm-coverage}. All models and removal effects appear in Appendix~\ref{app:vector}.}
+\label{tab:vector-main}
+\begin{tabular}{lrrrr}
+\toprule
+& \multicolumn{2}{c}{Deletion} & \multicolumn{2}{c}{Irrelevant context}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Target & Single & Group & Single & Group\\
+\midrule
+Qwen2.5 & 0.314 & 0.342 & 0.337 & 0.363\\
+General Reasoner & 0.314 & 0.299 & 0.337 & 0.305\\
+Mistral & 0.421 & 0.360 & 0.416 & 0.352\\
+Gemma & 0.486 & 0.543 & 0.468 & 0.538\\
+\bottomrule
+\end{tabular}
+\end{table}

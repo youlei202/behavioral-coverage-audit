@@ -1,0 +1,44 @@
+{
+  "schema_version": "pier_llm_reanalysis_v21_config_v1",
+  "original_root": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2",
+  "physical_root": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS",
+  "logical_root": "/work/Lei/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS",
+  "split_seeds": [
+    20260828,
+    20260829,
+    20260830,
+    20260831,
+    20260832,
+    20260833,
+    20260834,
+    20260835,
+    20260836,
+    20260837
+  ],
+  "bootstrap_replicates": 1000,
+  "bootstrap_shard_size": 100,
+  "bootstrap_seed": 20260828,
+  "default_workers": 48,
+  "families": {
+    "irrelevant_context": {
+      "doses": [0.0, 64.0, 128.0, 256.0, 512.0],
+      "high_dose": 512.0
+    },
+    "content_deletion": {
+      "doses": [0.0, 0.1, 0.2, 0.3, 0.4],
+      "high_dose": 0.4
+    }
+  },
+  "model_roster": [
+    "Qwen/Qwen2.5-7B-Instruct",
+    "TIGER-Lab/General-Reasoner-Qwen2.5-7B",
+    "microsoft/phi-4",
+    "microsoft/Phi-4-reasoning-plus",
+    "mistralai/Mistral-Nemo-Instruct-2407",
+    "allenai/OLMo-2-1124-13B-Instruct",
+    "ibm-granite/granite-3.3-8b-instruct",
+    "google/gemma-3-12b-it"
+  ],
+  "high_alignment_threshold": 0.7,
+  "epsilon": 1e-10
+}

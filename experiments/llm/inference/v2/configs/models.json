@@ -1,0 +1,20 @@
+{
+  "preferred": [
+    {"id": "Qwen/Qwen2.5-7B-Instruct", "broad_lineage": "qwen2.5", "exact_sibling_group": "qwen2.5-7b", "provider_family": "Qwen", "post_training_type": "instruction", "batch_size": 8},
+    {"id": "TIGER-Lab/General-Reasoner-Qwen2.5-7B", "broad_lineage": "qwen2.5", "exact_sibling_group": "qwen2.5-7b", "provider_family": "TIGER-Lab/Qwen", "post_training_type": "reasoning", "batch_size": 8},
+    {"id": "microsoft/phi-4", "broad_lineage": "phi-4", "exact_sibling_group": "phi-4-14b", "provider_family": "Microsoft", "post_training_type": "instruction", "batch_size": 4},
+    {"id": "microsoft/Phi-4-reasoning-plus", "broad_lineage": "phi-4", "exact_sibling_group": "phi-4-14b", "provider_family": "Microsoft", "post_training_type": "reasoning", "batch_size": 4},
+    {"id": "mistralai/Mistral-Nemo-Instruct-2407", "broad_lineage": "mistral", "exact_sibling_group": null, "provider_family": "Mistral", "post_training_type": "instruction", "batch_size": 4},
+    {"id": "allenai/OLMo-2-1124-13B-Instruct", "broad_lineage": "olmo-2", "exact_sibling_group": null, "provider_family": "AllenAI", "post_training_type": "instruction", "batch_size": 4},
+    {"id": "ibm-granite/granite-3.3-8b-instruct", "broad_lineage": "granite", "exact_sibling_group": null, "provider_family": "IBM", "post_training_type": "instruction", "batch_size": 8},
+    {"id": "google/gemma-3-12b-it", "broad_lineage": "gemma-3", "exact_sibling_group": null, "provider_family": "Google", "post_training_type": "instruction", "batch_size": 4}
+  ],
+  "fallback": [
+    {"id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B", "broad_lineage": "qwen2.5", "exact_sibling_group": null, "provider_family": "DeepSeek/Qwen", "post_training_type": "reasoning", "batch_size": 8},
+    {"id": "Qwen/Qwen3-8B", "broad_lineage": "qwen3", "exact_sibling_group": null, "provider_family": "Qwen", "post_training_type": "reasoning", "batch_size": 8},
+    {"id": "meta-llama/Llama-3.1-8B-Instruct", "broad_lineage": "llama-3", "exact_sibling_group": null, "provider_family": "Meta", "post_training_type": "instruction", "batch_size": 8},
+    {"id": "Qwen/Qwen2.5-14B-Instruct", "broad_lineage": "qwen2.5", "exact_sibling_group": null, "provider_family": "Qwen", "post_training_type": "instruction", "batch_size": 4},
+    {"id": "allenai/OLMo-2-1124-7B-Instruct", "broad_lineage": "olmo-2", "exact_sibling_group": null, "provider_family": "AllenAI", "post_training_type": "instruction", "batch_size": 8}
+  ]
+}
+

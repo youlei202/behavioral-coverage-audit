@@ -1,0 +1,12 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=7cm,height=4.4cm,grid=major,ymin=0,ymax=.23,xmin=.4,xmax=2.6,xtick={1,2},xticklabels={{Magnitude after track mean},{Mean trackwise magnitude}},x tick label style={align=center,text width=2.4cm},ylabel={Mean absolute residual}
+]
+\addplot[ybar,bar width=17pt,fill=teal!65,draw=teal] table[x=x,y=value,col sep=comma] {../../data/figures/cancellation_fixed.csv};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

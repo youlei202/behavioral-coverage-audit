@@ -1,0 +1,10 @@
+criterion,target,value,metric
+largest stable intervention-activated PIER increase,microsoft/phi-4,0.08677693113729334,increase
+largest honest convexity gap,microsoft/Phi-4-reasoning-plus,1.3266022521068341,honest_convexity_gap
+largest lineage effect beyond random removal,Qwen/Qwen2.5-7B-Instruct,0.07252738593423189,observed_inflation
+lowest stable real-model PIER,TIGER-Lab/General-Reasoner-Qwen2.5-7B,0.11300626458642564,pier
+highest stable real-model PIER,google/gemma-3-12b-it,0.2610001913255623,pier
+largest scalar-to-vector mismatch,google/gemma-3-12b-it,0.4991866300700692,mismatch
+largest design-transfer penalty,microsoft/phi-4,0.012580945509830188,transfer_penalty
+largest option-permutation artifact,google/gemma-3-12b-it,0.4684140597445645,probability_vector_tv
+largest score-vs-generation mismatch,TIGER-Lab/General-Reasoner-Qwen2.5-7B,0.85,mismatch

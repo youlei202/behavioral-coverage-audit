@@ -1,0 +1,194 @@
+[
+  {
+    "paper_file": "data/table_v23_endpoint_claim_comparison.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_2_endpoint_claim_comparison.csv",
+    "expected_sha256": "d2eb7971c0eaeca6259e50562258e95f03a1c2e7f96326a439273b298aecb3cf",
+    "actual_sha256": "d2eb7971c0eaeca6259e50562258e95f03a1c2e7f96326a439273b298aecb3cf",
+    "match": true
+  },
+  {
+    "paper_file": "data/table_v23_sibling_coverage.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_3_sibling_coverage.csv",
+    "expected_sha256": "8bb2a15c7c12561d75a6aaec84459164a823ba3d63ae5bedd330d3397bc414a0",
+    "actual_sha256": "8bb2a15c7c12561d75a6aaec84459164a823ba3d63ae5bedd330d3397bc414a0",
+    "match": true
+  },
+  {
+    "paper_file": "data/table_v23_distributed_convex_coverage.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_4_distributed_convex_coverage.csv",
+    "expected_sha256": "7bf44c7d152ada13d3fddf69e3943d7a43d32ebaf508ce08c8c21f03e5f9d1e7",
+    "actual_sha256": "7bf44c7d152ada13d3fddf69e3943d7a43d32ebaf508ce08c8c21f03e5f9d1e7",
+    "match": true
+  },
+  {
+    "paper_file": "data/table_v23_generation_validation.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_5_generation_validation.csv",
+    "expected_sha256": "4f1a4228bc4873cc99d7ff740641ad8cf4a362766fe1ded908f81822a02b95b8",
+    "actual_sha256": "4f1a4228bc4873cc99d7ff740641ad8cf4a362766fe1ded908f81822a02b95b8",
+    "match": true
+  },
+  {
+    "paper_file": "data/table_v23_claim_locking_matrix.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_6_final_claim_locking_matrix.csv",
+    "expected_sha256": "c7704951e89f62250ea83b7a60ca767bd8bdc45f20059c47ad9de08e544d76f0",
+    "actual_sha256": "c7704951e89f62250ea83b7a60ca767bd8bdc45f20059c47ad9de08e544d76f0",
+    "match": true
+  },
+  {
+    "paper_file": "data/v2/table1_ecosystem_manifest.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table1_ecosystem_manifest.csv",
+    "expected_sha256": "1044a3cdaaa1762ab0f20efc139ef968324a8dfa39d5a355a62fdff12f5b673f",
+    "actual_sha256": "1044a3cdaaa1762ab0f20efc139ef968324a8dfa39d5a355a62fdff12f5b673f",
+    "match": true
+  },
+  {
+    "paper_file": "data/v2/table5_gold_candidates.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table5_gold_candidates.csv",
+    "expected_sha256": "b222b89ac6874882ebbef7c62c909da13df59ddb5aac3845835886af598ff883",
+    "actual_sha256": "b222b89ac6874882ebbef7c62c909da13df59ddb5aac3845835886af598ff883",
+    "match": true
+  },
+  {
+    "paper_file": "data/v2/table4_controls_quality_checks.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table4_controls_quality_checks.csv",
+    "expected_sha256": "ee57870c54716da4ec90a9198c132ca552741cb98fb68f2cf2ad43ffb873604c",
+    "actual_sha256": "ee57870c54716da4ec90a9198c132ca552741cb98fb68f2cf2ad43ffb873604c",
+    "match": true
+  },
+  {
+    "paper_file": "data/v2/control_results.json",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/controls/control_results.json",
+    "expected_sha256": "68fad9e020ac916abf26309f8105adecc203a9e33587788e58b630c705f19a81",
+    "actual_sha256": "68fad9e020ac916abf26309f8105adecc203a9e33587788e58b630c705f19a81",
+    "match": true
+  },
+  {
+    "paper_file": "data/v2/table3_design_representation_sensitivity.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table3_design_representation_sensitivity.csv",
+    "expected_sha256": "533c6ce5ad1d6d4a1dfac97253e7a8bd7088eaa3ba8f20ef60c6c6d5a5622731",
+    "actual_sha256": "533c6ce5ad1d6d4a1dfac97253e7a8bd7088eaa3ba8f20ef60c6c6d5a5622731",
+    "match": true
+  },
+  {
+    "paper_file": "data/v2/table2_main_target_audit_summary.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table2_main_target_audit_summary.csv",
+    "expected_sha256": "9f9ae68a55544feb950ed1bdb05a200d9eb5e32ac618767f9c0ca0facfe7bed4",
+    "actual_sha256": "9f9ae68a55544feb950ed1bdb05a200d9eb5e32ac618767f9c0ca0facfe7bed4",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/trackwise_primary_dose_results.parquet",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/analysis/trackwise_primary_dose_results.parquet",
+    "expected_sha256": "f6c6db6f9f39149ba9490f8c267e6b47e0e074cb86f1e72c3867ef2ddc41925f",
+    "actual_sha256": "f6c6db6f9f39149ba9490f8c267e6b47e0e074cb86f1e72c3867ef2ddc41925f",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/cancellation_gap_results.parquet",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/analysis/cancellation_gap_results.parquet",
+    "expected_sha256": "e17fbb3996fca34caf0504436819ff5a8833e256f2f91ba8a562bb304cf18da4",
+    "actual_sha256": "e17fbb3996fca34caf0504436819ff5a8833e256f2f91ba8a562bb304cf18da4",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/table_1_corrected_endpoint_effects.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_1_corrected_endpoint_effects.csv",
+    "expected_sha256": "38e4155b7216ea8abd5ae733eebe4d3960c66f6454f2fdfc9b480a1e9938befb",
+    "actual_sha256": "38e4155b7216ea8abd5ae733eebe4d3960c66f6454f2fdfc9b480a1e9938befb",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/selected_calibrated_bootstrap_summary.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/selected_calibrated_bootstrap_summary.csv",
+    "expected_sha256": "6a9dba5cd41875871df952bc46ba4a7f01f9e2e57073bdd2e51dd1675e2f2eb2",
+    "actual_sha256": "6a9dba5cd41875871df952bc46ba4a7f01f9e2e57073bdd2e51dd1675e2f2eb2",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/sibling_removal_bootstrap_summary.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/sibling_removal_bootstrap_summary.csv",
+    "expected_sha256": "871285c6016cfb76597b05b70185e488437ee3a68c58c5c2fa5f9857fd590cda",
+    "actual_sha256": "871285c6016cfb76597b05b70185e488437ee3a68c58c5c2fa5f9857fd590cda",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/table_2_estimand_decomposition.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_2_estimand_decomposition.csv",
+    "expected_sha256": "fdd9048ef6c6c8c49d753a60aa0ed1f5d16739e4371ab6860fd9cb8fc8f1ad3e",
+    "actual_sha256": "fdd9048ef6c6c8c49d753a60aa0ed1f5d16739e4371ab6860fd9cb8fc8f1ad3e",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/endpoint_bootstrap_summary.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/endpoint_bootstrap_summary.csv",
+    "expected_sha256": "31df61ea3461c375006c9d77d297597b3eb909f05882e45e4501265567e2479a",
+    "actual_sha256": "31df61ea3461c375006c9d77d297597b3eb909f05882e45e4501265567e2479a",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/table_6_claim_survival.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_6_claim_survival.csv",
+    "expected_sha256": "68eb7a5936e28bdbb9cfad59eb5268a47e72779b479ad9dd5f168c2ff523acc6",
+    "actual_sha256": "68eb7a5936e28bdbb9cfad59eb5268a47e72779b479ad9dd5f168c2ff523acc6",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/V2_2_CONTROLS.json",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/controls/V2_2_CONTROLS.json",
+    "expected_sha256": "557d5a3e242b42c4789398dfc7b4c9e0c47005b373e868015bfa243924fd6383",
+    "actual_sha256": "557d5a3e242b42c4789398dfc7b4c9e0c47005b373e868015bfa243924fd6383",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/convexity_bootstrap_summary.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/convexity_bootstrap_summary.csv",
+    "expected_sha256": "b099d66f3861d11bad75a687e30e254be516dbc42b3b5ea09ffa8c2d5bfb2c74",
+    "actual_sha256": "b099d66f3861d11bad75a687e30e254be516dbc42b3b5ea09ffa8c2d5bfb2c74",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/table_4_sibling_coverage.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_4_sibling_coverage.csv",
+    "expected_sha256": "3b2020787852ea8fe336da58e16eced4f7d009ee447fb0fb04583abf3af107ae",
+    "actual_sha256": "3b2020787852ea8fe336da58e16eced4f7d009ee447fb0fb04583abf3af107ae",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/table_5_cancellation_diagnosis.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_5_cancellation_diagnosis.csv",
+    "expected_sha256": "160d68ec5f5bf06bda406cb3fe1a07cda4f465c95e99b4367441dfedb6bb7f23",
+    "actual_sha256": "160d68ec5f5bf06bda406cb3fe1a07cda4f465c95e99b4367441dfedb6bb7f23",
+    "match": true
+  },
+  {
+    "paper_file": "data/v22/table_3_convexity_gap.csv",
+    "upstream": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_3_convexity_gap.csv",
+    "expected_sha256": "b50709328208b7c74327856414742fed07c50e0559928b8ef8ba9f5cf02b980a",
+    "actual_sha256": "b50709328208b7c74327856414742fed07c50e0559928b8ef8ba9f5cf02b980a",
+    "match": true
+  }
+]

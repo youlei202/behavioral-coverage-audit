@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "input_files": 32,
+  "tables": [
+    "v22/table_1_corrected_endpoint_effects.csv",
+    "v22/table_2_estimand_decomposition.csv",
+    "v22/table_3_convexity_gap.csv",
+    "v22/table_4_sibling_coverage.csv",
+    "v22/table_5_cancellation_diagnosis.csv",
+    "v22/table_6_claim_survival.csv",
+    "v23/table_2_endpoint_claim_comparison.csv",
+    "v23/table_3_sibling_coverage.csv",
+    "v23/table_4_distributed_convex_coverage.csv",
+    "v23/table_5_generation_validation.csv",
+    "v23/table_6_final_claim_locking_matrix.csv"
+  ],
+  "vector_export": "verified_from_parquet",
+  "refitting": "not_run",
+  "resampling": "not_run",
+  "model_inference": "not_run",
+  "scope": "Cached fitted split outcomes and archived bootstrap distributions to tables; not a new score-to-fit campaign",
+  "output_root": "/work/Users/leiyo/GitHub/behavioral-coverage-audit/build/analysis"
+}

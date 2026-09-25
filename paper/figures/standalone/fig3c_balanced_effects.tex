@@ -1,0 +1,16 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.2cm,height=4.1cm,grid=major,xmin=-.038,xmax=.051,ymin=.4,ymax=4.6,xlabel={Balanced $\Delta U_t$},ytick={1,2,3,4},yticklabels={Mistral,OLMo,phi-4,Qwen2.5},legend style={at={(.5,1.03)},anchor=south,legend columns=2},xtick={-.03,0,.03}
+]
+\draw[slate!60,dashed] (axis cs:0,.4)--(axis cs:0,4.6);
+\addplot[only marks,mark=*,teal,error bars/.cd,x dir=both,x explicit] table[x=value,y=y,col sep=comma,x error minus=lo,x error plus=hi] {../../data/figures/stress_effects_I.csv};
+\addlegendentry{I}
+\addplot[only marks,mark=square*,coral,error bars/.cd,x dir=both,x explicit] table[x=value,y=y,col sep=comma,x error minus=lo,x error plus=hi] {../../data/figures/stress_effects_D.csv};
+\addlegendentry{D}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

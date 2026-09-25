@@ -1,0 +1,9 @@
+model,revision,parameter_count,broad_lineage,exact_sibling_group,post_training_type,tokenizer,chat_template,prompt_count,generation_count,clean_direct_answer_accuracy
+Qwen/Qwen2.5-7B-Instruct,a09a35458c702b33eeacc393d103063234e8bc28,7615616512,qwen2.5,qwen2.5-7b,instruction,Qwen2TokenizerFast,True,15680,420,0.4392857142857143
+TIGER-Lab/General-Reasoner-Qwen2.5-7B,e05e2d49ca11fdf74825cb1547dc50a4e441f908,7615616512,qwen2.5,qwen2.5-7b,reasoning,Qwen2TokenizerFast,True,15680,420,0.4125
+microsoft/phi-4,2db69c1c3e91a05d2c64a3185acfbaf36f744e25,14659507200,phi-4,phi-4-14b,instruction,GPT2TokenizerFast,True,15680,420,0.5303571428571429
+microsoft/Phi-4-reasoning-plus,69baf8528e1bcf05f475034d9e5dd32875ed125f,14659507200,phi-4,phi-4-14b,reasoning,GPT2TokenizerFast,True,15680,420,0.49107142857142855
+mistralai/Mistral-Nemo-Instruct-2407,04d8a90549d23fc6bd7f642064003592df51e9b3,12247782400,mistral,,instruction,PreTrainedTokenizerFast,True,15680,420,0.3625
+allenai/OLMo-2-1124-13B-Instruct,3a5c85baefbb1896a54d56fe2e76c0395627ddf4,13716198400,olmo-2,,instruction,GPT2TokenizerFast,True,15680,420,0.3196428571428571
+ibm-granite/granite-3.3-8b-instruct,51dd4bc2ade4059a6bd87649d68aa11e4fb2529b,8170864640,granite,,instruction,GPT2TokenizerFast,True,15680,420,0.36428571428571427
+google/gemma-3-12b-it,96b6f1eccf38110c56df3a15bffe176da04bfd80,12187325040,gemma-3,,instruction,GemmaTokenizerFast,True,15680,420,0.42857142857142855

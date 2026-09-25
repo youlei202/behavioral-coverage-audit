@@ -1,0 +1,13 @@
+# Observed CPython 3.12.3 replay/test environment
+iniconfig==2.3.0
+numpy==2.5.3
+packaging==26.3
+pandas==3.0.6
+pluggy==1.6.0
+pyarrow==25.0.1
+Pygments==2.21.0
+pymupdf==1.28.2
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+scipy==1.18.1
+six==1.17.0

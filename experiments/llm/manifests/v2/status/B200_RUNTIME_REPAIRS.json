@@ -1,0 +1,48 @@
+{
+  "schema_version": "pier_b200_runtime_repairs_v1",
+  "timestamp": "2026-08-28T16:31:11.317855272Z",
+  "user_authorized_on_b200": true,
+  "scientific_design_changed": false,
+  "repairs": [
+    {
+      "issue": "The staged virtual environment used a dangling absolute CPython 3.11 link on the B200 host.",
+      "repair": "Installed CPython 3.11.15 at the existing uv-managed link target; no Python packages were reinstalled.",
+      "validation": "pier_llm import succeeded; torch 2.9.1+cu128 reported CUDA 12.8 and 8 visible GPUs."
+    },
+    {
+      "issue": "Fixed scoring batch sizes exceeded device memory for high-vocabulary/long-prompt batches.",
+      "repair": "Added CUDA OutOfMemoryError-only batch-size backoff with ordered retry and explicit audit events.",
+      "validation": "Four backoff events were logged; every affected shard was subsequently written and validated."
+    },
+    {
+      "issue": "Generation shard validation incorrectly hard-coded prompt_id instead of generation_prompt_id.",
+      "repair": "Selected the prompt ID column from the shard schema.",
+      "validation": "Generation validation regression test passed; all 16 formal generation shards passed exhaustive validation."
+    }
+  ],
+  "tests": {
+    "targeted_pytest": "4 passed",
+    "ruff": "passed",
+    "py_compile": "passed"
+  },
+  "quarantine": {
+    "file_count": 4,
+    "reason": "Two pre-fix generation shard/data metadata pairs were quarantined by the original validator and retained for audit."
+  },
+  "hashes": {
+    "ready_source_tree_sha256": "a1ee9a8f36e068fb00da4d3545527c853381896d6576d5eb0e441c0da06d6b6c",
+    "current_source_tree_sha256": "8ec5918b9fe6e0dbfba792906894c947cb89d503316b451c1c60c9669a4a395c",
+    "inference_py_sha256": "acbde1181a33aa743863286ee02a6267942fb5ce816b609a4958fb3f581257d8",
+    "test_inference_py_sha256": "078bae4ef81618192f4ef87734c12a1f3d83f170c68665f38bd6df3fd7e1b243",
+    "b200_inference_complete_sha256": "e85a33a5e184b7d804fdf4817ba42cfff188432b20d133858e950089eb4fbe95"
+  },
+  "final_integrity": {
+    "passed": true,
+    "models_passed": 8,
+    "scoring_rows": 125440,
+    "generation_rows": 3360,
+    "valid_scoring_shards": 496,
+    "valid_generation_shards": 16,
+    "failure_count": 0
+  }
+}

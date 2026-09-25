@@ -1,0 +1,117 @@
+{
+  "rows": 1600,
+  "columns": 23,
+  "csv_roundtrip_check": {
+    "target": {
+      "string_identity": true,
+      "nulls": 0
+    },
+    "family": {
+      "string_identity": true,
+      "nulls": 0
+    },
+    "split_seed": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "dose": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "weight_source": {
+      "string_identity": true,
+      "nulls": 0
+    },
+    "mean_total_variation": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "mean_jensen_shannon_divergence": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "top1_semantic_answer_agreement": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "correctness_agreement": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "vector_overall_total_variation": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "vector_endpoint_delta": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "scalar_endpoint_delta": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "endpoint_direction_support": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "fit_selected_single_peer": {
+      "string_identity": true,
+      "nulls": 0
+    },
+    "single_peer_overall_total_variation": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "vector_convexity_improvement": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "scalar_convexity_improvement": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "convexity_direction_support": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "vector_sibling_removal_inflation": {
+      "max_absolute_difference": 0.0,
+      "nulls": 800
+    },
+    "scalar_sibling_removal_inflation": {
+      "max_absolute_difference": 0.0,
+      "nulls": 800
+    },
+    "sibling_direction_support": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "scalar_vector_weight_l1_change": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    },
+    "scalar_vector_weight_l2_change": {
+      "max_absolute_difference": 0.0,
+      "nulls": 0
+    }
+  },
+  "numeric_footer_stats_verified": [
+    "split_seed",
+    "dose",
+    "mean_total_variation",
+    "mean_jensen_shannon_divergence",
+    "top1_semantic_answer_agreement",
+    "correctness_agreement",
+    "vector_overall_total_variation",
+    "vector_endpoint_delta",
+    "scalar_endpoint_delta",
+    "single_peer_overall_total_variation",
+    "vector_convexity_improvement",
+    "scalar_convexity_improvement",
+    "vector_sibling_removal_inflation",
+    "scalar_sibling_removal_inflation",
+    "scalar_vector_weight_l1_change",
+    "scalar_vector_weight_l2_change"
+  ],
+  "all_passed": true
+}

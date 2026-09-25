@@ -1,0 +1,1162 @@
+[
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/__init__.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/__init__.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/analysis.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/data_prep.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/data_prep.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/inference.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/inference.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/model_prestage.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/model_prestage.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/packaging.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/packaging.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/plotting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/plotting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/postprocess.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/postprocess.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/prestage.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/prestage.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/smoke.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/smoke.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/solver.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/solver.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/src/pier_llm/utils.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/src/pier_llm/utils.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/configs/experiment.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/configs/experiment.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/configs/models.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/configs/models.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/configs/resolved_models.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/configs/resolved_models.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/configs/stopwords_en.txt",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/configs/stopwords_en.txt",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/scripts/bootstrap_runbook_path.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/scripts/bootstrap_runbook_path.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/scripts/common.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/scripts/common.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/scripts/prestage_cpu.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/scripts/prestage_cpu.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/scripts/run_b200_inference.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/scripts/run_b200_inference.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/scripts/run_cpu_postprocess.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/scripts/run_cpu_postprocess.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/tests/test_analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tests/test_analysis.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/tests/test_data_prep.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tests/test_data_prep.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/tests/test_inference.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tests/test_inference.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/tests/test_plot_package.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tests/test_plot_package.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/tests/test_solver.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tests/test_solver.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/REPRODUCE.md",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/REPRODUCE.md",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v2",
+    "copied_to": "experiments/llm/inference/v2/pyproject.toml",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/pyproject.toml",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/__init__.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/__init__.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/bootstrap.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/bootstrap.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/calibration.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/calibration.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/convexity.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/convexity.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/core.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/core.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/generation_alignment.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/generation_alignment.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/input_validation.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/input_validation.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/interface_bias.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/interface_bias.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/packaging.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/packaging.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/paired_effects.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/paired_effects.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/peer_removal.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/peer_removal.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/pipeline.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/pipeline.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/plotting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/plotting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/reporting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/reporting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/tables.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/tables.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/track_analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/track_analysis.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/pier_llm_reanalysis_v21/utils.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v21/utils.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/__init__.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/__init__.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/analysis.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/data_prep.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/data_prep.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/inference.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/inference.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/model_prestage.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/model_prestage.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/packaging.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/packaging.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/plotting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/plotting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/postprocess.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/postprocess.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/prestage.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/prestage.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/smoke.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/smoke.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/solver.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/solver.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/src/v2_snapshot/pier_llm/utils.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/src/v2_snapshot/pier_llm/utils.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/configs/reanalysis_v21.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/configs/reanalysis_v21.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/configs/v2_snapshot/experiment.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/configs/v2_snapshot/experiment.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/configs/v2_snapshot/models.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/configs/v2_snapshot/models.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/configs/v2_snapshot/resolved_models.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/configs/v2_snapshot/resolved_models.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/configs/v2_snapshot/stopwords_en.txt",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/configs/v2_snapshot/stopwords_en.txt",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/scripts/run_cpu_reanalysis_v21.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/scripts/run_cpu_reanalysis_v21.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/scripts/v2_snapshot/bootstrap_runbook_path.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/scripts/v2_snapshot/bootstrap_runbook_path.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/scripts/v2_snapshot/common.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/scripts/v2_snapshot/common.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/scripts/v2_snapshot/prestage_cpu.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/scripts/v2_snapshot/prestage_cpu.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/scripts/v2_snapshot/run_b200_inference.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/scripts/v2_snapshot/run_b200_inference.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/scripts/v2_snapshot/run_cpu_postprocess.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/scripts/v2_snapshot/run_cpu_postprocess.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/tests/test_paired_bootstrap_track.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/tests/test_paired_bootstrap_track.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/tests/test_peer_bias_calibration.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/tests/test_peer_bias_calibration.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/tests/test_resume.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/tests/test_resume.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/tests/test_tables_immutability.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/tests/test_tables_immutability.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/REPRODUCE_V2_1.md",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/REPRODUCE_V2_1.md",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v21",
+    "copied_to": "experiments/llm/analysis/v21/pyproject.toml",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_1_REANALYSIS_RESULTS/pyproject.toml",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/__init__.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/__init__.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/bootstrap.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/bootstrap.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/calibrated_bootstrap.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/calibrated_bootstrap.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/controls.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/controls.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/data.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/data.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/packaging.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/packaging.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/pipeline.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/pipeline.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/plotting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/plotting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/point_analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/point_analysis.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/reporting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/reporting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/sensitivities.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/sensitivities.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/utils.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/utils.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/v2_solver.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/pier_llm_reanalysis_v22/v2_solver.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/__init__.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/__init__.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/bootstrap.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/bootstrap.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/calibration.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/calibration.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/convexity.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/convexity.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/core.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/core.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/generation_alignment.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/generation_alignment.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/input_validation.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/input_validation.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/interface_bias.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/interface_bias.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/packaging.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/packaging.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/paired_effects.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/paired_effects.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/peer_removal.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/peer_removal.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/pipeline.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/pipeline.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/plotting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/plotting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/reporting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/reporting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/tables.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/tables.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/track_analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/track_analysis.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v21_snapshot/pier_llm_reanalysis_v21/utils.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v21_snapshot/pier_llm_reanalysis_v21/utils.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v2_snapshot/analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v2_snapshot/analysis.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v2_snapshot/solver.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v2_snapshot/solver.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/src/v2_snapshot/utils.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/src/v2_snapshot/utils.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/configs/reanalysis_v22.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/configs/reanalysis_v22.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/configs/v21_snapshot/V2_1_CORRECTED_REANALYSIS_REPORT.md",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/configs/v21_snapshot/V2_1_CORRECTED_REANALYSIS_REPORT.md",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/configs/v21_snapshot/reanalysis_v21.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/configs/v21_snapshot/reanalysis_v21.json",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/scripts/run_cpu_trackwise_v22.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/scripts/run_cpu_trackwise_v22.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/scripts/setup_env.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/scripts/setup_env.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/tests/test_bootstrap_resume.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tests/test_bootstrap_resume.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/tests/test_interface_and_calibration.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tests/test_interface_and_calibration.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/tests/test_splits_and_inventory.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tests/test_splits_and_inventory.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/tests/test_trackwise_controls.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tests/test_trackwise_controls.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/REPRODUCE_V2_2.md",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/REPRODUCE_V2_2.md",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v22",
+    "copied_to": "experiments/llm/analysis/v22/pyproject.toml",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/pyproject.toml",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/__init__.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/__init__.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/analysis.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/analysis.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/bootstrap.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/bootstrap.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/core.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/core.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/inference.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/inference.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/inputs.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/inputs.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/packaging.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/packaging.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/plotting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/plotting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/postprocess.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/postprocess.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/prepare.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/prepare.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/prestage.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/prestage.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/reporting.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/reporting.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/smoke.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/smoke.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/src/pier_llm_v23/utils.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/src/pier_llm_v23/utils.py",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/configs/experiment_v23.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/configs/experiment_v23.json",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/configs/resolved_models_v23.json",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/configs/resolved_models_v23.json",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/scripts/common_v23.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/scripts/common_v23.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/scripts/prestage_cpu_v23.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/scripts/prestage_cpu_v23.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/scripts/run_b200_interface_v23.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/scripts/run_b200_interface_v23.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/scripts/run_cpu_postprocess_v23.sh",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/scripts/run_cpu_postprocess_v23.sh",
+    "member_found": true,
+    "sha256_match": true
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/tests/test_analysis_design.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tests/test_analysis_design.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/tests/test_core.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tests/test_core.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/tests/test_manifest.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tests/test_manifest.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/tests/test_recovery_v231.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tests/test_recovery_v231.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/tests/test_shards.py",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tests/test_shards.py",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/pyproject.toml",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/pyproject.toml",
+    "member_found": false,
+    "sha256_match": null
+  },
+  {
+    "component": "llm-v23",
+    "copied_to": "experiments/llm/analysis/v23/REPRODUCE_V2_3.md",
+    "archive": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/REPRODUCE_V2_3.md",
+    "member_found": true,
+    "sha256_match": true
+  }
+]

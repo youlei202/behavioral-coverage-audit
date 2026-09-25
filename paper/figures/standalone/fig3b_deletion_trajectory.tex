@@ -1,0 +1,19 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.05cm,height=4.1cm,grid=major,xlabel={Deleted-word fraction},ylabel={Mean residual},legend style={at={(.5,1.03)},anchor=south,legend columns=2},yticklabel style={/pgf/number format/fixed,/pgf/number format/precision=2}
+]
+\addplot[teal,mark=*,line width=.8pt] table[x=dose,y=trackwise_fit_trackwise_eval,col sep=comma] {../../data/figures/fig3b_deletion_trajectory_Qwen2.5.csv};
+\addlegendentry{Qwen2.5}
+\addplot[coral,mark=square*,line width=.8pt] table[x=dose,y=trackwise_fit_trackwise_eval,col sep=comma] {../../data/figures/fig3b_deletion_trajectory_phi-4.csv};
+\addlegendentry{phi-4}
+\addplot[navy,mark=triangle*,line width=.8pt] table[x=dose,y=trackwise_fit_trackwise_eval,col sep=comma] {../../data/figures/fig3b_deletion_trajectory_OLMo.csv};
+\addlegendentry{OLMo}
+\addplot[ochre,mark=diamond*,line width=.8pt] table[x=dose,y=trackwise_fit_trackwise_eval,col sep=comma] {../../data/figures/fig3b_deletion_trajectory_Mistral.csv};
+\addlegendentry{Mistral}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

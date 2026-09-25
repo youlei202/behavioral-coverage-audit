@@ -1,0 +1,13 @@
+Model,Metric,Score
+"Model 1
+(Dominant)",Shapley Value (Attribution),0.49878777146792624
+"Model 1
+(Dominant)",PIER (Auditing),0.003881410381914027
+"Model 2
+(Redundant)",Shapley Value (Attribution),0.49848314118553283
+"Model 2
+(Redundant)",PIER (Auditing),0.005623667855531837
+"Model 3
+(Niche Unique)",Shapley Value (Attribution),0.0027290873465410344
+"Model 3
+(Niche Unique)",PIER (Auditing),2.9134486329523828

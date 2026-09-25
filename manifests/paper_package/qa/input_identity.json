@@ -1,0 +1,506 @@
+[
+  {
+    "file": "data/original/tables/exp12_shape_texture_pier_separated.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp12_shape_texture_pier_separated.csv",
+    "sha256": "cd9d57a76e6ab4263b622e70e43302301246c1de0018d78e46f37aea1e1a2179",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp5_dual_mode_residuals.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp5_dual_mode_residuals.csv",
+    "sha256": "7274ff6fa321229c5885831f63f86751e32d59241171ed972486ef29d1968914",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp10_imagenet_adv_pier.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp10_imagenet_adv_pier.csv",
+    "sha256": "a496520f38f6a09220f8cf4afedc68a4338bcced10025812dff764784671ad2f",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp14_multicity_tabular_summary.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp14_multicity_tabular_summary.csv",
+    "sha256": "a62a135b13518432af5c242f3e95a2e481d8cd750021e658e292cb94d5d76700",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp7_bert_context_disagreement.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp7_bert_context_disagreement.csv",
+    "sha256": "89fbaa9696eceb1e7c49df3219c109a1b7986b2008ea6bfb98a62ba161bc4a48",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp3_shapley.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp3_shapley.csv",
+    "sha256": "9c0747e37a90d941134c5f22bb0ade4540792c444963a9c9ea24b4288d89ab1c",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp6_bert_multicontext_pier.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp6_bert_multicontext_pier.csv",
+    "sha256": "87fe79408890e3ca632d9fb5c5d5e9b7211a558bcd4d31e2d9a59e608edd6986",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp4_bert_disco_dosesplit.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp4_bert_disco_dosesplit.csv",
+    "sha256": "211ef7fca15057ffecb402b234b63629788a6b11630f3ee0f9812d678e9d3826",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp11_shape_texture_pier.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp11_shape_texture_pier.csv",
+    "sha256": "6d348c72d83da0533458e738cac31b274220953ef2e4737bf6aa32b779af0af9",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp1_scaling_law.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp1_scaling_law.csv",
+    "sha256": "c2e5bd515e27d1442a9c05712d528ca21e6dbf14530d0fbe7c846bca3b16e115",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp2_saturation.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp2_saturation.csv",
+    "sha256": "f4f98503e17ea5c2283bd9601c25870f850b054473408b4b90f1f7588b6a78c2",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp8_routing_sanity_dose0.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp8_routing_sanity_dose0.csv",
+    "sha256": "2f5d6c2f8a76cfaa3d9c4ed6d59f6bf9a769fa3668bd8890af337f198e54a0d2",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp14_multicity_tabular_summary_peer_weights_long.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp14_multicity_tabular_summary_peer_weights_long.csv",
+    "sha256": "3f47367b6c526573d794a48ca528747cd119db2b22eaecc4e25bdaaa9bdaed9f",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/tables/exp9_routing_sanity_dose_grid_convex.csv",
+    "archive": "tables(1).zip",
+    "member": "tables/exp9_routing_sanity_dose_grid_convex.csv",
+    "sha256": "17bc6487d8162db785e36815d229e53094303e5ed35acabb52d193976713a4d1",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_texture_natural_EfficientNetB0_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_texture_natural_EfficientNetB0_residuals.npz",
+    "sha256": "6b947effe1c5ab206304165348ce058e71108053cf5d338f2bca305dd8983a41",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_shape_bias_ConvNeXtTiny_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_shape_bias_ConvNeXtTiny_residuals.npz",
+    "sha256": "41f7a6e1ec905cee86aba3eaae1b96f63e2842517c1b732fb33785f9260b7667",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_shape_bias_ResNet50_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_shape_bias_ResNet50_residuals.npz",
+    "sha256": "0d4fad8a8856715a533f1c69dbf53700b2a8d55a5fe2aed8eacd02c45169d843",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_shape_bias_ShapeResNet50_ShapeResNet_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_shape_bias_ShapeResNet50_ShapeResNet_residuals.npz",
+    "sha256": "f927b1f40c8544e35df2c9829022170c465efdcba75f102a6977c9c58e592d7c",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_shape_bias_ShapeResNet50_SIN_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_shape_bias_ShapeResNet50_SIN_residuals.npz",
+    "sha256": "2bc5d07524355065d9750eca92c4ef24eb8af9270d4ac917b5951afc4ce32f96",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_texture_natural_ShapeResNet50_SININ_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_texture_natural_ShapeResNet50_SININ_residuals.npz",
+    "sha256": "3be1bca81725e3711a0afd46d686d1afa634a54c33edb21f9d15521c9c7072c3",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_shape_bias_ViT_B16_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_shape_bias_ViT_B16_residuals.npz",
+    "sha256": "92f2986f11020b5eb20ad01a60812ba07d9551e5828bfecb568e2641e91d530b",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_texture_natural_ConvNeXtTiny_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_texture_natural_ConvNeXtTiny_residuals.npz",
+    "sha256": "1de5f1d543000665acaccc5fa2e879b1748560df6621fd6ff54770f24bebd653",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_texture_natural_ResNet50_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_texture_natural_ResNet50_residuals.npz",
+    "sha256": "f622d2f71b566cd6302807f2c27a1bd4ecd7665d6b2b3a80cfa4f98047b08e93",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_texture_natural_ViT_B16_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_texture_natural_ViT_B16_residuals.npz",
+    "sha256": "34307fbb2d7aa47f292c3a71c3c22c2b26ab52de85968ae55e88cd887d9291e9",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_texture_natural_ShapeResNet50_ShapeResNet_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_texture_natural_ShapeResNet50_ShapeResNet_residuals.npz",
+    "sha256": "479cbf8ef87c97a15a74246aba068fcf56436ab4a4b7b4f3301d40c01853448e",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_shape_bias_ShapeResNet50_SININ_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_shape_bias_ShapeResNet50_SININ_residuals.npz",
+    "sha256": "039c359cfd903e4a802a5aeddc10433f30cc3803743958130003d2cb3fec4539",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_texture_natural_ShapeResNet50_SIN_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_texture_natural_ShapeResNet50_SIN_residuals.npz",
+    "sha256": "960a1da22e344f4336ce4732424a7f8ebfcc988de1175eda6663b04c9cb52bc0",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp12/exp12_shape_bias_EfficientNetB0_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp12/exp12_shape_bias_EfficientNetB0_residuals.npz",
+    "sha256": "869de338fbb65788ccbcea3a8469686766d69dcd8d750384480479d3570725d8",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_shape_bias_ShapeResNet50_ShapeResNet_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_shape_bias_ShapeResNet50_ShapeResNet_residuals.npz",
+    "sha256": "a1f36bdde546da977669ca1f439b098ad215a34417d1205b6d3afc4cf6c7db2f",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_shape_bias_ShapeResNet50_SININ_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_shape_bias_ShapeResNet50_SININ_residuals.npz",
+    "sha256": "d8173bbd4bbe770e6a43762ef097947ae193b0f82150b964f654276ed0a57bdd",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_texture_natural_ShapeResNet50_SININ_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_texture_natural_ShapeResNet50_SININ_residuals.npz",
+    "sha256": "23da18e7c1f796fe09bc2b2e244ea31e1401e71179c0289b5c97eb462b0d12bc",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_shape_bias_ShapeResNet50_SIN_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_shape_bias_ShapeResNet50_SIN_residuals.npz",
+    "sha256": "b05eca095bef84cb0c996df0e9714cf28eceefc7d89957ace03376efbbc81fe8",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_shape_bias_ConvNeXtTiny_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_shape_bias_ConvNeXtTiny_residuals.npz",
+    "sha256": "af3ac995c011c920580a24fded748c89dfcdfa99234884f1f70a98c033c1a781",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_texture_natural_ShapeResNet50_ShapeResNet_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_texture_natural_ShapeResNet50_ShapeResNet_residuals.npz",
+    "sha256": "436a89ef9f380f74eea550e5aa66f9ca543c99c98aa8dccf8d720d0afba0fba8",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_shape_bias_EfficientNetB0_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_shape_bias_EfficientNetB0_residuals.npz",
+    "sha256": "498bc779cd50a95601524f556d13cbef5dc5feaaff7ba2ffe1410db2d40f1040",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_texture_natural_ShapeResNet50_SIN_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_texture_natural_ShapeResNet50_SIN_residuals.npz",
+    "sha256": "af572c774d3e196dcdc1f407ca64412e318174ae087b3a4f4790744cfa0f8b97",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_texture_natural_EfficientNetB0_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_texture_natural_EfficientNetB0_residuals.npz",
+    "sha256": "824c2b65323c640751a3dc851ef663a613d6e44f2cf09ea2dbdced776978bb18",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_texture_natural_ResNet50_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_texture_natural_ResNet50_residuals.npz",
+    "sha256": "7c0ffed424f99fc8debf1f6b81200706d879081e5a02761c75e2d136eb33067a",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_texture_natural_ConvNeXtTiny_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_texture_natural_ConvNeXtTiny_residuals.npz",
+    "sha256": "e9351d7722083225b1b6f462153e08de341bd5017cf3f6de0c5d01af557a0389",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_shape_bias_ViT_B16_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_shape_bias_ViT_B16_residuals.npz",
+    "sha256": "c7879eb1958e271bdaef44c2068e50bab030a7552eb89a2c6ca028a6755f3d7f",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_texture_natural_ViT_B16_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_texture_natural_ViT_B16_residuals.npz",
+    "sha256": "16ee6c6e1d876dd98ee7eb9185eb0e7aac093e2a93b501b9e079a12c7ac344dc",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp11/exp11_shape_bias_ResNet50_residuals.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp11/exp11_shape_bias_ResNet50_residuals.npz",
+    "sha256": "36da5ad15f937439833c5e35fd629c2acc3fc30779d12c452da2dcc08fd406a8",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_shape_bias.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_shape_bias.npz",
+    "sha256": "118facb9febd47123c6efdb3615c996ca779476f3ae483f0a5a0d700047f835e",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_texture_natural.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_texture_natural.npz",
+    "sha256": "14a80e22fdc778a55aa8d14370701a83b16f6e897bef35b9115dd43f01fd11ea",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_texture_natural.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_texture_natural.npz",
+    "sha256": "8e99141ec62af841388f01da2bb9cd4348c0d6bd92d09fd8134f2959b1c4974c",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_texture_natural.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_texture_natural.npz",
+    "sha256": "936bce6153ecdceb4d3135ce6dce444d840dd16ab4a45e5312c913933a763616",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_shape_bias.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_shape_bias.npz",
+    "sha256": "9e2957ad037165b338e14b164f4f58c0f0aacbfcbb2483c4383f7612642bf12f",
+    "byte_identical": true
+  },
+  {
+    "file": "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_shape_bias.npz",
+    "archive": "artifacts(1).zip",
+    "member": "artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_shape_bias.npz",
+    "sha256": "abcc6b0c16b8ece1e023564f9ba03551819b3588377157622e9fb66ea21ae9e0",
+    "byte_identical": true
+  },
+  {
+    "file": "data/table_v23_endpoint_claim_comparison.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_2_endpoint_claim_comparison.csv",
+    "sha256": "d2eb7971c0eaeca6259e50562258e95f03a1c2e7f96326a439273b298aecb3cf",
+    "byte_identical": true
+  },
+  {
+    "file": "data/table_v23_sibling_coverage.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_3_sibling_coverage.csv",
+    "sha256": "8bb2a15c7c12561d75a6aaec84459164a823ba3d63ae5bedd330d3397bc414a0",
+    "byte_identical": true
+  },
+  {
+    "file": "data/table_v23_distributed_convex_coverage.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_4_distributed_convex_coverage.csv",
+    "sha256": "7bf44c7d152ada13d3fddf69e3943d7a43d32ebaf508ce08c8c21f03e5f9d1e7",
+    "byte_identical": true
+  },
+  {
+    "file": "data/table_v23_generation_validation.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_5_generation_validation.csv",
+    "sha256": "4f1a4228bc4873cc99d7ff740641ad8cf4a362766fe1ded908f81822a02b95b8",
+    "byte_identical": true
+  },
+  {
+    "file": "data/table_v23_claim_locking_matrix.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/tables/table_6_final_claim_locking_matrix.csv",
+    "sha256": "c7704951e89f62250ea83b7a60ca767bd8bdc45f20059c47ad9de08e544d76f0",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v2/table1_ecosystem_manifest.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table1_ecosystem_manifest.csv",
+    "sha256": "1044a3cdaaa1762ab0f20efc139ef968324a8dfa39d5a355a62fdff12f5b673f",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v2/table5_gold_candidates.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table5_gold_candidates.csv",
+    "sha256": "b222b89ac6874882ebbef7c62c909da13df59ddb5aac3845835886af598ff883",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v2/table4_controls_quality_checks.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table4_controls_quality_checks.csv",
+    "sha256": "ee57870c54716da4ec90a9198c132ca552741cb98fb68f2cf2ad43ffb873604c",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v2/control_results.json",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/controls/control_results.json",
+    "sha256": "68fad9e020ac916abf26309f8105adecc203a9e33587788e58b630c705f19a81",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v2/table3_design_representation_sensitivity.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table3_design_representation_sensitivity.csv",
+    "sha256": "533c6ce5ad1d6d4a1dfac97253e7a8bd7088eaa3ba8f20ef60c6c6d5a5622731",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v2/table2_main_target_audit_summary.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS/tables/table2_main_target_audit_summary.csv",
+    "sha256": "9f9ae68a55544feb950ed1bdb05a200d9eb5e32ac618767f9c0ca0facfe7bed4",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/trackwise_primary_dose_results.parquet",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/analysis/trackwise_primary_dose_results.parquet",
+    "sha256": "f6c6db6f9f39149ba9490f8c267e6b47e0e074cb86f1e72c3867ef2ddc41925f",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/cancellation_gap_results.parquet",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/analysis/cancellation_gap_results.parquet",
+    "sha256": "e17fbb3996fca34caf0504436819ff5a8833e256f2f91ba8a562bb304cf18da4",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/table_1_corrected_endpoint_effects.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_1_corrected_endpoint_effects.csv",
+    "sha256": "38e4155b7216ea8abd5ae733eebe4d3960c66f6454f2fdfc9b480a1e9938befb",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/selected_calibrated_bootstrap_summary.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/selected_calibrated_bootstrap_summary.csv",
+    "sha256": "6a9dba5cd41875871df952bc46ba4a7f01f9e2e57073bdd2e51dd1675e2f2eb2",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/sibling_removal_bootstrap_summary.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/sibling_removal_bootstrap_summary.csv",
+    "sha256": "871285c6016cfb76597b05b70185e488437ee3a68c58c5c2fa5f9857fd590cda",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/table_2_estimand_decomposition.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_2_estimand_decomposition.csv",
+    "sha256": "fdd9048ef6c6c8c49d753a60aa0ed1f5d16739e4371ab6860fd9cb8fc8f1ad3e",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/endpoint_bootstrap_summary.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/endpoint_bootstrap_summary.csv",
+    "sha256": "31df61ea3461c375006c9d77d297597b3eb909f05882e45e4501265567e2479a",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/table_6_claim_survival.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_6_claim_survival.csv",
+    "sha256": "68eb7a5936e28bdbb9cfad59eb5268a47e72779b479ad9dd5f168c2ff523acc6",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/V2_2_CONTROLS.json",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/controls/V2_2_CONTROLS.json",
+    "sha256": "557d5a3e242b42c4789398dfc7b4c9e0c47005b373e868015bfa243924fd6383",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/convexity_bootstrap_summary.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/bootstrap_summaries/convexity_bootstrap_summary.csv",
+    "sha256": "b099d66f3861d11bad75a687e30e254be516dbc42b3b5ea09ffa8c2d5bfb2c74",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/table_4_sibling_coverage.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_4_sibling_coverage.csv",
+    "sha256": "3b2020787852ea8fe336da58e16eced4f7d009ee447fb0fb04583abf3af107ae",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/table_5_cancellation_diagnosis.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_5_cancellation_diagnosis.csv",
+    "sha256": "160d68ec5f5bf06bda406cb3fe1a07cda4f465c95e99b4367441dfedb6bb7f23",
+    "byte_identical": true
+  },
+  {
+    "file": "data/v22/table_3_convexity_gap.csv",
+    "archive": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS.zip",
+    "member": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS_RESULTS/tables/table_3_convexity_gap.csv",
+    "sha256": "b50709328208b7c74327856414742fed07c50e0559928b8ef8ba9f5cf02b980a",
+    "byte_identical": true
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "schema_version": "pier_stage_c_runtime_repairs_v1",
+  "timestamp": "2026-08-28T17:50:53.169390482Z",
+  "user_authorized_stage_c_on_current_host": true,
+  "scientific_design_changed": false,
+  "frozen_choices_changed": [],
+  "repairs": [
+    {
+      "issue": "CLARABEL occasionally returned an inaccurate stage-2 representative or raised SolverError under the preregistered projection-preservation tolerance.",
+      "repair": "Kept the enumerated stage-1 optimum and all original tolerances, then used active-face enumeration to select the minimum-norm simplex representative with the exact same projected response only when the CLARABEL result failed an existing postcondition or raised cvxpy.error.SolverError.",
+      "validation": "The real failing design preserved the stage-1 projection to floating-point precision; solver regression tests cover duplicate representations and forced SolverError fallback. No solver call, model, split, control, or bootstrap replicate was skipped."
+    },
+    {
+      "issue": "The vector-fidelity implementation assumed every selected MMLU-Pro question had the same number of answer options, but the frozen sample contains 3-10 options per question.",
+      "repair": "Zero-padded each question response to the batch maximum while requiring every model to have the same original vector length for each aligned question/dose key. Added coordinates are zero for the target and all peers and therefore add no fitting loss.",
+      "validation": "Both intervention families aligned to target shape (2800, 10) and design shape (2800, 10, 7); every probability row still summed to one within floating-point precision. Regression tests cover ragged vectors and cross-model length mismatch rejection."
+    },
+    {
+      "issue": "The first completed archive was created before the completion markers were written, leaving the packaged postprocess status incomplete and omitting EXPERIMENT_COMPLETE.json.",
+      "repair": "Implemented two-phase atomic packaging, excluded Python cache artifacts, and expanded the package validator to verify CRC, required outputs, complete packaged statuses, every MANIFEST SHA256, unmanifested members, unsafe paths, cache/environment directories, credential filenames and patterns, and model-weight suffixes.",
+      "validation": "The original pre-repair archive was not copied to the project root. The final archive is rebuilt only after completed archive-status records exist and is subjected to strict validation before delivery."
+    }
+  ],
+  "tests": {
+    "full_pytest": "19 passed, 8 expected cvxpy optimal_inaccurate warnings",
+    "ruff": "passed",
+    "py_compile": "passed"
+  },
+  "controls": {
+    "passed": true,
+    "control_count": 7,
+    "failed_control_count": 0
+  },
+  "hashes": {
+    "solver_py_sha256": "80c6fa9fdfb57546472c17208b19b50c76050e01215477ebf8306ff8b545c48c",
+    "analysis_py_sha256": "a21278f65a66f9ced30c25917ad8f6d678e700f809d9ecc2ccd8f1652c5d6ddc",
+    "packaging_py_sha256": "f3f1d0cd856e012ac9dc2ae9c2db0fe4296bb97de0a9b2bf153455374e75accc",
+    "postprocess_py_sha256": "0729e30a7b66cecd0909ff18076d5c7fdda9dd389927066e52a5dc795c76feb0"
+  }
+}

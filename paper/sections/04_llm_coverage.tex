@@ -1,0 +1,60 @@
+\section{Coverage structure in language-model ecosystems}
+\label{sec:llm-exp}
+
+The residual describes the quality of an approximation; group gains and removal effects describe its source. We examine their joint structure in eight instruction- and reasoning-tuned checkpoints from the Qwen, Phi, Mistral, OLMo, Granite, and Gemma families. The Qwen and Phi sibling comparisons follow checkpoint lineage; the balanced-interface analysis evaluates these specified pairs. Appendix~\ref{app:llm-protocol} gives checkpoint identities and the complete design.
+
+\paragraph{Reference-answer response and matched fitting.}
+The audit contains 560 MMLU-Pro questions across 14 subjects \citep{wang2024mmlupro}. Candidate labels are scored by conditional sequence likelihood and normalized over the available options. Every cyclic rotation is mapped back to semantic option identities before averaging; the primary response is the resulting reference-answer probability. Each option therefore occupies each label position once. This response tracks the target's reference-answer confidence across questions and interventions.
+
+We use ten stratified fitting/evaluation half-splits. Each family assigns equal total mass to clean and maximum-stress conditions; three matched realizations share the stressed mass. Residual magnitudes are calculated for each realization before averaging. Single-peer selection and group fitting use the same loss, either mean squared error (MSE) or mean absolute error (MAE), with held-out MAE as the common evaluation. Pointwise 95\% intervals use 1,000 common-question bootstrap draws: each physical question is resampled jointly across models and splits, and every fit is recomputed. This preserves the repeated splits' dependence.
+
+\subsection{Collective approximation varies across targets}
+Six targets show positive group gains under both stress families and both fitting losses, with each corresponding pointwise interval excluding zero (Figure~\ref{fig:llm-coverage}a). Relative improvements range from about $7\%$ to $32\%$. OLMo has smaller gains, including a deletion result whose MSE-fit interval crosses zero. Qwen2.5 has no reliable group advantage. The all-target view therefore separates recurrent collective approximation from a different regime in which one peer already achieves the group's available reconstruction quality.
+
+\begin{figure}[!t]
+\centering
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig2a_group_gain.pdf}
+\caption{Relative group gain across the ecosystem.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig2b_sibling_removal.pdf}
+\caption{Qwen sibling and non-sibling removal effects.}
+\end{subfigure}
+\par\vspace{2pt}
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig2c_directional_coverage.pdf}
+\caption{Single-peer and group errors in both directions.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig2d_distributed_gain.pdf}
+\caption{Distributed gains under matched fitting losses.}
+\end{subfigure}
+\caption{\textbf{A peer group can cover a target without a single peer doing so.} All panels use permutation-averaged semantic probabilities. D/I denote deletion and irrelevant context; MSE/MAE denote the fitting loss. Panel (a) reports $100\Gamma_t/E_t^{\mathrm{single}}$. Panel (b) compares declared sibling removal with the largest mean non-sibling effect. Panel (c) uses MSE fitting and held-out MAE. Panel (d) reports absolute group gains with pointwise 95\% common-question bootstrap intervals. Phi-R denotes Phi-4-reasoning-plus; GR denotes General Reasoner.}
+\label{fig:llm-coverage}
+\end{figure}
+
+\subsection{A close pair has unequal roles in the collection}
+Removing General Reasoner raises Qwen2.5's gap by $0.04790$ under deletion and $0.04502$ under irrelevant context. The largest mean non-sibling removal effects are $0.00056$ and $0.00084$. In the reverse direction, removing Qwen2.5 raises General Reasoner's gap by $0.04055$ and $0.04012$. For each target and family, the declared sibling is the most consequential removal in all ten splits (Figure~\ref{fig:llm-coverage}b).
+
+These strong reciprocal removal effects coexist with a directional group advantage. General Reasoner alone achieves essentially the full group's error for the Qwen2.5 target. For the General Reasoner target, Qwen2.5 is still the central peer, but adding the rest of the collection lowers error by $15$--$18\%$ (Figure~\ref{fig:llm-coverage}c). The pairwise response difference is symmetric; the gain supplied by the remaining peers is not. Qwen2.5 thus exhibits \emph{single-sibling coverage} relative to what the group can attain, while General Reasoner exhibits \emph{sibling-supported collective coverage}.
+
+The Phi pair separates shared lineage from strong reconstruction dependence. Removing phi-4 raises Phi-4-reasoning-plus's gap by $0.01119$ under deletion and $0.00835$ under irrelevant context, compared with largest mean non-sibling effects of $0.00577$ and $0.00691$. The sibling contributes, but its separation from other peers is much smaller than in the Qwen pair. In the reverse direction, removing Phi-4-reasoning-plus changes phi-4's irrelevant-context gap by $-0.00161$, with a pointwise interval spanning zero (Appendix~\ref{app:robustness}). Shared lineage therefore does not determine the strength or direction of measured dependence. The group comparison and the removal comparison supply distinct evidence: the first asks whether additional peers improve reconstruction; the second asks whether the remaining group can compensate for a particular peer's absence.
+
+\subsection{Distributed gains persist across fitting losses}
+Mistral's combination improves on the selected single peer by $19.4\%$ under deletion with MSE fitting and $20.4\%$ with MAE fitting. Under irrelevant context, both reductions are about $18.8\%$. The four intervals exclude zero (Figure~\ref{fig:llm-coverage}d). Phi-4-reasoning-plus has larger reference-answer gains of approximately $24$--$32\%$.
+
+For phi-4 itself, relative reductions are $7.5$--$8.9\%$ under deletion and $10.9$--$12.6\%$ under irrelevant context (Appendix~\ref{app:robustness}). Both Phi targets benefit from the collection despite weaker sibling-removal effects than the Qwen pair. Collective improvement and dependence on a particular sibling are therefore distinct aspects of coverage.
+
+\subsection{Complete option distributions retain the directional pattern}
+Reference-answer confidence and the allocation of probability among alternative answers are different response views. The complete-option audit fits all option probabilities jointly, using one coefficient vector across questions, three tracks, and five equally weighted doses. It uses the canonical answer order, vector squared-loss group fitting, and a single peer selected by fitting total variation (TV). Table~\ref{tab:vector-main} reports held-out TV from the completed ten-split diagnostic.
+
+Both Qwen targets select their sibling in every split. Their mean pairwise TV is therefore identical: $0.314$ under deletion and $0.337$ under irrelevant context. Adding the other peers lowers General Reasoner's TV to $0.299$ and $0.305$, whereas the fitted group has higher TV for Qwen2.5, $0.342$ and $0.363$. Each direction holds across all ten splits. Mistral also retains a group advantage, with reductions of $14.3\%$ and $15.4\%$. The two response views thus agree on which Qwen target benefits from additional peers and on Mistral's collective coverage.
+
+\input{tables/vector_main}
+
+Vector removal fits show that the Qwen sibling remains important even when group gain is absent (Table~\ref{tab:vector-sibling}). Removing either sibling increases the other's held-out TV in every split and both families. Thus Qwen2.5's negative vector group gain does not mean that its peers are irrelevant: its sibling is a better reference than the fitted combination, yet removing that sibling leaves a substantially worse combination. The Phi comparison again differs. Removing phi-4 raises Phi-R's TV, whereas removing Phi-R lowers phi-4's TV under irrelevant context in all ten splits. These paired comparisons locate dependence beyond the reference-answer coordinate.
+
+\input{tables/vector_siblings}
+
+The agreement is selective. Gemma benefits in the balanced reference-answer audit but has higher group TV than single-peer TV in this canonical vector diagnostic. The protocol and fitting-loss differences are specified in the table: the comparison establishes coverage under two recorded views rather than isolating response dimension alone. A coefficient-transfer comparison further separates the response measurement from the choice of fit. Keeping the canonical scalar-fit weights fixed while evaluating complete option distributions gives General Reasoner mean TV of $0.2935$ under deletion and $0.3009$ under irrelevant context; for Mistral, the values are $0.3630$ and $0.3557$. Each is below its corresponding selected-single value in Table~\ref{tab:vector-main}. Their collective advantage is therefore present both when the coefficients are learned from reference-answer responses and when all option coordinates enter fitting. Appendix~\ref{app:vector} gives the full transferred and refitted results for every target, including the cases where these views disagree.

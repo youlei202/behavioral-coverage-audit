@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pier-llm-reanalysis-v21"
+version = "0.1.0"
+description = "CPU-only corrected reanalysis of PIER Modern-LLM Ecosystem V2"
+requires-python = ">=3.11,<3.12"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pier_llm_reanalysis_v21*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src", "src/v2_snapshot"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = ["src/v2_snapshot", "scripts/v2_snapshot", "outputs", "artifacts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

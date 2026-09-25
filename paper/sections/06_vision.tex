@@ -1,0 +1,47 @@
+\begin{figure}[!t]
+\centering
+\begin{subfigure}[t]{0.322\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig4a_vision_stress.pdf}
+\caption{Matched adversarial stress.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.332\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig4b_vision_context.pdf}
+\caption{Context-specific mean residuals.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.322\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig4c_geometry_natural.pdf}
+\caption{Natural-image fitting geometry.}
+\end{subfigure}
+\par\vspace{2pt}
+\begin{subfigure}[t]{0.322\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig4d_geometry_shape.pdf}
+\caption{Shape-biased fitting geometry.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.332\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig4e_residual_mass.pdf}
+\caption{ConvNeXt residual concentration.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.322\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig4f_residual_overlap.pdf}
+\caption{Shared highest-residual inputs.}
+\end{subfigure}
+\caption{\textbf{Context affects residual size, peer support, and localization.} Panels (a)--(b) summarize held-out responses; lines connect the observed dose levels. Panels (c)--(d) show one SIN target with separate PCA bases (93.9\% and 94.8\% explained variation). The mixture is projected from the full response space. Peer labels: 1 ResNet-50, 2 EfficientNet, 3 ConvNeXt, 4 ViT. Panels (e)--(f) use all 400 stored residuals per context; overlap compares ConvNeXt-T with the SIN+IN$\to$IN ResNet in the seven-model audit.}
+\label{fig:vision}
+\end{figure}
+
+\section{Context-dependent gaps and image-level residuals}
+\label{sec:vision}
+
+An increased average residual can arise from many small discrepancies or from a few large ones. The vision audit distinguishes these patterns and relates them to the supporting peer combination. It uses ImageNet classifiers and shape-trained ResNet variants on matched images \citep{deng2009imagenet,he2016resnet,geirhos2019texture}. Fitting and evaluation are separated within each context; the adversarial and context experiments retain their respective score interfaces (Appendix~\ref{app:cross-domain}).
+
+\paragraph{Context changes the amount and source of coverage.}
+At the maximum matched adversarial dose, ResNet-50's mean residual is $0.511$ times its clean value, while ConvNeXt-T and robust ResNet-50 reach $1.189$ and $1.209$ (Figure~\ref{fig:vision}a). The separate seven-model, true-class-probability audit shows higher context-specific gaps for all seven targets on shape-biased images. ConvNeXt-T increases from $8.35\times10^{-5}$ to $7.88\times10^{-4}$, a $9.44$-fold change (Figure~\ref{fig:vision}b).
+
+For the SIN-trained ResNet target with four standard peers, context-specific PCA views of the fitting response vectors show a concurrent change in support (Figure~\ref{fig:vision}c--d). The natural-image fit is approximately the ViT response. The shape-biased fit instead assigns weights of about $0.507$, $0.223$, and $0.270$ to ResNet-50, EfficientNet-B0, and ViT-B/16. Its full fitting-vector residual norm rises from $0.00488$ to $0.04673$. These quantities describe the original-space fit; each panel has its own PCA basis. Context changes both the target's discrepancy and which combination lies closest to it.
+
+
+
+The other shape-trained targets show different support changes under the same four-peer roster (Appendix~\ref{app:cross-domain}). The SIN+IN target changes from approximately the EfficientNet response on natural images to a mixture dominated by ViT on shape-biased images. The SIN+IN$\to$IN target changes from approximately ViT alone to weights of $0.813$ on ConvNeXt and $0.187$ on ViT. Their fitting-vector residual norms increase from $0.01076$ to $0.02076$ and from $0.00604$ to $0.03309$, respectively. The larger gap is therefore accompanied by a target-specific change in which peers provide the closest recorded approximation, rather than a uniform change in one shared reference model.
+
+\paragraph{The gap concentrates on shared inputs.}
+Among the 400 evaluation residuals per context, the largest $5\%$ for ConvNeXt-T account for $72.99\%$ of residual mass on shape-biased images and $20.98\%$ on natural images (Figure~\ref{fig:vision}e). ConvNeXt-T and the SIN+IN$\to$IN ResNet share 19 of their 20 highest-residual positions in the shifted context, compared with two in the natural context (Figure~\ref{fig:vision}f). These sample-level summaries identify a shared concentration of reconstruction difficulty. The residual field therefore adds localization to the aggregate gap: it distinguishes broad disagreement from a small subset of inputs that dominate the measured error.

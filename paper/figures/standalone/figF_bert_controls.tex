@@ -1,0 +1,17 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.25cm,height=4.2cm,grid=major,xlabel={Masking intensity},ylabel={Mean PIER},xmin=0,xmax=.9,ymin=0,ymax=.32,legend style={at={(.02,.98)},anchor=north west}
+]
+\addplot[slate,mark=*,line width=.8pt] table[x=Dose,y=PIER,col sep=comma] {../../data/figures/bert_control_Clone.csv};
+\addlegendentry{Clone}
+\addplot[teal,mark=square*,line width=.8pt] table[x=Dose,y=PIER,col sep=comma] {../../data/figures/bert_control_RoBERTa.csv};
+\addlegendentry{RoBERTa}
+\addplot[coral,mark=triangle*,line width=.8pt] table[x=Dose,y=PIER,col sep=comma] {../../data/figures/bert_control_Finetuned.csv};
+\addlegendentry{Fine-tuned}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

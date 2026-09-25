@@ -1,0 +1,185 @@
+[
+  {
+    "panel": "fig1a_matched_audit",
+    "source_files": [],
+    "transformation": "Conceptual matched-audit schematic; no observations."
+  },
+  {
+    "panel": "fig1b_peer_projection",
+    "source_files": [],
+    "transformation": "Conceptual projection onto a rectangle; target projection is on the boundary."
+  },
+  {
+    "panel": "fig2a_group_gain",
+    "source_files": [
+      "data/table_v23_distributed_convex_coverage.csv"
+    ],
+    "transformation": "100*(single-group)/single. All eight targets; pointwise CI classification stored in llm_all_gains.csv."
+  },
+  {
+    "panel": "fig2b_sibling_removal",
+    "source_files": [
+      "data/table_v23_sibling_coverage.csv"
+    ],
+    "transformation": "Stored mean removal effects and their recorded intervals; no inferred per-peer intervals."
+  },
+  {
+    "panel": "fig2c_directional_coverage",
+    "source_files": [
+      "data/table_v23_distributed_convex_coverage.csv"
+    ],
+    "transformation": "MSE-fit single and convex held-out MAE, both targets and both families."
+  },
+  {
+    "panel": "fig2d_distributed_gain",
+    "source_files": [
+      "data/table_v23_distributed_convex_coverage.csv"
+    ],
+    "transformation": "Absolute matched-objective gains; CIs copied from archived improvement intervals."
+  },
+  {
+    "panel": "fig3a_context_trajectory",
+    "source_files": [
+      "data/v22/table_2_estimand_decomposition.csv"
+    ],
+    "transformation": "Canonical five-dose trackwise-fit/trackwise-evaluation means. Values already averaged across splits in source table."
+  },
+  {
+    "panel": "fig3b_deletion_trajectory",
+    "source_files": [
+      "data/v22/table_2_estimand_decomposition.csv"
+    ],
+    "transformation": "Canonical five-dose trackwise-fit/trackwise-evaluation means. Values already averaged across splits in source table."
+  },
+  {
+    "panel": "fig3c_balanced_effects",
+    "source_files": [
+      "data/table_v23_endpoint_claim_comparison.csv"
+    ],
+    "transformation": "Balanced endpoint changes and pointwise bootstrap intervals for named headline cases; all eight retained in appendix table."
+  },
+  {
+    "panel": "fig4a_vision_stress",
+    "source_files": [
+      "data/original/tables/exp10_imagenet_adv_pier.csv"
+    ],
+    "transformation": "All six archived curves, normalized by model-specific dose-zero residual. No CI reconstruction."
+  },
+  {
+    "panel": "fig4b_vision_context",
+    "source_files": [
+      "data/original/tables/exp11_shape_texture_pier.csv"
+    ],
+    "transformation": "Seven-model context audit; no averaging over separated shape-variant ecosystems."
+  },
+  {
+    "panel": "fig4c_geometry_natural",
+    "source_files": [
+      "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_texture_natural.npz"
+    ],
+    "transformation": "Stored PCA coordinates multiplied by 1000 for axes only; stored hull, mixture and target. No recomputed PCA or refit."
+  },
+  {
+    "panel": "fig4d_geometry_shape",
+    "source_files": [
+      "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SIN_shape_bias.npz"
+    ],
+    "transformation": "Stored PCA coordinates multiplied by 1000 for axes only; stored hull, mixture and target. No recomputed PCA or refit."
+  },
+  {
+    "panel": "figD_geometry_SININ_natural",
+    "source_files": [
+      "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_texture_natural.npz"
+    ],
+    "transformation": "Stored PCA coordinates multiplied by 1000 for axes only; stored hull, mixture and target. No recomputed PCA or refit."
+  },
+  {
+    "panel": "figD_geometry_SININ_shape",
+    "source_files": [
+      "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_SININ_shape_bias.npz"
+    ],
+    "transformation": "Stored PCA coordinates multiplied by 1000 for axes only; stored hull, mixture and target. No recomputed PCA or refit."
+  },
+  {
+    "panel": "figD_geometry_C_natural",
+    "source_files": [
+      "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_texture_natural.npz"
+    ],
+    "transformation": "Stored PCA coordinates multiplied by 1000 for axes only; stored hull, mixture and target. No recomputed PCA or refit."
+  },
+  {
+    "panel": "figD_geometry_C_shape",
+    "source_files": [
+      "data/original/artifacts/exp13/exp13_geometry_ShapeResNet50_ShapeResNet_shape_bias.npz"
+    ],
+    "transformation": "Stored PCA coordinates multiplied by 1000 for axes only; stored hull, mixture and target. No recomputed PCA or refit."
+  },
+  {
+    "panel": "fig4e_residual_mass",
+    "source_files": [
+      "data/original/artifacts/exp11/exp11_texture_natural_ConvNeXtTiny_residuals.npz",
+      "data/original/artifacts/exp11/exp11_shape_bias_ConvNeXtTiny_residuals.npz"
+    ],
+    "transformation": "Exact cumulative sorted residual mass at all 401 integer counts; zero included."
+  },
+  {
+    "panel": "fig4f_residual_overlap",
+    "source_files": [
+      "data/original/artifacts/exp11/exp11_shape_bias_ConvNeXtTiny_residuals.npz",
+      "data/original/artifacts/exp11/exp11_shape_bias_ShapeResNet50_ShapeResNet_residuals.npz",
+      "data/original/artifacts/exp11/exp11_texture_natural_ConvNeXtTiny_residuals.npz",
+      "data/original/artifacts/exp11/exp11_texture_natural_ShapeResNet50_ShapeResNet_residuals.npz"
+    ],
+    "transformation": "Matched array-position overlap at every k=1..40; stable index tie-breaking, no fabricated intermediate fractions."
+  },
+  {
+    "panel": "fig5a_traffic_utility",
+    "source_files": [
+      "data/original/tables/exp14_multicity_tabular_summary.csv",
+      "data/original/tables/exp14_multicity_tabular_summary_peer_weights_long.csv"
+    ],
+    "transformation": "All 31 exact city points; stated normalizations; flag only highlights numerical feasibility, no rows excluded."
+  },
+  {
+    "panel": "fig5b_traffic_group",
+    "source_files": [
+      "data/original/tables/exp14_multicity_tabular_summary.csv"
+    ],
+    "transformation": "All 31 archived points, identity reference; 26 improve, five do not. No claim of training-only single selection."
+  },
+  {
+    "panel": "figA_interface_change",
+    "source_files": [
+      "data/table_v23_endpoint_claim_comparison.csv"
+    ],
+    "transformation": "All 16 matched-design endpoint effects; Spearman 0.93235, not the eight-target error-ranking correlation."
+  },
+  {
+    "panel": "figA_cancellation",
+    "source_files": [
+      "data/v22/table_2_estimand_decomposition.csv"
+    ],
+    "transformation": "Mean across all rows of trackwise_fit_aggregate_eval versus trackwise_fit_trackwise_eval; same fitted weights."
+  },
+  {
+    "panel": "figF_bert_baseline",
+    "source_files": [
+      "data/original/tables/exp6_bert_multicontext_pier.csv"
+    ],
+    "transformation": "Subgroup-mean differences at dose 0; no causal interpretation or invented intervals."
+  },
+  {
+    "panel": "figF_bert_mid",
+    "source_files": [
+      "data/original/tables/exp6_bert_multicontext_pier.csv"
+    ],
+    "transformation": "Subgroup-mean differences at dose 0.5; no causal interpretation or invented intervals."
+  },
+  {
+    "panel": "figF_bert_controls",
+    "source_files": [
+      "data/original/tables/exp4_bert_disco_dosesplit.csv"
+    ],
+    "transformation": "All 30 exact dose-response values, including 1e-8 clone values."
+  }
+]

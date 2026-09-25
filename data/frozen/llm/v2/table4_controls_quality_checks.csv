@@ -1,0 +1,8 @@
+control,expected_behavior,observed_mean_residual,observed_max_residual,passed
+exact_clone_gold_probability,exact source recovery at numerical precision,2.7056731742594957e-11,1.3255385677979348e-10,True
+known_sparse_mixture_gold_probability,0.50/0.30/0.20 mixture recovery at numerical precision,2.958934103308559e-11,1.2622269895956606e-10,True
+boundary_mixture_gold_probability,simplex-face mixture recovery at numerical precision,2.5461470858026017e-11,1.1541090305655644e-10,True
+exact_clone_probability_vector,exact source recovery at numerical precision,6.398180360111772e-11,1.4578547500045952e-10,True
+known_sparse_mixture_probability_vector,0.50/0.30/0.20 mixture recovery at numerical precision,6.215354740793662e-11,1.3540926609902234e-10,True
+boundary_mixture_probability_vector,simplex-face mixture recovery at numerical precision,5.645592762919088e-11,1.1195086950023005e-10,True
+duplicated_peer_ambiguity,unchanged projected response despite non-unique weights,2.482259358490023e-11,1.168836138987217e-10,True

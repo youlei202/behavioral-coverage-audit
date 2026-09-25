@@ -1,0 +1,34 @@
+\section{Vision and forecasting protocols}
+\label{app:cross-domain}
+
+\subsection{Separate vision ecosystems and score interfaces}
+The adversarial audit contains ResNet-18, ResNet-50, EfficientNet-B0, ConvNeXt-Tiny, ViT-B/16, and a robust ResNet-50. It uses 500 images with an even fitting/evaluation split. The source implementation applies a common ResNet-50-referenced gradient-sign perturbation at doses $0,0.02,0.04,0.06,0.08,0.10$ and records a bounded margin score. These dose units follow the archived normalized-input implementation, not a separately verified pixel-space robustness budget.
+
+The seven-model context audit contains ResNet-50, EfficientNet-B0, ConvNeXt-Tiny, ViT-B/16, and three shape-trained ResNets. The variants are trained on stylized ImageNet (SIN), SIN and ImageNet (SIN+IN), or SIN+IN followed by ImageNet fine-tuning (SIN+IN$\to$IN). Each context has 800 images split into 400 fitting and 400 evaluation examples. This audit records the true-class probability and fits separately in each context. Its numerical residual scale is not comparable with the adversarial margin audit.
+
+The separate five-model variant experiments retain the same four standard peers plus one shape-trained variant. Their repeated standard-target rows describe different peer sets, not independent replicates to average silently. The main context panel uses the seven-model table only. The PCA experiment uses a shape-trained target with the four standard peers and the fitting response vectors.
+
+\subsection{Projected response geometry}
+For each target and context, the archived PCA input consists of four peer vectors, one target vector, and the fitted mixture vector, each evaluated on 400 fitting images. The first two principal components are fitted separately for each target--context combination. Figure~\ref{fig:geometry-all} displays all six archived projections; they cannot be interpreted as points in one shared coordinate system.
+
+A common affine PCA map preserves convex combinations with coefficients summing to one. Exclusion from the exact projected peer hull therefore implies exclusion from the original peer hull; projected inclusion does not establish original-space inclusion. The stored mixture is the projection of the original-space fitted mixture, not a fresh nearest-point solution in two dimensions. Its displayed segment need not be the shortest segment to the two-dimensional hull. Archived numerical weights have small feasibility deviations, which are retained rather than silently repaired.
+
+\input{tables/geometry_support}
+\input{tables/geometry_panels}
+
+\subsection{Residual concentration and matched ordering}
+For non-negative residual magnitudes $r_1,\ldots,r_n$, sort $r_{(1)}\geq\cdots\geq r_{(n)}$ and compute cumulative mass $\sum_{i=1}^k r_{(i)}/\sum_{i=1}^nr_i$. The main curves include every integer $k$ from zero to 400. Top-$k$ overlap is the size of the intersection of two highest-residual index sets divided by $k$. Sorting ties uses a fixed stable index order.
+
+The shared pair is specifically ConvNeXt-Tiny and SIN+IN$\to$IN, whose archived identifier is \texttt{ShapeResNet50\_ShapeResNet}; it is not the SIN target illustrated in the main PCA panels. The seven-model arrays yield top-20 overlap of 19 under shape-biased evaluation and two under natural evaluation. The absolute-residual correlation is $0.9947$ in the former setting. These arrays contain residuals and intervention levels but no image identifiers. The source code builds the evaluation ordering before the per-target loop; this supports indexwise alignment, while limiting independent file-level identity verification.
+
+\subsection{Forecasting comparisons and numerical scope}
+\label{app:traffic-caveats}
+The 31-city summary records locally trained forecasting models, a pooled global model, and a peer fit for each target. It reports 4,000 fitting and 4,000 residual-evaluation windows per city. Stored task-error summaries and residual summaries need not cover identical numbers of windows, so they are compared at city level rather than treated as paired per-window estimates.
+
+The normalized axes in Figure~\ref{fig:traffic} are $100\,\mathrm{PIER}/\mathrm{MeanFlow\_Test}$ and $100\,\mathrm{Delta\_Router}/\mathrm{Local\_MAE}$. Their correlation is $0.05188$; the correlation of raw \PIER and raw task-loss change is $0.83597$. The stored group error is lower than the closest single-peer diagnostic for 26 cities and higher for five. The closest-peer field minimizes recorded response discrepancy and is not documented in these artifacts as a fitting-only selection. It must not be equated with the honest matched-objective single-peer baseline used in the LLM study.
+
+The long-format weight file has 961 rows. Its weights are numerically approximate: the minimum is $-0.004825$ for Luzern and $-0.004698$ for Paris; Luzern's stored top-three mass is greater than one. These are material departures from an exact simplex constraint, not rounding to a probability vector. The raw outputs are preserved, and no strict-convex certificate or support-probability interpretation is claimed for this archive. Original response matrices needed to recompute predictions after repair are not supplied here.
+
+The archive supports static city-level reconstruction and task-error comparisons. Sequential removal would change the available peer sets and require corresponding refits and predictions; no such trajectory is reported here.
+
+\input{tables/forecasting_panels}

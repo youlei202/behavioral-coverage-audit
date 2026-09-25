@@ -1,0 +1,31 @@
+Dose,PIER,Model,Group
+0.0,0.039351316643681834,Architectural Divergence (RoBERTa),Low Redundancy
+0.1,0.07423884341581083,Architectural Divergence (RoBERTa),Low Redundancy
+0.2,0.06295741560066209,Architectural Divergence (RoBERTa),Low Redundancy
+0.30000000000000004,0.07553015478698534,Architectural Divergence (RoBERTa),Low Redundancy
+0.4,0.1078614091278815,Architectural Divergence (RoBERTa),Low Redundancy
+0.5,0.14143668203343218,Architectural Divergence (RoBERTa),Low Redundancy
+0.6000000000000001,0.15701804418701226,Architectural Divergence (RoBERTa),Low Redundancy
+0.7000000000000001,0.15732430417053458,Architectural Divergence (RoBERTa),Low Redundancy
+0.8,0.14639090585406164,Architectural Divergence (RoBERTa),Low Redundancy
+0.9,0.1729814104902951,Architectural Divergence (RoBERTa),Low Redundancy
+0.0,1.2898055681276332e-08,Perfect Redundancy (Clone),High Redundancy
+0.1,1.3027753396621655e-08,Perfect Redundancy (Clone),High Redundancy
+0.2,1.1708804666943351e-08,Perfect Redundancy (Clone),High Redundancy
+0.30000000000000004,9.212001307046248e-09,Perfect Redundancy (Clone),High Redundancy
+0.4,9.114164834789217e-09,Perfect Redundancy (Clone),High Redundancy
+0.5,9.318458058724111e-09,Perfect Redundancy (Clone),High Redundancy
+0.6000000000000001,9.427109927406807e-09,Perfect Redundancy (Clone),High Redundancy
+0.7000000000000001,9.949144488818895e-09,Perfect Redundancy (Clone),High Redundancy
+0.8,1.0564061074802567e-08,Perfect Redundancy (Clone),High Redundancy
+0.9,1.0918281065294689e-08,Perfect Redundancy (Clone),High Redundancy
+0.0,0.11992796694918599,Parametric Divergence (Finetuned),Uniqueness
+0.1,0.12993033746198196,Parametric Divergence (Finetuned),Uniqueness
+0.2,0.13116558454131788,Parametric Divergence (Finetuned),Uniqueness
+0.30000000000000004,0.17553414440621562,Parametric Divergence (Finetuned),Uniqueness
+0.4,0.16856102071435214,Parametric Divergence (Finetuned),Uniqueness
+0.5,0.21326468073064042,Parametric Divergence (Finetuned),Uniqueness
+0.6000000000000001,0.24709417238254044,Parametric Divergence (Finetuned),Uniqueness
+0.7000000000000001,0.24307908980680373,Parametric Divergence (Finetuned),Uniqueness
+0.8,0.27458398725465044,Parametric Divergence (Finetuned),Uniqueness
+0.9,0.2835845228939189,Parametric Divergence (Finetuned),Uniqueness

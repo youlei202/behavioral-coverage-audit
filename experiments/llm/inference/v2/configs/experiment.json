@@ -1,0 +1,27 @@
+{
+  "schema_version": "pier_llm_ecosystem_v2.0",
+  "project_root": "/work/Lei/PIER_LLM_ECOSYSTEM_GOLDMINE_V2",
+  "persistent_project_root": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2",
+  "dataset_id": "TIGER-Lab/MMLU-Pro",
+  "dataset_split": "test",
+  "sample_seed": 20260828,
+  "generation_seed": 20260829,
+  "base_questions_per_category": 40,
+  "generation_questions_per_category": 10,
+  "expected_categories": 14,
+  "irrelevant_context_tracks": 3,
+  "irrelevant_context_doses": [0, 64, 128, 256, 512],
+  "content_deletion_tracks": 3,
+  "content_deletion_doses": [0.0, 0.1, 0.2, 0.3, 0.4],
+  "option_permutations": 3,
+  "scoring_prompts_per_model": 15680,
+  "generation_prompts_per_model": 420,
+  "shard_size": 256,
+  "split_seeds": [20260828, 20260829, 20260830, 20260831, 20260832, 20260833, 20260834, 20260835, 20260836, 20260837],
+  "bootstrap_replicates": 1000,
+  "random_peer_removal_replicates": 100,
+  "solver_tau_absolute": 1e-12,
+  "solver_tau_relative": 1e-10,
+  "epsilon": 1e-10
+}
+

@@ -1,0 +1,15 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.3cm,height=4.3cm,grid=major,xmin=0,xmax=100,ymin=0,ymax=103,xlabel={Highest-residual inputs (\%)},ylabel={Residual mass (\%)},xtick={0,25,50,75,100},legend style={at={(.97,.05)},anchor=south east}
+]
+\addplot[teal,line width=1pt,no marks] table[x=pct,y=mass,col sep=comma] {../../data/figures/residual_mass_texture_natural.csv};
+\addlegendentry{Natural}
+\addplot[coral,line width=1pt,no marks] table[x=pct,y=mass,col sep=comma] {../../data/figures/residual_mass_shape_bias.csv};
+\addlegendentry{Shape-biased}
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,14 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=7.1cm,height=4.45cm,grid=major,xmin=.078,xmax=.11,ymin=.4,ymax=4.7,xlabel={Held-out MAE},ytick={1,2,3,4},yticklabels={GR / I,GR / D,Qwen / I,Qwen / D},legend style={at={(.5,1.04)},anchor=south,legend columns=1}
+]
+\addplot[only marks,mark=square*,slate] table[x=single,y=y,col sep=comma] {../../data/figures/qwen_direction.csv};
+\addlegendentry{Selected single peer}
+\addplot[only marks,mark=*,teal] table[x=group,y=y,col sep=comma] {../../data/figures/qwen_direction.csv};
+\addlegendentry{Fixed peer group}
+\end{axis}
+\end{tikzpicture}
+\end{document}

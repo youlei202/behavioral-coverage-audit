@@ -1,0 +1,15 @@
+\begin{table}[!ht]
+\centering\small
+\caption{\textbf{Sibling-removal effects for complete option vectors.} Increase in held-out TV after removing the declared sibling and refitting the vector squared-loss combination; means over ten fixed splits. The last column counts positive changes in the overlapping deletion/context splits; the full diagnostic is specified in Appendix~\ref{app:vector}.}
+\label{tab:vector-sibling}
+\begin{tabular}{llrrr}
+\toprule
+Target & Removed peer & Deletion & Context & Positive splits (D/I)\\
+\midrule
+Qwen2.5 & General Reasoner & +0.1365 & +0.1172 & 10/10, 10/10\\
+General Reasoner & Qwen2.5 & +0.1076 & +0.0856 & 10/10, 10/10\\
+Phi-R & phi-4 & +0.0203 & +0.0162 & 10/10, 10/10\\
+phi-4 & Phi-R & +0.0030 & -0.0087 & 9/10, 0/10\\
+\bottomrule
+\end{tabular}
+\end{table}

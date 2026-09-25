@@ -1,0 +1,18 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.25cm,height=4.2cm,grid=major,clip=false,xmin=-.036,xmax=.034,ymin=-.039,ymax=.098,xlabel={Long minus medium-length PIER},ylabel={Negation minus no-negation PIER},xtick={-.02,0,.02},ytick={-.02,0,.02,.04,.06,.08}
+]
+\draw[slate!45,dashed] (axis cs:0,-.03)--(axis cs:0,.085);\draw[slate!45,dashed] (axis cs:-.032,0)--(axis cs:.029,0);
+\addplot[only marks,teal,mark=*] table[x=length,y=negation,col sep=comma] {../../data/figures/figF_bert_mid.csv};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=north east,xshift=-2pt,yshift=-3pt] at (axis cs:-0.016378158126336084,-0.018187039978693087) {ALBERT};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=south west,xshift=2pt,yshift=4pt] at (axis cs:0.0093966880632307959,0.05749283691427659) {BERT};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=north east,xshift=-2pt,yshift=-4pt] at (axis cs:0.016672227605215889,-0.014076132105984504) {DistilBERT};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=south east,xshift=-2pt,yshift=4pt] at (axis cs:-9.4705862824104314e-05,0.070417974263138783) {RoBERTa};
+\node[font=\sffamily\fontsize{6.5}{7.5}\selectfont,anchor=north east,xshift=-2pt,yshift=-4pt] at (axis cs:-0.0053006537676675847,0.052427398497776806) {XLNet};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

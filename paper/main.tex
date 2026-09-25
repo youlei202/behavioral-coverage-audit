@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{iclr2027_conference,times}
+
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs,tabularx,multirow,makecell,array}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{pifont}
+\usepackage{xspace}
+
+\definecolor{navy}{HTML}{24465E}
+\definecolor{teal}{HTML}{3F7C85}
+\definecolor{ochre}{HTML}{CC8B3C}
+\definecolor{coral}{HTML}{C95C54}
+\definecolor{wine}{HTML}{8E4B57}
+\definecolor{mist}{HTML}{E9EEF1}
+\definecolor{pale}{HTML}{F6F8F9}
+\definecolor{ink}{HTML}{263238}
+
+\hypersetup{
+  colorlinks=true,
+  citecolor=navy,
+  linkcolor=navy,
+  urlcolor=teal,
+  pdftitle={Auditing Behavioral Coverage in Model Ecosystems},
+  pdfauthor={Anonymous authors}
+}
+\setlist[itemize]{leftmargin=1.3em,itemsep=.5pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.4em,itemsep=.5pt,topsep=2pt,parsep=0pt}
+\setlength{\textfloatsep}{7pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+% Page-top figures throughout the manuscript and supplement.
+\floatplacement{figure}{!t}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{5}
+\renewcommand{\topfraction}{0.94}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.80}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+\captionsetup{font=small,labelfont=bf,skip=2.5pt}
+\captionsetup[subfigure]{font=footnotesize,labelfont=bf,skip=2pt,justification=raggedright,singlelinecheck=false}
+\newcommand{\PIER}{\textsc{pier}\xspace}
+\newcommand{\DISCO}{\textsc{disco}\xspace}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\simplex}{\Delta}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\title{Auditing Behavioral Coverage\\in Model Ecosystems}
+\author{Anonymous authors\\Paper under double-blind review}
+
+% \iclrfinalcopy
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A target model can differ from each of its peers yet be closely approximated by their fixed combination. A similarly small reconstruction error can also depend almost entirely on one peer. We study these distinct sources of behavioral coverage through matched model responses. The Peer-Inexpressible Residual (\PIER) measures what remains after a fixed convex peer fit, and \DISCO estimates the fit and its residual on separate samples. Comparing the group with a selected single peer, and refitting after peer removal, identifies who supplies the coverage. In an eight-model MMLU-Pro audit, our primary response is the reference-answer probability averaged over cyclic option rotations. Six targets benefit from collective approximation under two stress families and matched squared- and absolute-error fitting. Qwen2.5 instead obtains essentially all available approximation quality from its reasoning-tuned sibling; the reverse direction gains a further $15$--$18\%$ from other peers. Mistral's group fit reduces error by $19$--$20\%$. A separate complete-option-distribution analysis retains the Qwen directionality and Mistral's group advantage. Matched stress increases residuals for some targets and decreases them for others. In vision, context changes both the supporting peer combination and the concentration of residuals on individual images. These results characterize how accurately a collection reproduces a target, which peers supply that approximation, and which inputs account for the remaining gaps.
+\end{abstract}
+
+\input{sections/01_introduction}
+\input{sections/02_framework}
+\input{sections/03_theory}
+\input{sections/04_llm_coverage}
+\input{sections/05_stress_interface}
+\input{sections/06_vision}
+\FloatBarrier
+\input{sections/07_traffic}
+\FloatBarrier
+\input{sections/08_related_work}
+\input{sections/09_discussion}
+
+\clearpage
+\bibliography{references}
+\bibliographystyle{iclr2027_conference}
+
+\section*{Reproducibility statement}
+The source release includes standalone LaTeX panels, their numerical inputs, arithmetic replay scripts, and a provenance manifest. Appendix~\ref{app:llm-protocol} specifies the primary LLM protocol and clustered bootstrap; Appendix~\ref{app:vector} gives the separate canonical complete-option analysis. Appendix~\ref{app:cross-domain} records the cross-domain observation interfaces and limitations of the stored numerical fits.
+
+\section*{AI use statement}
+Generative AI tools assisted with code review, experimental orchestration, language editing, and LaTeX construction. Experimental figures use measured or explicitly derived quantities; generated illustrations are confined to the labeled conceptual figure.
+
+\clearpage
+\appendix
+\input{appendix/A_theory}
+\input{appendix/B_llm_protocol}
+\input{appendix/C_robustness}
+\FloatBarrier
+\input{appendix/D_cross_domain}
+\input{appendix/E_additional_theory}
+\input{appendix/F_legacy_experiments}
+\end{document}

@@ -1,0 +1,61 @@
+\section{Projection theory and statistical scope}
+\label{app:theory}
+
+\subsection{Existence and response uniqueness}
+Fix the fitting distribution $P$ and write $\mathcal H=L^2(P;\R^q)$. Assume finitely many responses $Y_j\in\mathcal H$. The map $A:w\mapsto\sum_jw_jY_j$ is continuous from the compact simplex into $\mathcal H$, so its image $\mathcal C_t$ is compact. It is also convex. The metric projection of $Y_t$ onto this nonempty closed convex set exists and is unique in $\mathcal H$. This proves the first part of Proposition~\ref{prop:projection}.
+
+Uniqueness in $\mathcal H$ means equality $P$-almost surely, not a unique coefficient vector or a pointwise extension outside the support. For duplicated peers $Y_j=Y_k$, changing $(w_j,w_k)$ while keeping their sum fixed leaves $h_w$ unchanged. More generally, the set of minimizing weights is the inverse image of one projected response under $A$. No full-rank assumption on the peer columns is needed for response uniqueness.
+
+The projection satisfies
+\begin{equation}
+\langle Y_t-h_t^\star,h-h_t^\star\rangle_{L^2(P)}\leq0
+\quad\text{for every }h\in\mathcal C_t.
+\end{equation}
+Consequently,
+\begin{equation}
+\|Y_t-h\|_{L^2(P)}^2-\|Y_t-h_t^\star\|_{L^2(P)}^2
+\geq \|h-h_t^\star\|_{L^2(P)}^2.
+\label{eq:projection-excess}
+\end{equation}
+These statements concern squared-loss projection. A convex combination fitted by absolute loss need not induce a unique response.
+
+\subsection{Consistency with compatible evaluation support}
+Let $\|Y_j(z)\|_2\leq B$ for all target and peer responses. For independent observations from $P$, define
+\begin{equation}
+L(w)=\E_P\|Y_t-h_w\|_2^2,\qquad
+\widehat L_m(w)=\frac1m\sum_{i=1}^m\|Y_t(Z_i)-h_w(Z_i)\|_2^2.
+\end{equation}
+With finitely many bounded peer responses, expanding the square reduces uniform convergence to convergence of finitely many empirical first and second moments. Thus
+\begin{equation}
+\epsilon_m:=\sup_{w\in\simplex}|\widehat L_m(w)-L(w)|\to_p0.
+\end{equation}
+For any empirical minimizer $\widehat w$ and population minimizer $w^\star$, empirical optimality gives $L(\widehat w)-L(w^\star)\leq2\epsilon_m$. Equation~\eqref{eq:projection-excess} then yields
+$\|\widehat h_t-h_t^\star\|_{L^2(P)}^2\leq2\epsilon_m$.
+
+Let the evaluation sample be independent and distributed according to $Q$. If $Q\ll P$ and $\mathrm dQ/\mathrm dP\leq\kappa<\infty$, then
+\begin{equation}
+\E_Q\|\widehat h_t-h_t^\star\|_2
+\leq\sqrt{\kappa}\,\|\widehat h_t-h_t^\star\|_{L^2(P)}\to_p0.
+\end{equation}
+The reverse triangle inequality bounds the change in expected residual magnitude by this quantity. Conditional on the fit, evaluation residuals are independent and bounded by $2B$, so their sample mean differs from its $Q$-expectation by $o_p(1)$. This proves Proposition~\ref{prop:consistency}. The same argument tolerates an optimization error that vanishes with sample size. For matched designs with finitely many realizations per question, the same argument applies to question-level averages of the fitting and evaluation losses. Independence is required between question clusters, not between realizations within a cluster.
+
+Support compatibility is essential to this formulation. If peers coincide $P$-almost surely but differ on a set charged only by $Q$, their fitted representations can yield distinct $Q$-residuals. A fixed tie-breaking rule still defines an implementation, but projection uniqueness under $P$ alone does not identify a unique held-out population response. The main endpoint designs put positive mass on both clean and stressed conditions; the conditional evaluation of either is dominated by their mixture design.
+
+\subsection{Monotonicity and its limits}
+For nested peer sets $\mathcal J_1\subseteq\mathcal J_2$, assigning zero weights to the added peers embeds the smaller simplex into the larger. Therefore
+\begin{equation}
+\inf_{h\in\mathcal C(\mathcal J_2)}\E_P\|Y_t-h\|_2^2
+\leq
+\inf_{h\in\mathcal C(\mathcal J_1)}\E_P\|Y_t-h\|_2^2.
+\end{equation}
+This proves the monotonicity assertion in Proposition~\ref{prop:projection}. The same set-inclusion argument applies to any fixed fitting loss optimized over the two classes. It does not compare held-out MAE values of MSE-trained estimators, nor estimators evaluated under different designs. Negative test-set group gains and removal effects are therefore compatible with the framework.
+
+If $\mathcal C\subseteq\mathcal F$ is a richer admissible response class, its optimized fitting loss cannot be larger. Hence a large convex residual only establishes a gap relative to $\mathcal C$, not inexpressibility under arbitrary transformations of peer outputs. Fixed convex combinations and input-dependent single-peer selectors are generally different classes: neither should be identified with the other without further assumptions.
+
+\subsection{Aggregation of intervention realizations}
+For a fixed fit and scalar residuals $R_1,\ldots,R_K$,
+\begin{equation}
+\left|\frac1K\sum_{k=1}^KR_k\right|
+\leq \frac1K\sum_{k=1}^K|R_k|.
+\end{equation}
+Equality holds when the nonzero residuals have a common sign. Averaging signed responses can therefore conceal within-question disagreement across realizations. The primary estimator averages absolute residuals over intervention tracks. Averaging answer-label rotations is a separate choice: it defines the semantic score that is subsequently audited. Its residual is not the mean residual under each presentation.

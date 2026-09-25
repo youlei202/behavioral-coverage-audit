@@ -1,0 +1,13 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=7cm,height=4.4cm,grid=major,xlabel={Canonical endpoint change},ylabel={Balanced endpoint change},xmin=-.035,xmax=.048,ymin=-.035,ymax=.048
+]
+\addplot[slate!60,dashed,domain=-.032:.046,no marks]{x};
+\addplot[only marks,teal,mark=*] table[x=v23_endpoint_raw_delta,y=v23_permutation_averaged_delta,col sep=comma] {../../data/figures/interface_effects.csv};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

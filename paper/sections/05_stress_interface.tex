@@ -1,0 +1,34 @@
+\begin{figure}[!t]
+\centering
+\begin{subfigure}[t]{0.322\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig3a_context_trajectory.pdf}
+\caption{Canonical context trajectories.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.322\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig3b_deletion_trajectory.pdf}
+\caption{Canonical deletion trajectories.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.332\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig3c_balanced_effects.pdf}
+\caption{Balanced endpoint changes.}
+\end{subfigure}
+\caption{\textbf{Controlled stress does not uniformly increase the coverage gap.} Curves use fixed canonical-interface fits across five doses. Endpoint changes use separately fitted balanced-interface endpoint designs, with pointwise 95\% common-question bootstrap intervals. Positive changes indicate greater reconstruction error. D denotes deletion; I denotes irrelevant context.}
+\label{fig:stress}
+\end{figure}
+
+\section{Coverage under stress and response balancing}
+\label{sec:stress}
+
+The identity of the peers is fixed, but the response relation can change with the input. Irrelevant-context injection prepends unrelated material; content deletion removes selected words from the question stem while preserving the options. A single combination is fitted across the declared conditions of each family and held fixed during evaluation. Changes in its residual reveal where that combination ceases to track the target.
+
+\paragraph{Opposite directions under matched stress.}
+At the maximum irrelevant-context dose, the balanced reference-answer gap increases by $0.01435$ for Qwen2.5 and $0.03250$ for phi-4. It decreases by $0.00894$ for Mistral and $0.01026$ for OLMo. All four directions hold in every split and have common-question bootstrap intervals excluding zero (Figure~\ref{fig:stress}c). Under deletion, Mistral and OLMo also decrease, by $0.02183$ and $0.01565$. The same perturbation therefore makes one target harder to reconstruct and another easier.
+
+The canonical-order curves show the full dose dependence (Figure~\ref{fig:stress}a--b). Balanced endpoint fits then examine the high-dose changes under a second presentation protocol. The curves and endpoint comparisons retain their own response definitions and fitting designs. The complete-option diagnostic also gives opposite irrelevant-context directions for Qwen2.5 and Mistral (Appendix~\ref{app:vector}).
+
+
+
+\paragraph{Presentation changes magnitudes more often than directions.}
+The mean rotation-to-average TV diagnostic is $0.338$, indicating substantial variation in semantic option probabilities across presentations. Nevertheless, canonical and balanced endpoint analyses agree on 15 of 16 effect signs. Their eight-target rankings of family-averaged reconstruction errors have Spearman correlation $0.952$; the correlation across the 16 endpoint changes is $0.932$. These are complementary summaries of the error level and its response to stress.
+
+Granite illustrates why both the effect and its uncertainty matter. Its canonical contractions remain negative after balancing, but the balanced intervals include zero. The resulting evidence supports the Qwen2.5, phi-4, Mistral, and OLMo irrelevant-context directions while distinguishing them from the weaker Granite effects. Thus presentation balancing refines which coverage changes are supported, rather than leaving every conclusion unchanged. Appendix~\ref{app:robustness} gives all endpoint estimates and the separate direct-generation diagnostics.

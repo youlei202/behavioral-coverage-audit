@@ -1,0 +1,30 @@
+\begin{figure}[!t]
+\centering
+\begin{subfigure}[t]{0.323\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/figF_bert_baseline.pdf}
+\caption{Subgroup contrasts at dose zero.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.323\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/figF_bert_mid.pdf}
+\caption{Subgroup contrasts at dose $0.5$.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.323\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/figF_bert_controls.pdf}
+\caption{Constructed target responses.}
+\end{subfigure}
+\caption{\textbf{Subgroup localization and exact-duplication checks.} Fingerprint coordinates are arithmetic differences of archived context means; lines in (c) connect the observed dose-grid values. No missing confidence interval is reconstructed. The clone residual is retained at its actual nonzero numerical value, although it is visually indistinguishable from zero on the common scale.}
+\label{fig:legacy}
+\end{figure}
+
+\section{Additional sentiment-classifier audits}
+\label{app:legacy}
+
+The SST-2 experiments complement the main generative-model study by examining identifiable input subgroups and constructed target relations. They contain BERT, DistilBERT, RoBERTa, ALBERT, and XLNet classifiers under matched token masking. They are not described as a modern generative-model benchmark.
+
+\paragraph{Context contrasts.}
+For each model and dose, the horizontal fingerprint coordinate subtracts mean PIER on the reported medium-length bin (8--15) from that on the long-sentence bin (more than 15); the vertical coordinate subtracts the no-negation group from the explicit-negation group. Figure~\ref{fig:legacy}(a)--(b) uses the stored subgroup means at doses $0$ and $0.5$. ALBERT moves from positive contrasts at dose zero to negative contrasts at dose $0.5$. DistilBERT has a negative negation contrast at both doses but a positive length contrast. These are descriptive subgroup contrasts, not causal effects of sentence length or negation.
+
+\paragraph{Constructed targets.}
+A separate fixed-peer audit compares a DistilBERT clone, RoBERTa, and a fine-tuned DistilBERT. The clone's maximum residual is $1.31\times10^{-8}$ across the masking grid. RoBERTa and the fine-tuned target have nonzero gaps that generally rise with dose (Figure~\ref{fig:legacy}c). The fine-tuned target already has a residual of $0.120$ at baseline; stronger masking increases an already present gap. These controls establish different response relations without attributing the observed differences solely to architecture or a particular training mechanism.
+
+

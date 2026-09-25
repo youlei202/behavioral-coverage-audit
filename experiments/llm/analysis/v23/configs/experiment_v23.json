@@ -1,0 +1,41 @@
+{
+  "schema_version": "pier_llm_interface_validation_v23_v1",
+  "logical_root": "/work/Lei/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION",
+  "source_roots": {
+    "v2": "/work/Lei/PIER_LLM_ECOSYSTEM_GOLDMINE_V2",
+    "v22": "/work/Lei/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_2_TRACKWISE_REANALYSIS"
+  },
+  "model_roster": [
+    "Qwen/Qwen2.5-7B-Instruct",
+    "TIGER-Lab/General-Reasoner-Qwen2.5-7B",
+    "microsoft/phi-4",
+    "microsoft/Phi-4-reasoning-plus",
+    "mistralai/Mistral-Nemo-Instruct-2407",
+    "allenai/OLMo-2-1124-13B-Instruct",
+    "ibm-granite/granite-3.3-8b-instruct",
+    "google/gemma-3-12b-it"
+  ],
+  "families": {
+    "irrelevant_context": {"high_dose": 512.0, "source_dose_token": "512"},
+    "content_deletion": {"high_dose": 0.4, "source_dose_token": "0p4"}
+  },
+  "score_conditions": ["clean", "irrelevant_context_t0", "irrelevant_context_t1", "irrelevant_context_t2", "content_deletion_t0", "content_deletion_t1", "content_deletion_t2"],
+  "generation_conditions": ["clean", "irrelevant_context_t0", "content_deletion_t0"],
+  "score_shard_size": 256,
+  "generation_shard_size": 64,
+  "max_new_tokens": 512,
+  "dtype": "bfloat16",
+  "split_seeds": [20260828, 20260829, 20260830, 20260831, 20260832, 20260833, 20260834, 20260835, 20260836, 20260837],
+  "bootstrap_seed": 20260828,
+  "bootstrap_replicates": 1000,
+  "bootstrap_shard_size": 100,
+  "bootstrap_workers": 48,
+  "smoke_bootstrap_replicates": 5,
+  "sibling_directions": {
+    "Qwen/Qwen2.5-7B-Instruct": "TIGER-Lab/General-Reasoner-Qwen2.5-7B",
+    "TIGER-Lab/General-Reasoner-Qwen2.5-7B": "Qwen/Qwen2.5-7B-Instruct",
+    "microsoft/phi-4": "microsoft/Phi-4-reasoning-plus",
+    "microsoft/Phi-4-reasoning-plus": "microsoft/phi-4"
+  }
+}
+

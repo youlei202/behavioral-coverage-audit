@@ -1,0 +1,20 @@
+\section{Additional distinctions and query bounds}
+\label{app:additional-theory}
+
+\subsection{Unmatched observations and reference support}
+Suppose logs for all models are supported on $S_0$, while the reference audit distribution $P_\star$ assigns positive mass to $S\setminus S_0$. Consider peers that are zero everywhere. In one ecosystem the target is also zero; in a second it equals one on $S\setminus S_0$ and zero on $S_0$. The entire observational law is identical, but reference-design \PIER is zero in the first ecosystem and positive in the second. Thus logs lacking reference support do not identify the audit residual in general. This construction does not rule out identification from observational data with sufficient shared support and additional assumptions.
+
+\subsection{Utility credit is not coverage redundancy}
+Consider two identical model responses and a coalition game worth one whenever at least one model is available, and zero otherwise. Each model has Shapley value $1/2$, while either is exactly covered when the other is its peer. Positive utility credit can therefore coexist with zero \PIER. This counterexample distinguishes the objects measured; it is not a criticism of Shapley values for their intended utility-allocation task.
+
+\subsection{A qualified finite-design query bound}
+Assume a local linear response model $Y_j(z)=\phi(z)^\top\beta_j$ with $d$ features. Choose $d$ audit points with invertible feature matrix $\Phi$. In the noiseless setting, one response at each point recovers $\beta_j$ for every model. The coefficient representation then reduces exact coverage to membership in the convex hull of peer coefficients, provided the features identify responses on the reference design.
+
+Under independent sub-Gaussian noise with variance proxy $\sigma^2$, averaging $r$ repetitions at each design point controls response-mean errors by a union bound. Multiplication by $\Phi^{-1}$ transfers this error to the coefficients. For a fixed conditioning-dependent constant $C_\Phi$, a sufficient repeat count to resolve a separated margin $\gamma$ scales as
+\begin{equation}
+r\geq C_\Phi\frac{\sigma^2}{\gamma^2}\log\!\left(\frac{Nd}{\delta}\right).
+\end{equation}
+The query count is $dr$ per model, or $Ndr$ for the complete ecosystem. In the one-dimensional Gaussian case, testing mean zero against a mean separated by $\gamma$ requires $\Omega(\sigma^2\gamma^{-2}\log(1/\delta))$ observations. This matches the dependence on noise, separation, and confidence in that worst case, not a general lower bound in $d$ or $N$. No full-dimensional minimax-optimality claim is made.
+
+\subsection{Residual magnitude does not identify robustness}
+Let the intervention level be uniform on $[0,1]$. A constant residual $R_0(\theta)=c$ and the family $R_m(\theta)=(\pi c/2)\sin(2\pi m\theta)$ all have mean absolute residual $c$. Their derivatives, however, have magnitudes growing with $m$. Average \PIER therefore does not determine sensitivity along the intervention path. This motivates reporting trajectories and input-level concentration in addition to an average gap.

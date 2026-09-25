@@ -1,0 +1,57 @@
+\section{Behavioral coverage and peer expressibility}
+\label{sec:framework}
+
+Let $\mathcal J=\{1,\ldots,N\}$ index a model collection, $t$ a target, and $\mathcal J_{-t}$ its peers. An audit observes the models on the same transformed input $T_{\theta,\omega}(x)$, where $\theta$ specifies an intervention level and $\omega$ its realization. Writing $z=(x,\theta,\omega)$, the recorded response is
+\begin{equation}
+Y_j(z)=g_x\!\left(f_j(T_{\theta,\omega}(x))\right)\in\R^q.
+\label{eq:response}
+\end{equation}
+The response map $g_x$ selects what the audit compares. For multiple-choice questions, it can record reference-answer confidence or the entire option-probability vector. For forecasting, it records the prediction. Model-specific wrappers preserve the same semantic input and recorded quantity across peers.
+
+\paragraph{Fixed collective reconstruction.}
+Let $\Delta^{N-2}=\{w\in\R^{N-1}:w_j\geq0,\sum_jw_j=1\}$. The peer-response class is
+\begin{equation}
+h_w(z)=\sum_{j\in\mathcal J_{-t}}w_jY_j(z),\qquad
+\mathcal C_t=\{h_w:w\in\Delta^{N-2}\}.
+\label{eq:peer-class}
+\end{equation}
+A single $w$ applies across the audit. Even when $Y_j(z)$ is scalar, the fit reconstructs a whole response trace $(Y_j(z_1),\ldots,Y_j(z_m))$, rather than choosing coefficients separately for each observation.
+
+Convex weights combine the existing responses on their original scale and preserve probability normalization for vector responses. Allowing signed coefficients would permit extrapolation; allowing input-dependent weights would permit adaptive selection. The fixed convex class isolates the coverage supplied by an unchanged combination of peers.
+
+A fitting distribution $P$ defines the population approximation,
+\begin{equation}
+h_t^\star\in\arg\min_{h\in\mathcal C_t}\E_P\|Y_t-h\|_2^2.
+\label{eq:projection}
+\end{equation}
+For evaluation distribution $Q$, the residual and its mean magnitude are
+\begin{equation}
+R_t(z)=Y_t(z)-h_t^\star(z),\qquad
+U_t(P,Q)=\E_Q\|R_t(Z)\|_2.
+\label{eq:pier}
+\end{equation}
+We call $R_t$ \PIER and $U_t$ the \emph{coverage gap}. Scalar responses use absolute residuals; the full-option analysis additionally reports total variation. Section~\ref{sec:measurement} specifies the support conditions under which the fitted projection defines a unique evaluation response.
+
+\begin{figure}[!t]
+\centering
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig1a_matched_audit.pdf}
+\caption{Matched responses and a fixed peer fit.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/fig1b_peer_projection.pdf}
+\caption{Projection onto the peer-response class.}
+\end{subfigure}
+\caption{\textbf{A fixed peer fit reconstructs a response trace.} A fixed combination is learned from matched fitting observations and evaluated on held-out inputs. Its residual records what remains unexplained by the peer class; comparing alternative peer sets identifies the source of coverage. Both panels are conceptual.}
+\label{fig:framework}
+\end{figure}
+
+\paragraph{Estimation and peer dependence.}
+\DISCO solves the empirical simplex-constrained version of Eq.~\eqref{eq:projection} on a fitting sample and evaluates $\widehat U_t$ on held-out observations. The audit requires model responses but no model parameters or gradients. Absolute-loss fitting supplies a second matched comparison in the scalar experiments; Section~\ref{sec:measurement}'s projection uniqueness result applies to squared loss.
+
+Let $E_t^{\mathrm{single}}$ be the held-out error of the peer selected on the fitting sample, and $E_t^{\mathrm{group}}$ the error of the fitted combination. Define
+\begin{align}
+\Gamma_t&=E_t^{\mathrm{single}}-E_t^{\mathrm{group}},\label{eq:groupgain}\\
+I_{t\leftarrow j}&=\widehat U_t(\mathcal J_{-t}\setminus\{j\})-\widehat U_t(\mathcal J_{-t}).\label{eq:influence}
+\end{align}
+Each reduced peer set is refitted under the same design. Positive $\Gamma_t$ identifies a collective advantage; positive $I_{t\leftarrow j}$ measures how much coverage is lost without peer $j$. Together they separate dependence on one peer from improvement supplied by the rest. They are held-out comparisons and can have either sign.

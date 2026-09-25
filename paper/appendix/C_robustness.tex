@@ -1,0 +1,67 @@
+\section{Complete language-model comparisons and diagnostics}
+\label{app:robustness}
+
+\subsection{Balanced endpoint effects}
+Table~\ref{tab:endpoints-full} includes every target and both intervention families, rather than only the headline directions. A positive effect means that the fixed fitted peer combination has greater residual at maximum stress. Agreement of signs across overlapping splits is descriptive stability, not a binomial test with ten independent repetitions.
+
+\input{tables/endpoint_effects}
+
+Gemma and Phi-R have positive irrelevant-context effects whose intervals exclude zero, but these are not treated as generated-behavior conclusions. Granite's balanced effects cross zero despite stable negative split signs. OLMo's deletion effect remains a scalar-interface result; it should not inherit stronger full-output claims from the Mistral result.
+
+\subsection{Single-peer versus collective coverage}
+Table~\ref{tab:all-gains} gives the relative held-out improvement for every target and each matched fitting loss. These percentages are computed from the mean single and group errors; uncertainty is reported for the underlying absolute improvement. Intervals for both losses and complete removal results are supplied as machine-readable tables.
+\input{tables/all_gains}
+
+\input{tables/sibling_effects}
+The Qwen pair's asymmetry does not concern its direct pairwise error, which is symmetric under the matched absolute response difference. It concerns the improvement supplied by the remaining peers when either member is the target. Small and sometimes negative Phi sibling-removal effects provide a contrast to the strong Qwen dependence.
+
+
+\subsection{Complete-option-distribution audit}
+\label{app:vector}
+The complete-option analysis uses the same 560 questions and ten stratified half-splits as the canonical scalar audit. It retains the canonical option order and all five doses in each family: $0,64,128,256,512$ words for irrelevant context and $0,0.1,0.2,0.3,0.4$ for deletion. Each question--dose pair has equal design mass; the three nonzero-dose tracks divide that mass equally. The response contains the probabilities of every valid option, with zero padding in the fitting arrays where option counts differ.
+
+Two weight sources are evaluated. \emph{Transferred} weights are learned from scalar reference-answer responses and applied to the entire vector. \emph{Refitted} weights minimize the weighted sum of squared vector residuals over the fitting questions. A single peer is selected by its smallest mean fitting total variation. All fits are fixed over evaluation inputs. This is a squared-vector-fit/TV-evaluation diagnostic; its single-selection objective differs from group fitting, unlike the loss-matched scalar comparisons in the main experiment.
+
+For valid option distributions $p$ and $q$, the reported distance is
+\begin{equation}
+\operatorname{TV}(p,q)=\frac12\sum_s|p(s)-q(s)|.
+\end{equation}
+The archived implementation clips valid coordinates to $[10^{-15},1]$ and renormalizes before evaluating TV, Jensen--Shannon divergence, semantic top-1 agreement, and correctness agreement. It averages within each dose and then across the five equally weighted doses. The supplied table contains 1,600 rows: eight targets, two families, ten splits, two weight sources, and five doses. Overall values repeated on the five dose rows are counted only once when summarizing splits.
+
+\input{tables/vector_all}
+
+The single peer selected for each Qwen target is its sibling in all ten splits and both families. This produces equal pairwise TV in both directions, while the effect of the additional peers differs. For General Reasoner, vector refitting improves mean TV by $4.9\%$ under deletion and $9.6\%$ under irrelevant context. For Qwen2.5, the group's TV is higher. Mistral improves by $14.3\%$ and $15.4\%$, and Phi-R by $18.0\%$ and $16.2\%$. Gemma's vector group gains have the opposite sign from its balanced scalar results. Table~\ref{tab:vector-all} includes these differing cases together with all other targets.
+
+The vector sibling-removal diagnostic refits the remaining peers by the same vector squared loss. Both Qwen directions show positive TV inflation in every split (Table~\ref{tab:vector-sibling}); the Phi directions have smaller and less uniform effects. This diagnostic does not include a complete vector non-sibling removal null. Likewise, the tables report split means and direction counts, not new bootstrap intervals. The overlapping splits are a description of stability within the fixed question pool, rather than ten independent replications.
+
+The canonical vector design and the balanced scalar endpoint design differ in response representation, presentation, dose support, and fitting comparisons. Their common patterns establish evidence under both recorded views; differences do not isolate any one of those choices. The balanced-interface common-question intervals are reported only for the measurements to which they apply.
+
+\subsection{Interface rankings and intervention aggregation}
+Rankings of the eight targets' family-averaged endpoint-design MSE-fit errors have canonical-versus-balanced Spearman correlation $0.952$. Across the 16 target--family endpoint changes, the corresponding correlation is $0.932$, and 15 signs agree. These statistics refer to different objects and should not be interchanged.
+
+\begin{figure}[!t]
+\centering
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/figA_interface_change.pdf}
+\caption{Endpoint changes under two interfaces.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.485\linewidth}
+\centering\includegraphics[width=\linewidth]{figures/pdf/figA_cancellation.pdf}
+\caption{Order of aggregation under a fixed fit.}
+\end{subfigure}
+\caption{\textbf{Representation and aggregation are separate audit choices.} Left: all 16 endpoint changes under matched endpoint designs. Right: mean absolute residual after versus before averaging intervention tracks, with the trackwise-fit weights held fixed. Neither comparison adds new model observations.}
+\label{fig:interface-diagnostics}
+\end{figure}
+
+For a fixed fit, measuring each realized intervention and then averaging gives $K^{-1}\sum_k|R_k|$, whereas first averaging the signed responses gives $|K^{-1}\sum_kR_k|$. Jensen's inequality orders these quantities; equality holds when the nonzero residuals share a sign. The first retains variation across matched intervention realizations, while the second measures reconstruction of an averaged response.
+
+In the canonical audit, fitting and evaluating aggregate responses gives mean residual $0.17849$, compared with $0.18964$ under trackwise fitting and evaluation. This $6.25\%$ difference includes refitting. Figure~\ref{fig:interface-diagnostics}(b) isolates the evaluation order using identical trackwise-fit weights. These calculations are diagnostic comparisons of estimands, separate from the choice to define a label-balanced response before fitting.
+
+\subsection{Archived generation readouts}
+\input{tables/generation_diagnostics}
+The table averages stored per-condition readouts. Score--generation agreement is measured across individual rotations, not between one balanced argmax and every generated answer. The permissive parsing fallback and frequent budget-length outputs require particular caution for reasoning models. We do not use malformed rates as evidence of reliable final-answer completion.
+
+\subsection{Numerical feasibility and environment}
+The balanced-interface absolute-loss bootstrap uses a deterministic post-solve simplex projection for otherwise accepted solutions with raw violations no greater than $10^{-7}$. The repair was explicitly authorized after a feasibility-gate failure. Across 394 repaired solutions, the largest objective change was $1.46\times10^{-9}$ and the largest held-out prediction change was $1.01\times10^{-7}$. A repair-free-only diagnostic did not change the recorded headline decisions; it is a sensitivity check, not an alternative primary bootstrap.
+
+Post-processing used CPython 3.11.15 instead of the prestaged 3.11.13, with the locked package versions preserved. This is not a bitwise-identical runtime. The original inference outputs, split definitions, and bootstrap seeds were retained. The accompanying provenance record distinguishes this numerical implementation adjustment from any change of the scientific response definition.

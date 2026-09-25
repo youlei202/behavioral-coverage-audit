@@ -1,0 +1,21 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=5.3cm,height=4.3cm,grid=major,xlabel={Mean residual ($\times10^{-3}$)},xmin=0,xmax=.88,ymin=.4,ymax=7.6,ytick={1,2,3,4,5,6,7},yticklabels={SIN+IN to IN,SIN+IN,SIN,ViT,ConvNeXt,EffNet,RN-50},xtick={0,.4,.8},legend style={at={(.5,1.03)},anchor=south,legend columns=1,font=\sffamily\fontsize{6.5}{7.5}\selectfont}
+]
+\draw[slate!45,line width=.6pt] (axis cs:0.27447944061919999,7)--(axis cs:0.40658737416479995,7);
+\draw[slate!45,line width=.6pt] (axis cs:0.075711916023015469,6)--(axis cs:0.34289894075459998,6);
+\draw[slate!45,line width=.6pt] (axis cs:0.083475175514522465,5)--(axis cs:0.78770711870389998,5);
+\draw[slate!45,line width=.6pt] (axis cs:0.057183943948954208,4)--(axis cs:0.29724629591000001,4);
+\draw[slate!45,line width=.6pt] (axis cs:0.088435787296737345,3)--(axis cs:0.43150110884020004,3);
+\draw[slate!45,line width=.6pt] (axis cs:0.089052958054553086,2)--(axis cs:0.31644451426969999,2);
+\draw[slate!45,line width=.6pt] (axis cs:0.072929410922948107,1)--(axis cs:0.73995492844999999,1);
+\addplot[only marks,mark=o,teal] table[x=natural,y=y,col sep=comma] {../../data/figures/vision_context.csv};
+\addlegendentry{Natural}
+\addplot[only marks,mark=square*,coral] table[x=shape,y=y,col sep=comma] {../../data/figures/vision_context.csv};
+\addlegendentry{Shape-biased}
+\end{axis}
+\end{tikzpicture}
+\end{document}

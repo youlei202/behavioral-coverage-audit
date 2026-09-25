@@ -1,0 +1,52 @@
+\section{Language-model audit protocol}
+\label{app:llm-protocol}
+
+\subsection{Checkpoints and question sample}
+The ecosystem comprises the eight checkpoints in Table~\ref{tab:models}. Exact revision identifiers are preserved in the accompanying model manifest. The family sources are Qwen2.5 \citep{qwen2025qwen25}, General Reasoner \citep{ma2025generalreasoner}, Phi-4 and Phi-4 reasoning \citep{abdin2024phi4,phi4reasoning2025}, Mistral NeMo \citep{mistralnemo2024}, OLMo 2 \citep{olmo22025}, Granite 3.3 \citep{granite332025}, and Gemma 3 \citep{gemma32025}. Qwen and Phi are the declared sibling groups; this metadata does not assert behavioral equivalence.
+
+\input{tables/models}
+
+The fixed sample contains 560 MMLU-Pro questions, 40 per subject across 14 subjects. Each question retains its original number $m_q$ of valid options; the audit does not assume every row has exactly ten. Ten stratified 50:50 splits contain 280 fitting and 280 evaluation questions each. A question and all of its doses, tracks, model responses, and label rotations remain on the same side within a split. The ten splits reuse the same physical questions and are not independent datasets.
+
+\subsection{Matched interventions}
+Irrelevant-context injection prepends unrelated stems from other categories at nested word budgets $0,64,128,256,512$. Content deletion replaces selected eligible non-stopword tokens in the question stem with a literal blank at fractions $0,0.1,0.2,0.3,0.4$. Options and the reference answer are unchanged. Three realizations are constructed per question at each nonzero dose. The semantic intervention is shared across models before model-specific chat wrapping.
+
+\subsection{Candidate-label scores and balanced responses}
+For each valid visible label $k$, we evaluate the conditional sequence log likelihood $\ell_{j,k}$ of the prescribed short label continuation, without length normalization, and set
+\begin{equation}
+p_{j,k}=\frac{\exp(\ell_{j,k})}{\sum_{r=1}^{m_q}\exp(\ell_{j,r})}.
+\end{equation}
+These scores are conditional on the prompt and answer format. For question $q$, evaluate all $m_q$ cyclic rotations and remap visible labels to their original semantic options. The balanced response is
+\begin{equation}
+\bar p_j(s)=\frac1{m_q}\sum_{r=0}^{m_q-1}p_j^{(r)}(s),
+\qquad Y_j=\bar p_j(y_q^\star).
+\end{equation}
+Every semantic option occupies every position exactly once. This balances positions, not all $m_q!$ permutations; it need not remove interaction effects or recover latent beliefs. Because normalization is nonlinear, balancing is not generally equivalent to subtracting an additive logit bias.
+
+\subsection{Distinct full-dose and endpoint designs}
+The canonical-order trajectories fit one vector over all five doses, giving equal mass to each question and dose and dividing nonzero-dose mass equally among the three tracks. In contrast, the balanced-interface comparisons use only clean and maximum-stress conditions. For each family and split, their fitting objective is
+\begin{equation}
+\widehat L_t(w)=\frac1{|\mathcal Q_{\rm fit}|}\sum_{q\in\mathcal Q_{\rm fit}}
+\left[\frac12 r_q(0;w)^2+
+\frac16\sum_{k=1}^3r_q(d_{\max},k;w)^2\right].
+\end{equation}
+Endpoint evaluation uses
+\begin{equation}
+\widehat U_t(0)=\frac1{|\mathcal Q_{\rm eval}|}\sum_q|r_q(0)|,
+\quad
+\widehat U_t(d_{\max})=\frac1{3|\mathcal Q_{\rm eval}|}\sum_q\sum_{k=1}^3|r_q(d_{\max},k)|.
+\end{equation}
+Overall endpoint-design errors average the two endpoints with equal mass. Endpoint effects subtract the clean value from the stressed value. The raw endpoint baseline uses this same two-endpoint design before comparing it with balanced responses, avoiding a confound between interface change and omission of intermediate doses.
+
+\subsection{Matched fitting losses and peer removal}
+For the balanced reference-answer analysis, the squared-loss comparison selects the single peer of smallest fitting MSE and compares it with the simplex-constrained MSE fit. The absolute-loss comparison analogously selects by fitting MAE and uses an absolute-loss convex fit. All four errors are evaluated by held-out MAE under the same design. The canonical complete-option diagnostic has its own fitting and evaluation specification in Appendix~\ref{app:vector}. A selected single peer is fixed across evaluation inputs. For each deletion of a peer, the reduced model is refitted on the same fitting questions and evaluated on the same held-out questions.
+
+\subsection{Common-question bootstrap and selection scope}
+Each of 1,000 bootstrap replicates draws one subject-stratified multiplicity vector over the 560 base questions. That same vector is restricted to the fitting and evaluation partitions of all ten fixed splits. Each fit, single-peer selection, and relevant peer-removal comparison is recomputed using the weighted sample; split estimates are then averaged. This retains dependence arising when a physical question occurs in several split definitions. Reported percentile intervals are pointwise, not simultaneous family-wise intervals.
+
+The lineage comparisons and focused validation targets were fixed before the balanced-interface evaluation, following inspection of the earlier canonical audit. The new interface measurements use the same question pool, not a fresh independent benchmark. The six-of-eight summary is an ecosystem-wide descriptive result; it is not presented as six independently preregistered discoveries.
+
+\subsection{Generation as an auxiliary interface}
+A fixed 140-question subset, ten per subject, is evaluated by deterministic generation with a 512-token budget under clean and two maximum-dose conditions. All cyclic rotations are included and extracted answer labels are remapped to semantic options. These measurements are not inputs to the primary \PIER estimator.
+
+The archived parser accepts explicit final-answer patterns but also has a permissive fallback for a valid standalone label near the end of an output. In long reasoning sequences, this can identify an intermediate label as an answer. Hitting the token budget also need not imply successful completion. Accordingly, the archived agreement and malformed rates in Appendix~\ref{app:robustness} are diagnostics under that parser, not verified final-answer accuracy or proof that truncation was resolved.

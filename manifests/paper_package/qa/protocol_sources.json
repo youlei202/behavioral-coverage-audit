@@ -1,0 +1,18 @@
+{
+  "style_reference": "https://arxiv.org/pdf/2608.12935v1",
+  "style_reference_use": "Writing structure and Contributions formatting only; not a source of PIER experimental claims.",
+  "verified_protocol_files": [
+    {
+      "repository": "youlei202/ISQED",
+      "path": "experiments/exp11_shape_bias_texture.py",
+      "blob_sha": "972b6ec4d35f4e9a661a8ffdabac5a940f727f69",
+      "verified_details": "p_true score mode; common fit/eval ordering constructed before per-target loop."
+    },
+    {
+      "repository": "youlei202/ISQED",
+      "path": "experiments/exp13_image_model_geometry.py",
+      "blob_sha": "84cbf2af8a1bb3d61e25428b0789a222f0c9403f",
+      "verified_details": "Separate PCA for each target/context using four peer, target, and fitted mixture vectors on 400 fitting inputs."
+    }
+  ]
+}

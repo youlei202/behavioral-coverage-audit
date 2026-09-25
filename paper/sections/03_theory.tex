@@ -1,0 +1,23 @@
+\section{Estimation and representation}
+\label{sec:measurement}
+
+Two properties connect the empirical fit to a population response and determine how its coefficients should be interpreted.
+
+\begin{proposition}[Projection and representation]
+\label{prop:projection}
+If the finitely many target and peer responses belong to $L^2(P;\R^q)$, then $\mathcal C_t$ is compact and convex in $L^2(P)$. Equation~\eqref{eq:projection} has a unique projected response, although its representing weight vector may be non-unique. Enlarging the peer set cannot increase the optimized squared distance under the same $P$.
+\end{proposition}
+
+The simplex has a compact image in response space. Projection onto that image is unique up to $P$-almost-sure equality. Coincident peers can exchange coefficient mass while preserving the response, so removal effects compare the coverage available from different peer sets rather than the size of a chosen coefficient.
+
+\begin{proposition}[Held-out consistency]
+\label{prop:consistency}
+Assume bounded responses, a fixed finite peer set, independent fitting and evaluation samples, and $Q\ll P$ with bounded density ratio. An empirical squared-loss minimizer satisfies $\|\widehat h_t-h_t^\star\|_{L^2(P)}\to_p0$ and its held-out residual estimate satisfies $\widehat U_t\to_p U_t(P,Q)$ as both sample sizes increase.
+\end{proposition}
+
+Uniform convergence over the simplex gives consistency of the fitting response; support compatibility transfers it to evaluation. The matched LLM half-splits use the same population design, with questions as the independent sampling units. Appendix~\ref{app:theory} gives the proofs, the extension to clustered intervention realizations, and the distinction between fitting-loss monotonicity and held-out comparisons.
+
+\paragraph{Exact-response controls.}
+A copied response, a known three-peer mixture, and a boundary mixture give held-out mean residuals of order $10^{-11}$. A duplicated peer changes the coefficient representation while preserving the fitted response (Table~\ref{tab:controls}). These cases connect the implementation directly to the reconstruction and representation properties above.
+
+\input{tables/exact_controls}

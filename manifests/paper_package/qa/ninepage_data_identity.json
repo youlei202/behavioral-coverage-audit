@@ -1,0 +1,11 @@
+{
+  "base_archive": "ICLR2027_Behavioral_Coverage_ClaimDriven_Source.zip",
+  "checked_files": 224,
+  "changed_files": [],
+  "conference_style_unchanged": true,
+  "figure_style_unchanged": true,
+  "font_and_spacing_settings_unchanged": true,
+  "no_new_inference": true,
+  "no_new_fits": true,
+  "no_new_bootstrap": true
+}

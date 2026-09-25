@@ -1,0 +1,9 @@
+BibTeX 0.99e (TeX Live 2026)
+kpathsea version 6.4.2
+Copyright 2026 Oren Patashnik.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the BibTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the BibTeX source.
+Primary author of BibTeX: Oren Patashnik.

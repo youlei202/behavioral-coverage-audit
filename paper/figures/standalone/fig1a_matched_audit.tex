@@ -1,0 +1,17 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+
+\path[use as bounding box] (-3.1,-.65) rectangle (3.1,3.05);
+\node[block,text width=5.2cm,minimum height=.65cm] (q) at (0,2.45)
+ {\textbf{Matched tests}\\Same input and response map};
+\node[block,text width=5.2cm,minimum height=.65cm] (f) at (0,1.30)
+ {\textbf{Fitting sample}\\One fixed peer combination};
+\node[block,text width=5.2cm,minimum height=.65cm,fill=lightteal,draw=teal] (e) at (0,.15)
+ {\textbf{Evaluation sample}\\Residuals on held-out inputs};
+\draw[link] (q.south)--(f.north);
+\draw[link] (f.south)--(e.north);
+
+\end{tikzpicture}
+\end{document}

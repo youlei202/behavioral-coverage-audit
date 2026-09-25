@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "commands": [
+    "make replay",
+    "make verify",
+    "make clean"
+  ],
+  "source_only_initial_copy": true,
+  "no_initial_pdfs": true,
+  "external_raw_variables_removed": true,
+  "pythonpath_removed": true,
+  "frozen_evidence_unchanged": true,
+  "clean_preserves_frozen_evidence": true,
+  "clean_removes_generated_products": true,
+  "network_namespace_isolated": true,
+  "network_note": "Replay contains no downloads/network calls; namespace result is reported separately",
+  "result": {
+    "level_a": "passed",
+    "unique_panels": 26,
+    "empirical_panels": 24,
+    "composite_figures": 8,
+    "tables": 10,
+    "pages": 22,
+    "references_first_page": 10,
+    "citations": 23,
+    "undefined_citations": 0,
+    "undefined_references": 0,
+    "new_inference": false,
+    "new_fits": false,
+    "new_bootstrap": false,
+    "pdf_sha256": "9b2ff06216b067821f92947e6cf0fdfe6a26f91091eff587d571e864cb285b65",
+    "numeric_qa": {
+      "llm_six_targets": 6,
+      "endpoint_direction_matches": 15,
+      "endpoint_change_spearman": 0.9323529411764706,
+      "error_ranking_spearman": 0.9523809523809524,
+      "traffic_improved": 26,
+      "traffic_raw_corr": 0.8359678604940602,
+      "traffic_normalized_corr": 0.0518769169675993,
+      "traffic_min_weight": -0.0048245451111272,
+      "traffic_flagged_cities": [
+        "luzern",
+        "paris"
+      ],
+      "natural_top20": 2,
+      "shape_top20": 19,
+      "fixed_fit_aggregate_mean": 0.1787611978981543,
+      "fixed_fit_trackwise_mean": 0.18964131524405564
+    },
+    "maintained_source_files": 450,
+    "provenance_items": 18
+  }
+}

@@ -1,0 +1,14 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+width=7.1cm,height=4.45cm,grid=major,xmin=-.003,xmax=.065,ymin=.4,ymax=4.7,xlabel={Increase in held-out residual},ytick={1,2,3,4},yticklabels={GR / I,GR / D,Qwen / I,Qwen / D},legend style={at={(.5,1.04)},anchor=south,legend columns=1}
+]
+\addplot[only marks,mark=*,teal,error bars/.cd,x dir=both,x explicit] table[x=permutation_averaged_inflation,y=y,col sep=comma,x error minus=lo,x error plus=hi] {../../data/figures/qwen_removal.csv};
+\addlegendentry{Sibling removal}
+\addplot[only marks,mark=square*,coral] table[x=largest_non_sibling_inflation,y=y,col sep=comma] {../../data/figures/qwen_removal.csv};
+\addlegendentry{Largest non-sibling mean}
+\end{axis}
+\end{tikzpicture}
+\end{document}

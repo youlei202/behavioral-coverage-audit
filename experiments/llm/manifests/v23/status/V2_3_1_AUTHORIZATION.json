@@ -1,0 +1,10 @@
+{
+  "authorized": true,
+  "authorization": "deterministic simplex feasibility repair for optimal solver outputs with raw simplex violations no larger than 1e-7",
+  "environment_deviation_authorized": "CPython 3.11.15 may replace unavailable CPython 3.11.13 with identical locked package versions",
+  "no_new_inference": true,
+  "b200_reopen_forbidden": true,
+  "preserve_existing_bootstrap_shards": true,
+  "expected_existing_valid_shards": 781,
+  "expected_pending_shards": 19
+}

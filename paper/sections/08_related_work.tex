@@ -1,0 +1,8 @@
+\section{Related work}
+\label{sec:related}
+
+\paragraph{Attribution and model comparison.}
+Feature attribution allocates a model response to input variables, while counterfactual explanation studies changes that alter a decision \citep{ribeiro2016lime,sundararajan2017integrated,wachter2017counterfactual}. SVCCA and CKA compare learned representations \citep{raghu2017svcca,kornblith2019cka}. Our observations are output response traces: a target is reconstructed by a fixed peer combination, and alternative peer sets reveal its reconstruction dependence. Input-level residuals then connect the collection-level fit to the examples on which it fails.
+
+\paragraph{Aggregation, transfer, and credit.}
+Ensembles and model soups combine models to improve task prediction; distillation transfers behavior to a student \citep{hinton2015distilling,wortsman2022model}. The objective here is target-response reconstruction, so approximation error is a result rather than a training surrogate for task performance. Fixed convex fitting follows the synthetic-control construction \citep{abadie2010synthetic}; matched interventions provide common observations for the model collection. Shapley values allocate a chosen coalition utility \citep{shapley1953value,lundberg2017shap}. Their object differs from coverage: duplicated responses can receive positive credit while leaving zero peer residual. Appendix~\ref{app:additional-theory} formalizes this example and the support requirements of observational audits.

@@ -1,0 +1,19 @@
+\documentclass[border=2pt]{standalone}
+\input{../figure_style.tex}
+\begin{document}
+\begin{tikzpicture}
+
+\path[use as bounding box] (-.65,-.7) rectangle (5.55,2.88);
+\filldraw[draw=teal,fill=lightteal,line width=.8pt] (0,0)--(2.4,0)--(2.4,1.9)--(0,1.9)--cycle;
+\foreach \x/\y in {0/0,2.4/0,2.4/1.9,0/1.9}{\fill[teal] (\x,\y) circle (2pt);}
+\node[text=teal,align=center,text width=2.0cm] at (1.2,1.0) {Convex peer\\responses};
+\node[circle,draw=navy,fill=white,inner sep=0pt,minimum size=6pt] (h) at (2.4,.80) {};
+\node[circle,draw=coral,fill=coral!15,inner sep=0pt,minimum size=7pt] (t) at (4.55,.80) {};
+\draw[-{Latex[length=2mm]},coral,line width=.95pt] (h.east)--node[above=4pt,text=coral] {$R_t=Y_t-h_t^\star$} (t.west);
+\draw[navy!65,line width=.4pt] (h.south east)--(2.78,.40);
+\node[anchor=north west,align=left,text=navy] at (2.82,.43) {Fitted response\\$h_t^\star$};
+\node[anchor=south,align=center,text=coral] at (4.55,1.1) {Target\\$Y_t$};
+\node[anchor=north,text=slate] at (1.2,-.12) {Points: individual peers};
+
+\end{tikzpicture}
+\end{document}
