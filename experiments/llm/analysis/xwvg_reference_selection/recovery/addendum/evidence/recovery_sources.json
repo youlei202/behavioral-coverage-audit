@@ -1,0 +1,76 @@
+{
+  "source_repository": "https://anonymous.4open.science/r/behavioral-coverage-audit-F68D/README.md",
+  "inspection_date": "2026-11-07",
+  "historical_v23_results_zip": {
+    "basename": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "recorded_logical_path": "/work/Lei/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "recorded_physical_path": "/work/Users/leiyo/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/artifacts/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+    "sha256": "ba24123066a16aa29af60fa924589256fd7fe8566ecd9a2017f12dccaeb682a1",
+    "size_bytes": 109877741,
+    "raw_score_shards_omitted": true,
+    "analysis_and_validation_directories_included_by_packager": true,
+    "actual_zip_recovered_in_this_chat": false
+  },
+  "expected_archive_members": [
+    "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/analysis/permutation_averaged_semantic_scores.parquet",
+    "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/validation/permutation_wise_semantic_scores.parquet",
+    "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS/MANIFEST.sha256"
+  ],
+  "inspected_files": [
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/packaging.py",
+      "sha256": "e9fe7ed89d95416a7df8285987a9b949248c7a08eb2e780504caaae60775b4b1"
+    },
+    {
+      "path": "experiments/llm/manifests/v23/status/final_package.json",
+      "sha256": "84fecee28c1b6b89f4e3182eb513036a265e1a630493d6d878a09e1e93d20562"
+    },
+    {
+      "path": "manifests/llm_source_archive_identity.json",
+      "sha256": "476a9688c4c7650ab49e3a5336247422682c8cde1846e757ad2279ff00fd294f"
+    },
+    {
+      "path": "experiments/llm/inference/v2/src/pier_llm/data_prep.py",
+      "sha256": "1f8f86b978a1009f350251901005b47b4ff92b741b629932f6197adae28d7bac"
+    },
+    {
+      "path": "experiments/llm/inference/v2/src/pier_llm/utils.py",
+      "sha256": "5e033ca7715044879b4e3d1c36b9ae14a47520bf884f12930d9a6ea6462035fc"
+    },
+    {
+      "path": "experiments/llm/manifests/v2/data/manifests/dataset_source.json",
+      "sha256": "ea1023b4d9f56ac39d1c6c38643ba6b8080659e2bdf2847013ddd0fe75bbc6c3"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/prepare.py",
+      "sha256": "0f5b8eabcdf9e19f86beeae22c1cdb04f0e35f47ae24e9fb283796688f265803"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/inference.py",
+      "sha256": "0bcd17ba4b3939f257c16e35b78d7ce03239b10442ca761fa3bc225fa2271a09"
+    },
+    {
+      "path": "experiments/llm/manifests/v23/status/prompt_manifest_status.json",
+      "sha256": "ef149c6982970448f4393563723d0bfa4cdda9beec8ff12510a4fe0ef13478e6"
+    }
+  ],
+  "real_model_inference_run": false,
+  "real_selected560_reconstruction_run": false,
+  "receiving_codex_report_available_on_this_host": false,
+  "package_checks": {
+    "python_syntax": "passed",
+    "dependency_free_help": "passed",
+    "upstream_source_hashes": "passed",
+    "deterministic_constructed_selection": "passed",
+    "upstream_jsonl_serialization": "passed",
+    "constructed_sample_rejected_as_historical_sample": "passed",
+    "existing_mismatched_output_refused": "passed",
+    "public_snapshot_location_scan": "completed_without_matching_input",
+    "archive_location_smoke": "passed_by_component_author"
+  },
+  "limitations": [
+    "The user supplied a report excerpt; its full report and new implementation were not accessed here.",
+    "The historical ZIP paths and contents are derived from archived metadata and packing source; the actual ZIP remains to be located.",
+    "The pinned real dataset was not downloaded in this chat."
+  ]
+}

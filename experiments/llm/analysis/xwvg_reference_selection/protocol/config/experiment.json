@@ -1,0 +1,171 @@
+{
+  "schema_version": "bca_xwvg_plan_v1",
+  "analysis_id": "xwvg_reference_selection",
+  "paper_submission": 41357,
+  "primary_protocol": "balanced_full_vector_endpoints",
+  "primary_response_column": "permutation_averaged_semantic_probabilities",
+  "primary_budget": 2,
+  "secondary_budget": 3,
+  "budgets": [
+    1,
+    2,
+    3,
+    7
+  ],
+  "budget_meaning": "at_most_k_available_peers",
+  "model_roster": [
+    "Qwen/Qwen2.5-7B-Instruct",
+    "TIGER-Lab/General-Reasoner-Qwen2.5-7B",
+    "microsoft/phi-4",
+    "microsoft/Phi-4-reasoning-plus",
+    "mistralai/Mistral-Nemo-Instruct-2407",
+    "allenai/OLMo-2-1124-13B-Instruct",
+    "ibm-granite/granite-3.3-8b-instruct",
+    "google/gemma-3-12b-it"
+  ],
+  "model_revisions": {
+    "Qwen/Qwen2.5-7B-Instruct": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "TIGER-Lab/General-Reasoner-Qwen2.5-7B": "e05e2d49ca11fdf74825cb1547dc50a4e441f908",
+    "microsoft/phi-4": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+    "microsoft/Phi-4-reasoning-plus": "69baf8528e1bcf05f475034d9e5dd32875ed125f",
+    "mistralai/Mistral-Nemo-Instruct-2407": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+    "allenai/OLMo-2-1124-13B-Instruct": "3a5c85baefbb1896a54d56fe2e76c0395627ddf4",
+    "ibm-granite/granite-3.3-8b-instruct": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+    "google/gemma-3-12b-it": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+  },
+  "families": {
+    "irrelevant_context": {
+      "doses": [
+        0.0,
+        512.0
+      ],
+      "clean_track_count": 1,
+      "stress_track_count": 3,
+      "clean_mass": 0.5,
+      "stress_track_mass": 0.16666666666666666
+    },
+    "content_deletion": {
+      "doses": [
+        0.0,
+        0.4
+      ],
+      "clean_track_count": 1,
+      "stress_track_count": 3,
+      "clean_mass": 0.5,
+      "stress_track_mass": 0.16666666666666666
+    }
+  },
+  "split_seeds": [
+    20260828,
+    20260829,
+    20260830,
+    20260831,
+    20260832,
+    20260833,
+    20260834,
+    20260835,
+    20260836,
+    20260837
+  ],
+  "question_count": 560,
+  "category_count": 14,
+  "questions_per_category": 40,
+  "expected_primary_cache_rows": 31360,
+  "observations_per_family_model": 2240,
+  "observations_per_split_side_family": 1120,
+  "fit_objective": "weighted_full_vector_total_variation",
+  "selection_objective": "weighted_full_vector_total_variation",
+  "evaluation_metrics": [
+    "weighted_full_vector_total_variation",
+    "balanced_top_option_agreement"
+  ],
+  "methods": [
+    "collective",
+    "nearest_k",
+    "uniform_random_expected"
+  ],
+  "candidate_counts": {
+    "1": 7,
+    "2": 21,
+    "3": 35,
+    "7": 1
+  },
+  "expected_candidate_fits": 10240,
+  "expected_nontrivial_fits": 9120,
+  "expected_strategy_split_rows": 1920,
+  "expected_main_summary_rows": 32,
+  "expected_all_budget_summary_rows": 64,
+  "peer_order": "fixed_model_roster_without_target",
+  "selection_tie_tolerance": 1e-09,
+  "argmax_tie_rule": "first_semantic_option",
+  "preprocessing": {
+    "temperature": 1.0,
+    "bias_correction": false,
+    "average_complete_semantic_rotations_first": true,
+    "probability_sum_tolerance": 1e-10,
+    "probability_bounds_tolerance": 1e-12,
+    "padding_tolerance": 1e-12,
+    "padding": "zero_invalid_coordinates"
+  },
+  "solver": {
+    "backend": "scipy.optimize.linprog",
+    "method": "highs",
+    "matrix_format": "sparse_csr",
+    "primal_feasibility_tolerance": 1e-09,
+    "dual_feasibility_tolerance": 1e-09,
+    "simplex_acceptance_tolerance": 1e-08,
+    "max_repair_l1": 1e-07,
+    "objective_recompute_tolerance": 1e-07
+  },
+  "uncertainty": {
+    "mode": "frozen_fit_common_question_descriptive",
+    "replicates": 2000,
+    "seed": 20261107,
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "includes_selection_and_fitting_uncertainty": false,
+    "p_values": false,
+    "full_refit_bootstrap_enabled": false
+  },
+  "compute": {
+    "gpu_inference_enabled": false,
+    "max_workers": 4,
+    "blas_threads_per_worker": 1,
+    "solver_threads_per_worker": 1,
+    "resume": true,
+    "pilot_targets": [
+      "Qwen/Qwen2.5-7B-Instruct",
+      "TIGER-Lab/General-Reasoner-Qwen2.5-7B",
+      "microsoft/phi-4"
+    ],
+    "pilot_families": [
+      "irrelevant_context",
+      "content_deletion"
+    ],
+    "pilot_split_seed": 20260828,
+    "pilot_subset_indices": {
+      "2": [
+        0,
+        10,
+        20
+      ],
+      "3": [
+        0,
+        17,
+        34
+      ],
+      "7": [
+        0
+      ]
+    },
+    "pilot_nontrivial_fits": 42
+  },
+  "optional_canonical_sensitivity": {
+    "enabled": false,
+    "protocol": "canonical_full_vector_five_doses",
+    "automatic_fallback": false
+  },
+  "proposed_new_component": "experiments/llm/analysis/xwvg_reference_selection/src/bca_reference_selection"
+}

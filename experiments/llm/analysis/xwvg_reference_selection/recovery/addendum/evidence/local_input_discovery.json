@@ -1,0 +1,133 @@
+{
+  "tool": "locate_inputs.py",
+  "report_version": 1,
+  "created_at_utc": "2026-11-07T14:37:16.026589+00:00",
+  "schema_validated": false,
+  "searched_roots": [
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage",
+      "requests": [
+        {
+          "requested_path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage",
+          "source": "--repo-root"
+        }
+      ],
+      "direct_probes_complete": true,
+      "recursive_scan_status": "finished_with_recorded_exclusions"
+    }
+  ],
+  "missing_roots": [
+    {
+      "requested_path": "/work/Users/leiyo",
+      "source": "historically_recorded_root",
+      "reason": "not_present_or_mount_unavailable"
+    },
+    {
+      "requested_path": "/work/Lei",
+      "source": "historically_recorded_root",
+      "reason": "not_present_or_mount_unavailable"
+    }
+  ],
+  "permission_errors": [],
+  "other_errors": [],
+  "skipped_entries": [
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/experiments/llm/manifests/v23/env",
+      "reason": "excluded_environment_or_model_cache_directory"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/experiments/llm/manifests/v22/env",
+      "reason": "excluded_environment_or_model_cache_directory"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/experiments/llm/manifests/v2/env",
+      "reason": "excluded_environment_or_model_cache_directory"
+    }
+  ],
+  "direct_probes": [
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/data/mmlu_pro_selected_560.jsonl",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/outputs/analysis/permutation_averaged_semantic_scores.parquet",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/outputs/validation/permutation_wise_semantic_scores.parquet",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/data/mmlu_pro_selected_560.jsonl",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/outputs/analysis/permutation_averaged_semantic_scores.parquet",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/outputs/validation/permutation_wise_semantic_scores.parquet",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION_RESULTS.zip",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_RESULTS.zip",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/data/mmlu_pro_selected_560.jsonl",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/mmlu_pro_selected_560.jsonl",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/outputs/analysis/permutation_averaged_semantic_scores.parquet",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/outputs/validation/permutation_wise_semantic_scores.parquet",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/permutation_averaged_semantic_scores.parquet",
+      "status": "missing"
+    },
+    {
+      "path": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/permutation_wise_semantic_scores.parquet",
+      "status": "missing"
+    }
+  ],
+  "truncated_scan": false,
+  "truncation_details": [],
+  "max_entries": 250000,
+  "entry_counts": {
+    "filesystem": 617,
+    "zip_members": 0
+  },
+  "files": [],
+  "archives": [],
+  "zip_errors": [],
+  "limitations": [
+    "No match does not prove loss: unavailable mounts, permissions, skipped directories and limits leave gaps.",
+    "Only listed roots are searched; no parent or filesystem-wide search is performed.",
+    "Loose files are inspected by name/type/size only, without reading their contents or validating schemas or hashes.",
+    "ZIP central directories are read; member payloads are never read or extracted. A member name does not validate its data.",
+    "The entry budget bounds inspected names. Python zipfile loads the central-directory metadata when opening each ZIP.",
+    "Internal symlinks and the recorded cache/environment directories are intentionally excluded.",
+    "Search reflects this run; files can move or change during or after discovery."
+  ],
+  "entries_used": 617,
+  "summary": {
+    "candidate_loose_files": 0,
+    "candidate_result_archives": 0,
+    "relevant_archive_members": 0,
+    "schema_validated": false,
+    "interpretation": "Discovery only. Validate the required contents separately before analysis."
+  },
+  "environment_root_is_set": false
+}

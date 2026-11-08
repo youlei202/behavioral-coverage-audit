@@ -1,0 +1,57 @@
+{
+  "schema_version": "bca_xwvg_package_checks_v1",
+  "package_status": "plan_and_numerical_reference_checked",
+  "real_data_experiment_run": false,
+  "gpu_or_model_inference_run": false,
+  "numerical_reference": {
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "tests_run": 7,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0,
+    "scope": "Constructed numerical cases only, not empirical evidence"
+  },
+  "static_checks": {
+    "python_syntax": "pass",
+    "json_syntax": "pass",
+    "protocol_arithmetic": "pass",
+    "relative_markdown_links": "pass",
+    "source_hash_matches": 19,
+    "empirical_run": false
+  },
+  "source_inspection": {
+    "matched_sha256_count": 19,
+    "source_report": "source_manifest.json"
+  },
+  "input_preflight": {
+    "command": "python3 tools/preflight.py --repo-root <downloaded-public-repo> --raw-root <downloaded-public-repo> --out evidence/local_preflight.json",
+    "exit_code": 2,
+    "status": "blocked_missing_primary_inputs",
+    "mismatches": 0,
+    "missing_roles": [
+      "balanced_full_vector_cache_or_complete_saved_rotations",
+      "original_selected_560_question_jsonl"
+    ]
+  },
+  "delivery_scope": "Experiment plan, source map, fixed config, availability preflight, sparse-TV numerical reference and checks. Receiving Codex must implement the complete real-data pipeline.",
+  "numerical_test_names": [
+    "test_budget_endpoints_and_training_dominance",
+    "test_clean_and_stress_design_mass",
+    "test_duplicate_peers_do_not_require_unique_weights",
+    "test_exact_fixed_mixture_and_sparse_constraints",
+    "test_invalid_probability_and_padding_fail",
+    "test_ragged_vectors_have_equal_observation_mass",
+    "test_random_mean_is_mean_of_errors_not_error_of_mean"
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "checked_file_sha256": {
+    "config/experiment.json": "5e4cc82d5be042aebb3f35a30f788272b9df30fced2d68fdcec17c376147d812",
+    "reference/tv_core.py": "f00bc21fb5c119a2b87a253f9e2aeb9af22211d1317f60ae0366c6d8af819067",
+    "tests/test_tv_core.py": "07712fb94c2124de9b3a2c5af3cf12009772f6661bc976aa02b34f5818fa55e6",
+    "tools/preflight.py": "e76ba441f552b7977f923dc71f551c4059be70d150a63f749bbafc90975d9f98"
+  }
+}

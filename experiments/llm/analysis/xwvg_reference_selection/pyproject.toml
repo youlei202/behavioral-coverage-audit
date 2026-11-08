@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bca-reference-selection"
+version = "0.1.0"
+description = "Cached balanced full-vector XWVG reference selection"
+requires-python = ">=3.12"
+dependencies = ["numpy", "scipy", "pandas", "pyarrow", "matplotlib", "psutil"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

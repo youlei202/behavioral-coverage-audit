@@ -1,0 +1,4 @@
+# CPU-only selected-question recovery. Prefer the existing compatible environment.
+# The locator and both --help commands require only the Python standard library.
+numpy
+datasets

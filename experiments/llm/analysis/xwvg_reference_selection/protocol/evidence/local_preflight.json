@@ -1,0 +1,158 @@
+{
+  "schema_version": "bca_xwvg_preflight_v2",
+  "primary_protocol": "balanced_full_vector_endpoints",
+  "repo_root": "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage",
+  "empirical_experiment_run": false,
+  "parquet_row_validation_run": false,
+  "model_inference_run": false,
+  "source_checks": [
+    {
+      "path": "README.md",
+      "status": "match",
+      "expected_sha256": "0f4b43c8bb7641c513f0025ccdc3773fb55db065a4ad1bfe764b6a19a27dc24b",
+      "actual_sha256": "0f4b43c8bb7641c513f0025ccdc3773fb55db065a4ad1bfe764b6a19a27dc24b"
+    },
+    {
+      "path": "docs/KNOWN_LIMITATIONS.md",
+      "status": "match",
+      "expected_sha256": "df838596d393b14e44200973eb438017c2a7566c17168d545077492da49c2c5c",
+      "actual_sha256": "df838596d393b14e44200973eb438017c2a7566c17168d545077492da49c2c5c"
+    },
+    {
+      "path": "docs/FULL_INFERENCE_REPRODUCTION.md",
+      "status": "match",
+      "expected_sha256": "8b4689495f91af80e28714ad0a325c8e3d927b04b01983949ee467f46fb5aa40",
+      "actual_sha256": "8b4689495f91af80e28714ad0a325c8e3d927b04b01983949ee467f46fb5aa40"
+    },
+    {
+      "path": "scripts/replay_analysis.py",
+      "status": "match",
+      "expected_sha256": "4d0a8f850798d3f15999e13c39119d415d0a6de09e81a4b93363ec4fef722871",
+      "actual_sha256": "4d0a8f850798d3f15999e13c39119d415d0a6de09e81a4b93363ec4fef722871"
+    },
+    {
+      "path": "scripts/stage_experiments.py",
+      "status": "match",
+      "expected_sha256": "452602a3347ca6c6aafb6f1fb5d8b281c96ff00546a97c89c18351b59ef74d3c",
+      "actual_sha256": "452602a3347ca6c6aafb6f1fb5d8b281c96ff00546a97c89c18351b59ef74d3c"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/analysis.py",
+      "status": "match",
+      "expected_sha256": "f273d1cb1c51b541dcdbb3848c9f98fb99aa59de991b55db2632a64d4d58b5ff",
+      "actual_sha256": "f273d1cb1c51b541dcdbb3848c9f98fb99aa59de991b55db2632a64d4d58b5ff"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/core.py",
+      "status": "match",
+      "expected_sha256": "9d71da8efd9ea88bb0d9da3b7ccfacf8fdf148750dd24a32623004e3f8719f8a",
+      "actual_sha256": "9d71da8efd9ea88bb0d9da3b7ccfacf8fdf148750dd24a32623004e3f8719f8a"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/bootstrap.py",
+      "status": "match",
+      "expected_sha256": "4d4e8c8692ad3b39855129065268dd8b54dfb4f455eeacc70e5c8c74f0b80d98",
+      "actual_sha256": "4d4e8c8692ad3b39855129065268dd8b54dfb4f455eeacc70e5c8c74f0b80d98"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/inputs.py",
+      "status": "match",
+      "expected_sha256": "f9ee6e00bd218fc9cd2ede01b035836a24b7a2ef432a4b8b88e81b769c65490e",
+      "actual_sha256": "f9ee6e00bd218fc9cd2ede01b035836a24b7a2ef432a4b8b88e81b769c65490e"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/src/pier_llm_v23/utils.py",
+      "status": "match",
+      "expected_sha256": "36ebf9390c1340148ccb41533b337cd4c19971d5911af6b828021db5347ab95c",
+      "actual_sha256": "36ebf9390c1340148ccb41533b337cd4c19971d5911af6b828021db5347ab95c"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/configs/experiment_v23.json",
+      "status": "match",
+      "expected_sha256": "4c1b68f3ce5cb8ecc7ab17973cc3722d85a9b46b87b0e59d9d8e8f51bdb6197e",
+      "actual_sha256": "4c1b68f3ce5cb8ecc7ab17973cc3722d85a9b46b87b0e59d9d8e8f51bdb6197e"
+    },
+    {
+      "path": "experiments/llm/analysis/v23/configs/resolved_models_v23.json",
+      "status": "match",
+      "expected_sha256": "f5cd0ec138b628f33802301c1ebbceefffd6c2471e549d24a1a88735ec38fda0",
+      "actual_sha256": "f5cd0ec138b628f33802301c1ebbceefffd6c2471e549d24a1a88735ec38fda0"
+    },
+    {
+      "path": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/data.py",
+      "status": "match",
+      "expected_sha256": "a7bbe1d6b6ac2b68c32c43718a2715a974e499001d18331a12d8bfe5ed186f19",
+      "actual_sha256": "a7bbe1d6b6ac2b68c32c43718a2715a974e499001d18331a12d8bfe5ed186f19"
+    },
+    {
+      "path": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/sensitivities.py",
+      "status": "match",
+      "expected_sha256": "4dcfa2aeb425c11abf97de5c0718adc72ceb1545ff81b6bdfca029938de0e252",
+      "actual_sha256": "4dcfa2aeb425c11abf97de5c0718adc72ceb1545ff81b6bdfca029938de0e252"
+    },
+    {
+      "path": "experiments/llm/analysis/v22/src/pier_llm_reanalysis_v22/utils.py",
+      "status": "match",
+      "expected_sha256": "a855ca389869f9c266378902be661bd3d3a0244b81d295f3f40e286e79e754d5",
+      "actual_sha256": "a855ca389869f9c266378902be661bd3d3a0244b81d295f3f40e286e79e754d5"
+    },
+    {
+      "path": "experiments/llm/analysis/v22/configs/reanalysis_v22.json",
+      "status": "match",
+      "expected_sha256": "57094352b08c741aa74971f64e3d88ee9833bfd00fa1b57ece03857ddf5b51e3",
+      "actual_sha256": "57094352b08c741aa74971f64e3d88ee9833bfd00fa1b57ece03857ddf5b51e3"
+    },
+    {
+      "path": "experiments/llm/inference/v2/configs/resolved_models.json",
+      "status": "match",
+      "expected_sha256": "e8d413ea7028b7893fd4da2c359a4a397da345513acb597b44696961a0830b69",
+      "actual_sha256": "e8d413ea7028b7893fd4da2c359a4a397da345513acb597b44696961a0830b69"
+    },
+    {
+      "path": "experiments/llm/manifests/v22/manifests/input_inventory_before.json",
+      "status": "match",
+      "expected_sha256": "29a9c53cefd96885f07c92a4d2f62f43beb90a2132c7539cde892bee415d0983",
+      "actual_sha256": "29a9c53cefd96885f07c92a4d2f62f43beb90a2132c7539cde892bee415d0983"
+    },
+    {
+      "path": "manifests/external_design_inputs.tsv",
+      "status": "match",
+      "expected_sha256": "189d72cda18cdb86e66514b3fb4443859455820a554fbedb9be898239159d943",
+      "actual_sha256": "189d72cda18cdb86e66514b3fb4443859455820a554fbedb9be898239159d943"
+    }
+  ],
+  "input_checks": [],
+  "missing": [
+    "Original selected-560 JSONL: PIER_LLM_ECOSYSTEM_GOLDMINE_V2/data/mmlu_pro_selected_560.jsonl",
+    "Balanced full-vector average or complete saved semantic rotations"
+  ],
+  "mismatch": [],
+  "notes": [
+    "The public archive contains fitted summaries, not the required probability cache.",
+    "An available averaged cache still needs row-level and provenance validation.",
+    "Canonical V2 scores are not an automatic primary-protocol fallback.",
+    "If only shards remain, follow the data map: V23 new rotations, V2 rotation 0, and score_semantic_manifest.jsonl are needed; inspect sidecars and mappings."
+  ],
+  "searched_paths": {
+    "balanced_cache": [
+      "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/outputs/analysis/permutation_averaged_semantic_scores.parquet",
+      "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/outputs/analysis/permutation_averaged_semantic_scores.parquet"
+    ],
+    "rotation_cache": [
+      "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/outputs/validation/permutation_wise_semantic_scores.parquet",
+      "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/outputs/validation/permutation_wise_semantic_scores.parquet"
+    ],
+    "selected_questions": [
+      "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/PIER_LLM_ECOSYSTEM_GOLDMINE_V2/data/mmlu_pro_selected_560.jsonl",
+      "/workspace/scratch/1667020e0ed5/tmp/source/behavioral_coverage/data/mmlu_pro_selected_560.jsonl"
+    ]
+  },
+  "expected_paths": {
+    "balanced_cache": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/outputs/analysis/permutation_averaged_semantic_scores.parquet",
+    "rotation_cache_if_rebuilding": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2_3_INTERFACE_VALIDATION/outputs/validation/permutation_wise_semantic_scores.parquet",
+    "selected_questions": "PIER_LLM_ECOSYSTEM_GOLDMINE_V2/data/mmlu_pro_selected_560.jsonl"
+  },
+  "input_route": "primary_cache_unavailable",
+  "can_attempt_cpu_reconstruction": false,
+  "status": "blocked_missing_primary_inputs"
+}

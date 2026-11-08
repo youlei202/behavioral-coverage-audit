@@ -26,3 +26,6 @@ hf_cache/
 # Small checkpoint identity JSONs are provenance, not model weights.
 !experiments/llm/manifests/v2/data/manifests/models/
 !experiments/llm/manifests/v2/data/manifests/models/*.json
+
+# New supplementary runs; historical frozen evidence remains tracked.
+/outputs/xwvg_reference_selection/
